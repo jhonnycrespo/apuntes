@@ -1,0 +1,48 @@
+PROMISE
+=======
+
+  new Promise((resolve, reject) => {})
+
+  then(onFulfilled, [onRejected]);
+
+  Parameters
+  ===========
+    - onFulfilled: A function called if the promise is fulfilled. This function has one argument, the fulfillment value.
+    - onRejected: A function called if the promise is rejected. This function has one argument, the rejection reason.
+
+  Methods
+  =======
+    Promise.prototype.catch()
+    =========================
+      The catch() method returns a Promise and deals with rejected cases only.
+
+        p.catch(onRejected);
+        p.catch(reason => {})
+
+      Parameters
+      ===========
+        onRejected: A function called when the promise is rejected. This function has one argumen "reason".
+
+      The promise returned by catch() is rejected if "onRejected" throws an error or returns a Promise which
+      itself is rejected; otherwise, it is resolved.
+
+    Promise.prototype.then()
+    ========================
+      The then() method returns a Promise. It takes up to two arguments:
+
+      p.then(onFulfilled, [onRejected]);
+
+      Parameters
+      ==========
+        - onFulfilled: a function called when the promise is fulfilled. This function has one argument, the fulfillment value.
+        - onRejected: a function called if the promise is rejected.
+
+      Return value
+      ============
+        A Promise in the "pending status".
+
+        After the invocation of the handler function, if the handler function:
+          - returns a value, the promise returned by then() gets resolved with the returned value as it's value.
+          - throws an error, the promise returned by then() gets rejected with the throw error as it's value.
+          - returns an already resolved promise, the promise returned by then() gets resolved with that promise's value as it's value.
+          - returns an already rejected promise, the promise returned by then gets rejected with that promise's value as its value.

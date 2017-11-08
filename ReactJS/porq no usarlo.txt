@@ -1,0 +1,17 @@
+REACT
+======
+	* bueno
+		- virtual DOM and re-rendering.
+		- component based
+
+	* malo
+	- combinar logica(js) con presentacion(html)?? 
+	- separation of concerns
+
+
+Angular
+=======
+	* bueno
+		- component based
+	* malo
+		- Angular overloads HTML with template language and expression strings.

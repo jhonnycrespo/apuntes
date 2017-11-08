@@ -1,0 +1,111 @@
+KEY IDEA: Pack information into your names
+
+A lot of the name we see in programs are vague, like tmp. Even words that may seem reasonable, such as "size"
+or "get", don't pack much information. This chapter shows you how to pick names that do.
+
+Choose Specific Words
+======================
+
+For example, the word "get" is very unspecific.
+The word "get" doesn't really say much. Does this method get a page from the local cache, from a database, or
+from the internet? If it's from the internet, a more specific name might be FetchPage() or DownloadPage().
+
+Ex: BinaryTree Class
+	- what would you excect the size() method to return? the height of the tree, the number of nodes, or
+	  the memory footprint of the tree?
+	- The problem is that size() doesn't convey much information. A more specific name would be height(),
+	  numNodes(), or memoryBytes().
+
+Ex: Thread Class
+	- The name stop() is okay, but depending on what exactly it does, there might be a more specific name.
+	  For instance, you might call it kill() instead, if it's a heavyweight operation that can't be undone.
+	  Or you might call it pause(), if there is a way to resume() it.
+
+  Finding More "Colorgul" Words
+  ===============================
+	- KEY IDEA: it's better to be clear and precise than to be cute.
+
+
+Avoid Generic Names Like tmp and retval
+========================================
+
+Name like "tmp", "retval", and "foo" are usually cop-outs that mean "I can't think of a name". Instead of
+using an empty name like this, pick a name that describes the entity's value or purpose.
+
+There are, however, some cases where generic names do carry meaning. Let's take a look at when it makes sense
+to use them.
+
+	ejm: in cases where the variable's sole purpose is temporary storage, with a lifetime of only a few lines.
+	     The name "tmp" conveys specific meaning to the reader, that this variable has no other duties. It's not
+	     being passed around to other functions or being reset or reused multiple times.
+
+ADVICE: The name "tmp", "aux" should be used only in cases when being short-lived and temporary is the most important
+	fact about that variable.
+
+  Loop Iterators
+  ===============
+
+	Names like i, j, iter and it are commonly used as indices and loop iterators. Even though these names are
+	generic, they're understood to mean "I am an iterator".
+
+	A lot of the time, they’re overused out of pure laziness. This is understandable—when nothing
+	better comes to mind, it’s easier to just use a meaningless name like  foo and move on. But if
+	you get in the habit of taking an extra few seconds to come up with a good name, you’ll find
+	your “naming muscle” builds quickly.
+
+Prefer Concrete Names over Abstract Names
+===========================================
+When naming a variable, function, or other element, describe it concretely rather than abstractly.
+
+For example, suppose you have an internal method named serverCanStart(), which tests whether the server
+can listen on a given TCP/IP port. The name serverCanStart() is somewhat abstract, though. A more concrete name
+would be canListenOnPort(). This name describes directly what the method will do.
+
+
+
+
+Attaching Extra Information to a Name
+======================================
+
+
+How Long Should a Name be?
+============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Use Name Formatting to Convey Meaning
+======================================
+
+Class member variables are like normal variables, but must end with an underscore, like offset_, _offset or m_.
+At first, this convention may seem strange, but being able to instantly distinguish members from other
+variables is very handy.

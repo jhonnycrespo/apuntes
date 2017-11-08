@@ -1,0 +1,14 @@
+Behavior-Driven Development
+============================
+
+- "bdd is about implementing an application by describing its behavior from the perspective of its stakeholders" -Dan North
+
+-
+
+
+
+
+Stories
+========
+- Stories describe features from the stakaholders POV.
+ 

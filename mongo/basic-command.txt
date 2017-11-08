@@ -1,0 +1,15 @@
+enter shell
+============
+  > mongo
+
+show databases
+================
+  > show dbs
+
+select collection
+==================
+  > use <dbName>
+
+show all
+========
+  > db.cats.find()

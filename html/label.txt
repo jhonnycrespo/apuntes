@@ -1,0 +1,19 @@
+label
+=====
+  - The <label> tag allows you to click on the label, and it will be treated like clicking on the associates
+    input element. There are two ways to create this association:
+
+	- First, you can wrap the label element around the input element:
+		
+		<label>Input here:
+    			<input type='text' name='theinput' id='theinput'>
+		</label>
+
+	- The other way is to use the "for" attribute, giving it the ID of the associated input:
+		<label for="theinput">Input here:</label>
+		<input type='text' name='theinput' id='theinput'>
+
+
+for:""
+========
+  -

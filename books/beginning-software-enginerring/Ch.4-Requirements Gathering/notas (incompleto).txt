@@ -1,0 +1,77 @@
+User Requirements
+==================
+  - Los requerimientos de usuario describen como sera usado el proyecto por los usuarios finales.
+  - Ellos, por lo general incluyen cosas como diagramas, sketches, prototipos de la interfaz, diagramas de
+    casos de uso.
+
+  - A veces estos requerimientos son muy detallados, describiendo exactamente lo que debe hacer una
+    aplicacion bajo diferentes circunstancias.
+	
+  ** Ver ejemplo en el libro
+
+  - Los requerimientos vagos son malos, pero los requerimientos flexibles te permiten explorar 
+    diferentes options antes de empezar a escribir codigo. Para mantener los requerimientos flexibles,
+    trata de que los requerimientos describen las necesidades del proyecto sin obligarte a usar
+    una tecnica o enfoque en particular.
+
+Functional Requirements
+========================
+  - Los requerimientos funcionales son sentencias detalladas de las capacidad que se desea tenga el proyecto.
+    Son similares a los "user requirements" pero estos podrian tambien incluir cosas que los usuarios no ven
+    directamente. Por ejemplo, podrian describir reportes que produce la aplicacion, interfaces a otras 
+    aplicaciones y flujos de trabajo.
+
+  - Estas son cosas que debe hacer la aplicacion
+
+
+Nonfunctional Requirements
+===========================
+  - Los requerimientos no-funcionales son declaracion sobre la calidad del comportamiento de la aplicacion
+    o limitacion y restricciones sobre como produce los resultados deseados. Especifican cosas como el
+    rendimiento, funcionamiento, confiabilidad y seguridad de la aplicacion.
+
+   ** ejm: La aplicacion debe soportar 20 usuarios simultaneamente haciendo reservaciones a cualquier hora
+	   del dia".
+
+Implementation Requirements
+=============================
+
+...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

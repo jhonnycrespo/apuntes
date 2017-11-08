@@ -1,0 +1,136 @@
+Los requerimientos son las "features" que debe tener tu aplicacion. Al comienzo de un proyecto, debes recolectar los
+requerimientos de los clientes para averiguar que necesitas construir o crear.
+
+Durante todo el desarrollo, usaras los requerimientos para guiar el desarrollo y asegurar que vas hacia la direccion correcta.
+
+Al final del proyecto, usaras los requerimientos para verificar que la aplicacion o sistema realmente hace lo que se supone
+que debe hacer.
+
+Dependiendo del alcance del proyecto y de su complejidad, podrias necesitar solo unos cuantos requerimientos, o podrias
+necesitas cientos de requerimientos. El numero y tipo de requerimientos tambien pueden depender del nivel de formalidad
+que el cliente quiere.
+
+Las secciones siguientes describen algunas de las propiedades que deben tener los requerimientos para ser utiles:
+	* Clear
+	* Unambiguous
+	* Consistent
+	* Prioritized
+	* Verifiable
+	* Words to Avoid
+
+CLEAR
+======
+  - los buenos requerimientos son claros, concisos y faciles de entender. Esto significa que ellos no deben ser descritos con lenguaje tecnico, o terminos dificiles de entender, jergas, etc.
+
+  - Esta bien usar terminos tecnicos y abreviaciones si estos estan definidos en algun lado o son de conocimiento
+    comun en el dominio del proyecto.
+
+  * ejm: supongamos que trabajas en un software que programa citas para el personal de reparacion de equipos.
+	 
+	 Un requerimiento que diga "Mejorar la programacion de citas" es muy vago para ser de utilidad.
+	 Acaso significa que el personal de reparacion debe abandonar y realizar una nueva cita si no pueden terminar
+	 su trabajo dentro de una hora? O significa algo algo como permitir a los usuarios decirte en que horas estaran
+	 en casa y entonces con esa informacion marcar las citas?
+
+	 Un mejor requerimiento seria, "Reducir la ventana principal de citas a no mas de 2 horas mientras se cumpla
+	 el 90 porciento de las citaas programadas"
+
+Unambiguous
+============
+
+  - 
+
+  * EJM: supong que estas construyendo una aplicacion de mapeo de calles para patinadores, y tienes un requerimiento
+    que dice, "Encontrar la mejor ruta desde un punto inicial a un destino final". Esto no deberia ser tan dificil.
+    Despues de todo Google Maps, Yahoo Maps y otros hacen algo como esto.
+
+    Pero como como defines "mejor ruta"? La ruta mas corta? La ruta que usa caminos dedicados especificamente para bicicletas?
+    O quizas la ruta que pasa a traves de la mayoria de Starbuck?
+
+    Incluso si decides que "mejor ruta" significa la mas corta, que significa esto? La ruta mas corta en distancia?
+    o la mas corta en tiempo? que tal si la ruta mas corta en distancia pasa a traves de colinas y esto incrementa el tiempo?
+
+    En este ejemplo, podrias cambiar el requerimiento para permitir a los usuarios decidir como escoget la "mejor ruta".
+
+  - Mientras escribes requerimiento, da lo mejor de ti para escribirlos los menos ambiguo posible. Leelos con cuidados
+    para asegurarte de que por tu mente no cruzara otra interpretacion en lugar de la que se quieres.
+
+    Luego pasalos a otras personas (particularmente clientes y usuarios finales) para ver si estan de acuerdo contigo.
+
+Consistent
+==========
+
+  - Los requerimientos de un proyecto deben ser concistentes el uno al otro. Esto significa no solo que ellos no pueden
+    contradecirse, sino que tambien no deben tener demasiadas restricciones para que el problema no pueda solucionarse.
+
+    Cada requerimiento deben ser consistente con si mismo. Esto signficia que "Debe ser posible de lograr".
+
+  * EJM: Considemeremos el ejemplo anterior. Podrias incluir el siguiente requerimiento:
+
+	- Atender el 90 porciento de las citas programas
+
+	Podria ser que no sea posible satisfaces este requerimiento solo usando software. Tal vez sea posible
+	contratando mas personal de reparacion.
+
+Prioritized
+============
+
+Verifiable
+===========
+  - Los requerimientos deben ser verificables. Si no puedes verificar un requerimiento, como sabras si lo has
+    cumplido.
+
+    Ser verificable significa que el requerimiento debe estar limitado y ser precisamente definido. No pueden
+    ser declaracion abiertas como, "Procesar mas ordenes de trabajo por hora de las que actualmente se procesan". Cuantas ordenes significa "mas"? Tecnicamente, procesar una orden de trabajo mas por hora es "mas", pero probablemente eso no satisfaga al cliente. Que tal 100? o 1000?
+
+    Un mejor requerimiento diria:
+      "Procesar al menos 100 ordenes de trabajo por hora". Deberia ser relativamente facil determinar si tu programa cumple este requerimiento.
+
+      Incluso con esta mejora, la verificacion podria ser complicada porque se basa en algunos suposiciones
+      que no estan definidas. por ejemplo, el requerimiento probablemente asume que estas procesado ordenes 
+      de trabajo en medio de un dia tipico de trabajo, no durante un gran evento de liquidacion, durante una 
+      hora pico de ordenes de trabajo o durante un corte de energia.
+
+    Un aun mejor requerimiento diria:
+      "Procesar al menos 100 ordenes de trabajo por hora como media durante un dia tipico de trabajo". Quizas
+      te gustaria refinar aun mas el requerimiento especificando que es un "dia tipico de trabajo", pero esta
+      version deberia ser lo suficientemente buena para la mayoria de clientes razonables.
+
+Words to Avoid
+===============
+  Algunas palabras son ambiguas o subjetivas, y añadirlas a un requerimiento puede volver impreciso el 
+  requerimiento. La siguiente lista da un ejemplo de algunas palabras que hacen a un requerimiento menos 
+  exacto?
+
+    * Comparativas
+      - Palabras como mas rapido, mejor , mas. Cuanto mas rapido? Define "mejor". Cuanto mas? Estas palabras
+        necesitan ser cuantificadas.
+    * Adjetivos imprecisos
+      - Palabras como rapido, robusto, amigable, eficiente, flexible. Estas son solo otras formas de comparar.
+        Se ven bien en reportes de administracion, casos de negocio y material de marketing, pero son demasiado
+        imprecisos para ser usados en requerimientos.
+    * Comandos vagos
+      - Palabras como minimizar, maximizar, mejorar, optimizar. Al menos que uses estas palabras en un contexto
+        de algoritmos. Incluso cuando son usadas cuando se habla de algoritmos, esta clase de palabras son, por lo general, aplicadas a problemas donde no existe una solucion inmediata. En cualquier caso, debes hacer
+        los objetivos mas concretos. Provee algun numero u otro criterio que puedas usar para determinar
+        si un requerimiento ha sido logrado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

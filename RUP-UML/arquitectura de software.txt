@@ -1,0 +1,22 @@
+- Subsistemas con interfaces claramente definidas.
+	- Las interfaces estables permiten que el software de ambas partes progrese independientemente.
+	- Una arquitectura y unos patrones de diseño adecuados nos ayudan a encontrar las interfaces correctas
+	  entre los subsistemas.
+
+
+- Para que una organizacion desarrolle un sistema, dicho sistema debe ser comprendido por todos los que vayan a
+   intervenir en el.
+
+CASOS DE USO Y ARQUITECTURA
+=============================
+	- Existe cierta interaccion entre los casos de uso y la arquitectura.
+	- La arquitectura esta condicionada por los casos de uso que queremos que soporte el sistema. Los casos
+	  de uso son "directores" de la arquitectura.
+
+LOS PASOS HACIA UNA ARQUITECTURA
+==================================
+	- La arquitectura se desarrola mediante iteraciones, principalmente durante la fase de elaboracion.
+	- Que casos de uso son relevantes arquitectonicamente hablando?
+		- Los caos de uso arquitectonicamente relevantes son aquellos que nos ayudan a mitigar los riesgos mas
+		  importantes, aquellos que son los mas importantes para los usuarios del sistema, y aquellos
+		  que nos ayudan a cubrir todas las funcionalidades significativas, de forma que nada quede en penumbra.

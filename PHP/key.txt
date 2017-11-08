@@ -1,0 +1,3 @@
+key
+====
+   - return the index element of the current array position.

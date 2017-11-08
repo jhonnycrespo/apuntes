@@ -1,0 +1,36 @@
+REST
+=====
+
+Let's look at the key principles around the HTTP and URI standards, sticking to which will make your HTTP
+applications a RESTful-service-enables application:
+
+	- Everything is a resource
+	- Each resource is identifiable by a unique identifier (URI)
+		* ejm URIs: 
+			http://www.mydatastore.com/images/vacation/2014/summer
+		  	http://www.mydatastore.com/data/documents/balance?format=xml
+	- Use the standard HTTP methods.
+	- Resources can have multiple representations
+	- Communicate statelessly
+
+** ref: RESTful Web API Design with Node.js [pag. 2] 
+
+THE REST GOALS
+==================
+	- Separation of the representation and the resource
+	- Visibility
+	- Reliability
+	- Scalability
+	- Performance
+
+** ref: RESTful Web API Design with Node.js [pag. 7] 
+
+
+REST vs RESTful
+=================
+
+	- REST is a "style of software architecture".
+	- RESTful is tipically used to refer to web services implementing that architecture.
+	- RESTful is an adjective that refers to web services implementing the REST architecture.
+	- A service based on REST is called a  "RESTful service".
+	- Para que un servicio sea considerado RESTful debe cumplir con los "key principles".

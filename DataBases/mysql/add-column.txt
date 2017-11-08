@@ -1,0 +1,3 @@
+-- Columns are nullable by default. As long as the column is not declared UNIQUE or NOT NULL, there shouldn't be any problems.
+
+ALTER TABLE salud_revision_periodica_paciente ADD COLUMN identificacion TINYINT(2) DEFAULT 0;

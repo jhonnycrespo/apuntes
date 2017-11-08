@@ -1,0 +1,8 @@
+Scopo Resolution Operator
+==========================
+
+
+   - The Scope Resolution Operator or in simpler terms, the double colon, is a token that allows access to static, constant, 
+     and overridden properties or methods of a class. 
+
+   - When referencing these items from outside the class definition, use the name of the class. 

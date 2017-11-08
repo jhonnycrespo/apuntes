@@ -1,0 +1,8 @@
+Retorna una instacia de un "single route", que podemos usar para manejar verbos HTTP con middleware opcional.
+
+- Usa app.route() para evitar nombres de ruta duplicados.
+
+USAGE
+======
+	- app.route('<path>').get(fuction(req, res, next))
+	- app.route('<path>').post(function(req, res next))

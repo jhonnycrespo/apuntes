@@ -1,0 +1,13 @@
+Esta es mi lista de IDEs:
+ 1. phpstorm
+	- de paga
+	- consume muchos recursos
+	- hecho en java
+ 2. netbeans
+	- free
+ 3. phpDesigner 
+	- no java
+	- solo windows
+ 4. Sublime text
+
+ 5. Visual Studio Code

@@ -1,0 +1,55 @@
+La captura de requerimientos puede no ser la etapa mas importante de un proyecto, pero es con seguridad una etapa importante.
+
+Los buenos requerimientos deben satisfacer algunos requisitos. Por ejemplo, ellos deben ser claros y concisos. Tener cientos
+de requerimientos no servira de nada si nadie puede entender lo que significan o si se contradicen entre si.
+
+Algunos desarrolladores agrupan los requerimientos en categorias. Por ejemplo, puedes usar audience-oriented categories,
+FURPS, o FURPS+ para organizar los requerimientos. Categorizar los requerimientos por si solo no te ayuda definir tu
+proyecto, pero puedes usar las categorias como un checklist para asegurar que no te has olvidado nada obvio.
+
+Hay muchas formas de recolectar requerimientos. Obviamente, debes hablar con los clientes y, si es posible, con los usuarios.
+Puedes usar las 5 Ws y una H para ayudarte a guiar la conversacion.
+Observar a los usuarios mientras realizar su trabajo is normalmente instructivo. Puede ayudar a clarificcar los objetivos
+del proyect, y ocasionalmente podrias descubrir cosas simples que puedes agregar al proyecto para hacer mas facil el trabajo
+de los usuarios.
+
+Despues de entener las necesidades de los usuarios, debes refinar esas necesidades en requerimientos.
+
+Finalmente, despues de saber cuales son los requerimientos, necesitas registrarlos para que todos puedan consultarlos mientras
+el proyecto continua. Algunas formas para registrar los requerimientos incluyen escribir especificaciones de manera formal,
+diagramas UML, historias de usuario, casos de uso y prototipos.
+
+Antes de moverte a la siguiente fase, debes validar los requerimientos para asegurarte que ellos satisfaces las necesidades de
+los clientes. Luego, al final del proyecto, tambien deberas verificar que el proyecto ha logrado satisfacer los requerimientos.
+
+Si piensas que esto suena como mucho trabajo, estas en lo cierto. Pero, es totalmente necesario para el exito del proyecto.
+Sin requerimiento, como sabrias que construir? A menos que los requerimientos sean claros y verificables, como sabrias
+sin has alcanzado los objetivos?
+
+Despues de recolectar, registrar y validar los requerimientos estas listo para moverte a la siguiente fase: Diseño de alto nivel
+o "High Level Design". Podrias ya haber incorporado algunas decisiones de diseño en los requerimientos
+	** ejm: podrias haber tomado algunas decisiones sobre la UI o haber escogido una arquitectura.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

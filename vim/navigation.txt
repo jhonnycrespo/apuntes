@@ -1,0 +1,14 @@
+BASIC MOVEMENT
+===============
+	> hjkl
+
+	* Move back by token/forward by token/back by word/forward by word. (A token is a 
+	  sequence of letters, digits, and underscores. For the capital letter variations, 
+	  a word consists of anything that’s not whitespace.)
+	> bwBW
+
+	* Basically Page Up and Page Down, but moves by half a screenful and doesn’t lose your cursor position.
+	> ctrl+u ctrl+d
+
+	* Move to the top/middle/bottom of the screen
+	> HML

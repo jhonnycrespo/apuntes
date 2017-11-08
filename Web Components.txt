@@ -1,0 +1,32 @@
+Los web components son una reciente incorporacion al HTML5 que pueden suponer el mayor cambio en el mundo web en años
+y solucionar de golpe varios problemas historicos de HTML.
+
+
+El estandar, en realidad, se compone de 4 subelementos complementarios, pero independientes entre si:
+   * Custom Elements
+   * Templates
+   * Shadow Dom
+   * HTML imports
+
+Cualquiera de ellos puede ser usado por separado, lo que hace que la tecnologia de los Web Components sea muy util y flexible.
+
+Basicamente los Web Components permiten a los desarrolladores usar las mismas herramientas que usan los responsables
+de los navegadores para implementar nuevos elementos.
+
+CUSTOM ELEMENTS: ETIQUETAS PERSONALIZADAS
+==========================================
+	- Alguna vez has deseado que la W3C introdujera alguna etiqueta al estandar?
+	- Ahora cualquiera puede crear su propia etiqueta y marcar de formas mas semantica y sencilla lo que de otro
+	  modo seria, muy probablemente, una sopa de divs. ejm: una etiqueta para un mapa de google.
+	- Sera la comunidad la que creara y mejorara nuevos elementos, listos para ser añadidos al estandar si gana
+	  popularidad.
+	- Los custom elements pueden extender a algun "elemento generico de HTML" como un boton u otro para extender
+	  su funcionalidad.
+	- El unico requisito para crear un custom element es que su nombre contenga un guion. ejm: <super-boton>.
+
+TEMPLATES
+=========
+
+
+
+**ref: http://octuweb.com/introduccion-web-components

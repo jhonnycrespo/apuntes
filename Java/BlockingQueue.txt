@@ -1,0 +1,19 @@
+java.util.concurrent.BlockingQueue;
+
+BlockingQueue
+==============
+   - The BlockingQueue interface in the java.util.concurrent package represents a queue which is "thread safe" 
+     to put into, and take instances from.
+
+Usage
+=====
+   - A BlockingQueue is typically used to have on thread produce objects, which another thread consumes.
+   - The producing thread will keep producing new objects and insert the into the queue, until the queue
+     reaches some upper bound on what it can contain. its limit, in other words.
+   - If the blocking queue reaches its upper limit, the producing thread is blocked while trying to insert the new object.
+     it remains blocked until a consuming thread takes an object out of the queue.
+
+  - The consuming thread keeps taking objects out of the blocking queue, and process them. if the consuming
+    thread tries to take an objects out of an empty queue, the consuming thread is blocked until a producing
+    thread puts an object into the queue.
+

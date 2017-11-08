@@ -1,0 +1,4 @@
+observable
+===========
+	- un arreglo cuyos items llegan de manera asincrona sobre el tiempo.
+	- nos ayudan a manejar datos asincronos

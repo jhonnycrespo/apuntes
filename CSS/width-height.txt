@@ -1,0 +1,14 @@
+width
+=====
+	- la propiedad width especifica el ancho del area del contenido de un elemento. El area de contenido se
+	  encuentra entre el padding, border, y margin del elemento.
+
+sintaxis
+=========
+	- percentage: especificado como un porcentaje del ancho del bloque contenedor.
+
+max-width
+=========
+	- el elemento acomoda su ancho al ancho del elemento contenedor.
+	- evita que los valores usados en la propiedad width sean mayores que el valor especificado
+	  por max-width

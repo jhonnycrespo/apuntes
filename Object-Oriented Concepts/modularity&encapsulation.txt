@@ -1,0 +1,19 @@
+modularity
+==========
+
+Modularity means dividing up a system into components, or modules, each of which can be designed, implemented, tested, reasoned about, and reused separately from the rest of the system. The opposite of a modular system is a monolithic system — big and with all of its pieces tangled up and dependent on each other.
+
+A program consisting of a single, very long main() function is monolithic — harder to understand and harder to isolate bugs in. By contrast, a program broken up into small functions and classes is more modular.
+
+Encapsulation
+=============
+
+Encapsulation is one of the four fundamentals OOP concepts. The other three are inheritance, polymorphism, and abstraction.
+
+Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
+
+Encapsulation means building walls around a module (a hard shell or capsule) so that the module is responsible for its own internal behavior and bugs in other parts of the system can't damage its integrity.
+
+One kind of encapsulation is access control: using public and private to control the visibility and accessibility of your variables and methods. A public variable or method can be accessed by any code (assuming the class containing that variable or method is also public). A private variable or method can only be accessed by code in the same class. Keeping things private as much as possible, especially for variables, provides encapsulation, since it limits the code that could inadvertently cause bugs.
+
+Another kind of encapsulation comes from variable scope. The scope of a variable is the portion of the program text over which that variable is defined, in the sense that expressions and statements can refer to the variable. A method parameter's scope is the body of the method. A local variable's scope (in Java) extends from its declaration to the closing curly brace of the block around the declaration. Keeping variable scopes as small as possible makes it much easier to reason about where a bug might be in the program.

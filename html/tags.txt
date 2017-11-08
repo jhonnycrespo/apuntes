@@ -1,0 +1,27 @@
+role
+====
+  La mayoria de los roles fueron definidos en ARIA 1.0, y luego fueron incorporados en HTML5.
+  Algunos de los nuevos elementos HTML5 (dialog, main, etc) estan basado en los roles ARIA.
+	Hay principalmente dos razones para usar roles:
+	  - Sobreescribir el rol
+
+
+aria-hidden
+============
+  Indica que el elemento y todos sus descendientes no son visibles o percibibles para cualquier usuario.
+
+
+tabindex
+=========
+  es un atributo global, responsable de 2 cosas:
+	- fija el orden de elementos "focusables" y
+	- hace a un elementos "focusables"
+
+	usos
+	=====
+		- para hacer a un elemento focusable sin querer fijar el orden
+			tabindex="0"
+		- si no quieres que el elemento sea focusable
+			tabindex="-1"
+
+  El focus se hace con la tecla tab

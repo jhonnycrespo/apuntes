@@ -1,0 +1,6 @@
+Scene
+======
+
+The JavaFX Scene class is the container for all content in a scene graph. The background of the scene is filled as specified by the fill property.
+
+The application must specify the root Node for the scene graph by setting the root property. If a Group is used as the root, the contents of the scene graph will be clipped by the scene's width and height and changes to the scene's size (if user resizes the stage) will not alter the layout of the scene graph. If a resizable node (layout Region or Control is set as the root, then the root's size will track the scene's size, causing the contents to be relayed out as necessary.

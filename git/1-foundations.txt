@@ -1,0 +1,39 @@
+COMMIT
+========
+ - A commit is a snapshot of a git repository.
+
+HEAD
+=====
+ - Head is git's name for the current commit.
+
+WORKING DIRECTORY
+==================
+	- 
+
+
+
+
+DIRECTORIES
+============
+ - git does not track directories, only them content.
+
+
+UNTRACKED FILES
+=================
+ - son archivos que han sido creados (seguramente) y que pueden ser agregados al "stage area"
+   usando "git add" para luego hacer "commit sobre ellos".
+
+CHANGES NOT STAGED FOR COMMIT
+==============================
+ - Son archivos sobre los que se ha hecho algun cambio y pueden ser agregados al "stage area"
+   usando "git add" para luego hacer "commit sobre ellos".
+
+CAMBIONS EN LOS PERMISOS DE UN ARCHIVO
+========================================
+ - git registra los cambios en los permisos. Asi que nos pedira agregar el archivo al "stage area"
+   si le hemos cambiado los permisos.
+
+CONFIGURACIONES GLOBALES
+=========================	
+ - si usamos el atributo "--global" la configuracion que hayamos aplicado afectara a todos los respositorios
+   que creemos o sobre los que hagamos commit, aunque no lo hayamos creado nosotros. 

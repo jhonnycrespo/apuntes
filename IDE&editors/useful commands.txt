@@ -1,0 +1,16 @@
+delete line
+============
+  - ctrl + shift + k
+
+copy line
+==========
+  - ctrl + c
+
+
+duplicate line
+===============
+  - ctrl + shift + d
+
+hide sidebar
+=============
+  - ctrl + k + b

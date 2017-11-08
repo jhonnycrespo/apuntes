@@ -1,0 +1,52 @@
+  * Desarrolla con "Error Reporting" encendido
+	- Lo primero que debes hacer cuando empiezas un proyecto es encender el reporte de errores a E_ALL
+          y solo debes apagarlo unos segundos antes de entrar en produccion.
+
+  * Usar el "ternary operator" cuando sea posible
+	-() ? :
+
+  * Siempre usar ===
+	- Usa el operador === para verificar si algo es null o false.
+
+  * Redirect forms to their original pages
+
+  * Usar XDebug
+	- ya no usar echo, var_dump() y otros
+
+  * Usar PHPUnit
+
+  * Usar booleans con minusculas
+	- true, false
+
+  * Single Quotes or Double Quotes
+	- Usar single quotes (single quotes arent parsed)
+
+  * Use the built in password hashing functions to hash and compare passwords
+
+  * Use PDO
+
+  * Usar define() en lugar de const
+
+  * Use PHPMailer
+
+  * Usa un IDE
+
+  * Use Composer
+
+  * Sanitize HTML input and output
+	- use htmlentities() for simple sanitization and
+	- HTML Purifier library for complex sanitization
+
+  * Working with dates and times
+	- no usar date(), date_timezone_set()
+	- usar DateTime class
+
+  * usar empty($arr) en lugar de (count($arr) === 0)
+
+  * String matching: usar ===
+
+
+Referencias
+===========
+  **ref: https://phpbestpractices.org/
+ - http://engineering.naukri.com/2015/09/better-practices-in-php-speed-up-your-code/

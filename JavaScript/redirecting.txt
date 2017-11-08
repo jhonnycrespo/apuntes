@@ -1,0 +1,5 @@
+window.location.replace("http://sidanmor.com");
+ - If you want to simulate an HTTP redirect, use location.replace.
+
+window.location.href = "http://sidanmor.com";
+ - If you want to simulate someone clicking on a link, use location.href

@@ -1,0 +1,74 @@
+INTRODUCCION
+===============
+
+ * paradigma: Conjunto de teorias, estandares y metodos que juntos representan una forma de organizar el conocimiento.
+ - Cada paradigma tiene sus propias caracteristicas y tratan de solucionar los problemas del desarrollo de software desde
+   distintas perspectivas y filosofias.
+
+TIPOS DE PARADIGMAS DE PROGRAMACION
+=====================================
+
+ - En general la mayoria son variantes de los dos tipos principales:
+	* Programacion Imperativa (o por procedimientos): Es el mas usado en general, se basa en dar instrucciones al ordenador
+	  de como hacer las cosas en forma de algoritmos. La programacion imperativa es la mas usada y la mas antigua.
+	  Dentro de esta categoria se engloban los siguientes paradigmas:
+
+		- Programacion orientada a objetos
+		- Programacion dinamica
+
+	* Programacion Declarativa: Dentro de esta categoria se engloban los siguientes paradigmas:
+
+		- Programacion funcional
+		- Programacion logica
+		- Programacion con restricciones
+	* Programacion multiparadigma
+
+- Tanto La programacion imperativa como la declarativa son "paradigmas de programacion".
+
+DECLARATIVE -> Bueno
+=============
+
+ - A declarative style allows you control flow and state in your application by saying 'it should look like this'.
+ - In contrast to imperative, with declarative programming you only describe "what you want to happer", and leave the
+   questiong of "how it will happen" up to your framework of choice.
+
+IMPERATIVE -> Malo
+=============
+
+ - An imperative style turn that around and allows you to control your application by saying 'this is what you should do'.
+
+ - Imperative programming is when your code specifies not just "what" you want to happen, but "how you want it to happen". 
+   In other words, imperative programming means that you are dealing with many internals to make your code function properly.
+
+DIFERENCIAS
+=============
+ - The benefits of declarative is that you don't get bogged down in the implementation details of representing state. You're 
+   delegating the organizational component of keeping your application views consistent so you just have to worry about state.
+
+ - Example:
+	- Imagine you have a butler, who is kind of a metaphor for a framework. And you would like to make dinner. 
+	  In a imperative world, you would tell them step by step how to make dinner. You have to provide theme these instructions:
+
+		Go to kitchen
+		Open fridge
+		Remove chicken from fridge
+		...
+		Bring food to table
+
+
+	- In a declarative would, you would simply describe what you want
+
+		I want a dinner with chicken.
+
+
+ - If you butler doesn't know how to make chicken, then you cannot operate in a declarative style. Just like if backbone 
+   doesn't know how to mutate its self to do a certain task, you can't just tell it to do that task. React is able to be 
+   declarative because it "knows how to make chicken", for example. Compared to backbone, which only knows how to interface 
+   with the kitchen.
+
+ - Being able to describe the state reduces the surface area for bugs dramatically, which is a benefit. On the other hand, 
+   you might have less flexibility in how things occur, because you're delegating or abstracting away how you implement the state.
+
+
+
+

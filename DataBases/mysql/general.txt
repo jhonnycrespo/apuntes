@@ -1,0 +1,29 @@
+Connectarse
+============
+	>mysql -u <USERNAME> -p 
+
+Seleccionar o cambiar BD
+=========================
+	> use <DBNAME>;
+
+
+exportar base de datos
+========================
+	cmd> mysqldump -p -u <username> <database_name> > dbname.sql 
+
+exportar una tabla
+==================
+	cmd> mysqldump -p --user=username database_name tableName > tableName.sql
+
+importar archivo sql
+=======================
+	mysql> use <DBNAME>;
+	mysql> SET autocommit=0 ; source the_sql_file.sql ; COMMIT ; // recuerda user "forward slashes" '/' y absolute paths
+
+mostrar cabeceras de una tabla
+=================================
+	mysql> DESCRIBE/EXPLAIN <tableName>
+
+mostrar todas las tablas
+=========================
+	mysql> show tables;

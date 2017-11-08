@@ -1,0 +1,136 @@
+STAGING AREA
+=============
+  	- changes to be commited.
+
+    - undo a file added to staged area using "git add <file>". Your modifications will be kept and the file 
+      will once again show up in the modified, but not yet staged set of git status.
+    > git reset HEAD <file>
+    > git reset <file>
+
+
+    - undo all files added to staged area using "git add ."
+    > git reset
+    - en versiones antiguas de git es necesario usar la palabra "HEAD" al final.
+    > git reset Head
+
+
+git log [<remoteName/branchName>]
+
+git clone
+==========
+	- The history of changes is copied. This is true for cloning a repository, but not for copying.
+	> git clone <url>
+
+git diff log
+
+git pull <remoteName> <localBranchName> == git fetch + git merge
+git push <remoteName> <localBranchName>
+
+	* fast forward merge??
+
+git remote add <remoteName> <url>
+
+change git remote url
+=====================
+
+	git remote set-url origin <URL>
+		- https://github.com/USERNAME/OTHERREPOSITORY.git
+		- git@github.com:USERNAME/OTHERREPOSITORY.git
+
+comparing things
+=================
+	* Changes between two commits
+		- compare two commits, printing each line that is present in one commit but not the other.
+		> git diff <commit1_ID> <commit2_ID>
+
+	* Compare working directory and Staging Area
+		- Compare the working directory to the staging area.
+		- This will show any changes made that we haven't added to the staging area yet.
+		> git diff (no arguments)
+
+	* Compare Staging Area and the most recent commit
+		- Compare staging area and the most recent commit.
+		> git diff --staged
+
+
+git checkout
+==============
+	- Temporarily reset all files in a directory to their state at the time of a specific commit.
+	> git checkout <commit ID to restore>
+
+git log
+========
+	- Show the commits made in this repository, starting with the most recent.
+	> git log
+
+	- commits history in two branches
+	> git log --graph --oneline <branch1> <branch2>
+
+git reset
+=========
+	- Discards any changes in either the working directory or the staging area.
+	> git reset --hard
+
+	- dicard changes and back to the last commit
+	  > git reset HEAD --hard
+	  > git clean -fd 
+      - remove untracked files from the working tree
+      - "-d" 
+      - "-f" 
+      - If you want to keep files that are not tracked due to .gitignore, be careful with the "git clean -fd" command
+
+git branch
+===========
+	> git branch
+	- shows the current local branches
+
+	> git branch <branch-name>
+	- creates a branch
+
+	> git branch -d <branch-name>
+	- Delete a branch. This won't delete the commits in the branch, it will only delete the label.
+
+
+git show
+============
+	> git show <commit ID>
+	- compares commit to its parent.
+
+
+Removing changes on files (modified files or created files)
+====================
+    > git checkout -- .
+    - descard all changes in the working DIRECTORY
+
+Discard untagged changes
+==========================
+    > git clean -df (removes all untracked files and folders)
+    > git checkout -- . or git checkout .
+
+Discard modifications on files (rever working directory to most recent commit)
+===============================
+    > git reset --hard HEAD
+
+
+Back to last commit
+=====================
+    > git reset --hard HEAD
+
+Remove untracked files
+=======================
+    > git clean (remove untracked files from the working tree)
+
+    * show what files would be removed
+      > git clean -fd -n (-n does the trick)
+
+
+
+show head id
+==============
+  > git rev-parse HEAD or git rev-parse --short HEAD
+
+Remove commit, keep changes
+===========================
+  > git reset HEAD^ or "HEAD^"
+
+

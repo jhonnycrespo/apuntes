@@ -1,0 +1,8 @@
+instance variable
+==================
+	- declared inside of a class
+
+
+local variable
+===============
+	- declared inside of methods

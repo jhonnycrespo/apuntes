@@ -1,0 +1,9 @@
+Virtual Machines
+=================
+  - 
+
+
+
+Docker Containers
+==================
+  - Containers sit on top of the host

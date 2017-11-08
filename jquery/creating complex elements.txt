@@ -1,0 +1,19 @@
+metodo 1
+=========
+
+ver el = $("<a>". {
+	href: "#",
+	"class": "btn btn-success",
+	title: ""
+});
+
+$("body").append(el);
+
+metodo 2
+=========
+
+  - Usar templates
+
+metodo 3
+=========
+  - Usar template engines

@@ -1,0 +1,13 @@
+Vagrant is used to manage virtual machines. This is useful when you want to set up
+different development and deployment environments by using vagrant to manage VM automatically.
+VM are actually servers.
+
+Vagrant abstracts the machine where as Docker abstract the application.
+
+
+providers:
+  - Virtual Box
+  - VMWare
+  - Hyper-V
+  - Docker Container
+  - Google Compute Engine

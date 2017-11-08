@@ -1,0 +1,56 @@
+* Instalar Generator-angular-fullstack
+	- npm install -g generator-angular-fullstack@2.0.13
+* Crear un proyecto usando el generador
+	- yo angular-fullstack <nombreProyecto>
+	Configuracion:
+		javascript:
+		HTML:
+		mongoDB: No
+		routing: ui-router
+
+* Hasta este proyecto hemos trabajado con ngRoute, ahora con uiRouter
+
+* Sub-generadores:
+==================
+	- Client (Anugular + bower):
+		- yo angular-fullstack:controller <param-nombre>
+		- yo angular-fullstack:service <param-nombre>
+		- yo angular-fullstack:filter <param-nombre>
+		- yo angular-fullstack:route <param-nombre>
+		- yo angular-fullstack:directive <param-nombre>	
+
+		- nota: 	 
+		
+	- Server (NodeJs):
+		- yo angular-fullstack:endpoint <NombreEndPoint>
+
+* Inyeccion de nuevos scripts
+	- grunt injector
+	Ahora el archivo index.html tendra inyectados los scripts de los controladores
+	y servicios.
+
+* Practica 
+  ========
+	- generar un nuevo tab: "Test" en la barra de navegacion
+	- generar una nueva ruta para cargar "Test"
+		yo angular-fullstack:route test-page
+		grunt injector
+
+====================== Problemas con NPM =======================
+
+* Problemas con npm
+	- npm cache clean : para limpiar el cache de npm
+	  c:\Users\<username>\appdata\roaming\npm-cache\
+
+* dependencias globales:
+	- c:\Users\<username>\appdata\roaming\npm\
+	   Aqui se descargan las dependencias globales
+
+
+================= agregar un modulo externo =====================
+
+	- bower install angular-ui-grid --save
+		directive: ui-grid
+
+	- grunt wiredep : para agregar el script a index.html
+ui-grid.info/docs/

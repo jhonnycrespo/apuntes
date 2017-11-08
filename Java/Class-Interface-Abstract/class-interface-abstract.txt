@@ -1,0 +1,83 @@
+class
+======
+   - fully implemented
+   - contains state
+   - methods are fully implemented
+
+interface
+==========
+
+    An interface is just a contract or specification, a description of the behavior of a class. Every implementing class ensures, that
+    it will have these methods.
+
+   - no state (no instance variables)
+   - an interface can extend other interface
+   - interfaces are implicitly public and abstract.
+   - all methods are abstract (not implemented) (Methods in interface are "public abstract" or "public static")
+   - the abstract keyword is not necessary, all methods are abstract by default
+   - you can only use "public static final" variables, that means, constants (Bad practice).
+   - multiple interfaces can be implemented by classes (supports multiple inheritance)
+   - non instantiable (no constructors)
+   - we can use the name of the interface as a Abstract Data Type in parametrs, arrays, lists, etc.
+
+   * since java 8: Java 8 has added the concept of interface default methods. An interface default method can contain a default implementation of that method. Classes that implement the interface but which contain no implementation for the default interface will then automatically get the default method implementation.
+
+   An interface describes a set of methods that can be called on an object, but does not provide concrete implementations for all the methods... Once a class implements an interface, all objects of that class have an is-a relationship with the interface type, and all objects of the class are guaranteed to provide the functionality described by the interface. This is true of all subclasses of that class as well.
+
+abstract
+=========
+   - the class is partially implemented (subclasses must complete the implementation)
+   - contains state 
+   - some methods are fully implemented
+   - some methods are abstract (not implemented) (Abstract methods are "public" or "public static")
+   - cannot be instantiated
+   - la clase que hereda de la clase abstracta debe implementar los metodos abstractos
+
+   From "Java How to Program" about abstract classes:
+
+   Because they’re used only as superclasses in inheritance hierarchies, we refer to them as abstract superclasses. These classes cannot be used to instantiate objects, because abstract classes are incomplete. Subclasses must declare the “missing pieces” to become “concrete” classes, from which you can instantiate objects. Otherwise, these subclasses, too, will be abstract.
+
+   An abstract class’s purpose is to provide an appropriate superclass from which other classes can inherit and thus share a common design.
+
+
+When to use abstract or interface
+==================================
+
+Abstract classes are most commonly subclassed to share pieces of implementation. A single abstract class is subclassed by similar classes that have a lot in common (the implemented parts of the abstract class), but also have some differences (the abstract methods).
+
+
+There are a number of times you might consider using an interface over an abstract implementation
+
+    - When the available abstract implementation doesn't do what you want and you want to create your own.
+    - when you have an existing class (that extends from other class) and you want to implement the functionality of the interface
+
+Generally speaking, interfaces were introduced to overcome the lack of multiple inheritancy, amongst other things.
+
+
+Which should you use, abstract classes or interfaces?
+=====================================================
+
+Consider using abstract classes if any of these statements apply to your situation:
+
+    - You want to share code among several closely related classes.
+
+    - You expect that classes that extend your abstract class have many common methods or fields, or require access modifiers other than public (such as protected and private).
+
+    - You want to declare non-static or non-final fields. This enables you to define methods that can access and modify the state of the object to which they belong.
+
+Consider using interfaces if any of these statements apply to your situation:
+
+    - You expect that unrelated classes would implement your interface. For example, the interfaces Comparable and Cloneable are implemented by many unrelated classes.
+
+    - You want to specify the behavior of a particular data type, but not concerned about who implements its behavior.
+
+    - You want to take advantage of multiple inheritance of type.
+
+
+
+
+
+    - Use abstract class to establish relation between interrelated objects. Use interface to establish relation between unrelated classes.
+
+
+

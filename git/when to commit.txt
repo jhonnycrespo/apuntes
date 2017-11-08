@@ -1,0 +1,56 @@
+when to commit
+===============
+	- whwn you add a new feature
+	- when you fix a typo
+	- when you fixed a file wrong indentation
+	- when you added a working method
+
+	- whenever you've done significant amount of work
+
+
+	- commit only when you have succesfully unit tested the given functionality/function/module
+	  and you are reasonably assured that is ready for integration or system testing.
+
+
+Each commit should do exactly one of the following:
+
+	- add a new piece of data or functionality
+
+	- fix one or more bugs (one commit for each if possible) where fix can be:
+		- performance improvement
+		- correcting wrong code behaviour
+		- removing typographical error
+
+	- refactoring code or data without changing the semantics. this includes
+		- rewriting code that behaves identical to original
+		- changing representation of data to a different format
+		- Formatting code or data to meet project's formatting guidelines
+	- Merge changes from another branch(either upstream/downstream)
+
+
+
+====
+	- My general rule of thumb on committing code is to check in when I have completed a 
+	  chunk of code and it compiles. Chunk is not really defined. If it's a small task, 
+	  I might not check in until I'm done it. If it's larger, I might check in after each 
+	  logical portion is completed.
+
+====
+	- As soon as the corresponding task is done. A task is a part of a user story.
+	  A task is done when:
+		- the corresponding unit test passes
+		- code is properly documented
+
+====
+	- you commit when you have reached a codebase state that you want to remember.
+
+====
+	- when is safe
+
+====
+	- whenever you've done significant amount of work
+
+
+
+
+** Remember: push it to a shared repository only after it's working.

@@ -1,0 +1,50 @@
+Selectors
+=========
+	*: $("*") : All elements
+	#id -- $("#lastname") The elements with id="lastname"
+	.class
+	.class, .demo : all elements with the class "intro" or "demo"
+	element
+	el1, el2, el3: $("h1,div,p") : all <h1>, <div> and <p> elements
+	:first
+	:last
+	:odd
+	:first-child
+	:first-of-type
+	:last-child
+	:last-of-type
+	parent > child
+	parent descendant
+
+	[attribute] -- $("[href]") -- All elements with a href attribute
+	[attribute=value] -- $("[href='default.htm']") -- All elements with a href attribute value equal to "default.htm"
+	[attribute$=value] -- $("[href$='.jpg']") -- All elements with a href attribute value ending with ".jpg"
+	[attribute|=value] -- $("[title|='Tomorrow']") -- All elements with a title attribute value equal to 'Tomorrow', or starting with 'Tomorrow' followed by a hyphen
+
+	
+	:input -- $(":input")	All input elements
+	:text -- $(":text")	All input elements with type="text"
+	:password -- $(":password")	All input elements with type="password"
+	:radio -- $(":radio")	All input elements with type="radio"
+
+	:button -- $(":button")	All input elements with type="button"
+	:image -- $(":image")	All input elements with type="image"
+	:file -- $(":file")	All input elements with type="file"
+
+	:selected -- $(":selected")	All selected input elements
+	:checked -- $(":checked")	All checked input elements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

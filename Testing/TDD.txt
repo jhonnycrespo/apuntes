@@ -1,0 +1,6 @@
+Test-Driven Development
+========================
+
+  - each function should only test one thing
+
+  - "Test until fear turns to boredom"

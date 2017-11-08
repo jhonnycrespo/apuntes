@@ -1,0 +1,9 @@
+Navigation
+===========
+  * go to end
+	- ctrl + END
+
+  * go to start
+	- ctrl + HOME
+
+  

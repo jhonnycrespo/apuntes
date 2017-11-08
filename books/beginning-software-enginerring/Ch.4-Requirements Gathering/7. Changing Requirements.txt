@@ -1,0 +1,6 @@
+En mucho proyecto, los requerimientos evolucionan a traves del tiempo. Mientras trabajas, podrias descubrir que algo
+que pensaste que seria facil es dificil. O podrias encontrarte con una tecnica que te permite agregar 
+
+Dependiendo del tipo de proyecto, podrias acomodar algunos cambios, mientras no se te salgan de las manos. Puedes controlar
+los cambios mediante un "change control board". Los clientes (y otros) pueden sugerir realizar cambios en este panel, pero estos
+deben ser aprobados primero. El panel decir si un cambio debe ser implementado o suspendido para otro release.

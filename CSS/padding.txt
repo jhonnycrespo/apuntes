@@ -1,0 +1,19 @@
+padding
+	- la propiedad padding establece el espacio de relleno requerido por todos los lados de un elemento.
+	- el area de padding es el espacio entre el contenido del elemento y su borde (border).
+	- no se permiten valores negativos.
+
+
+valores
+	- <percentage>
+	- con respecto al ancho (width) del bloque que lo contiene
+
+
+
+ejemplo
+========
+
+si el width del contenedor es de 425px.
+cuanto es el padding-bottom del elemento hijo??
+
+ 

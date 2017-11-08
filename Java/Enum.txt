@@ -1,0 +1,15 @@
+Enum in java is a data type that contains fixed set of constants.
+
+It can be used for days of the week (SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY and SATURDAY) , directions (NORTH, SOUTH, EAST and WEST) etc. The java enum constants are static and final implicitly. It is available from JDK 1.5.
+
+Java Enums can be thought of as classes that have fixed set of constants.
+
+
+POINT TO REMEMBER FOR JAVA ENUM
+================================
+
+    - enum improves type safety
+    - enum can be easily used in switch
+    - enum can be traversed
+    - enum can have fields, constructors and methods
+    - enum may implement many interfaces but cannot extend any class because it internally extends Enum class

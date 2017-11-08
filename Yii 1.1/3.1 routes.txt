@@ -1,0 +1,6 @@
+route
+=====
+   - Users request a particular controller and action in terms of route. A route is formed by concatenating a 
+     controller ID and an action ID, separated by a slash. For example, the route post/edit refers to PostController 
+     and its edit action. By default, the URL http://hostname/index.php?r=post/edit would request the post controller 
+     and the edit action.

@@ -1,0 +1,23 @@
+EDITING
+=======
+
+	* Enter insert mode
+
+	> i: insert at cursor
+	> a: append after cursor
+	> I: insert at beginning of line
+	> A: append to end of line
+
+	* Open new line
+	> o: below the current line
+	> O: above the current line
+
+	* Correct the token/word. Basically combines delete and insert into one step.
+	> cw
+	> cW
+
+	* Correct the line(s) by clearing and then entering insert mode. Starts inserting at the current indent level.
+	> cc
+
+CORRECTING TEXT
+===============

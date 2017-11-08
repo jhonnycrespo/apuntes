@@ -1,0 +1,67 @@
+/**
+ * https://www.cs.umd.edu/class/fall2002/cmsc214/Tutorial/recursion.html
+ */
+
+RECURSION
+==========
+
+The basis for understanding recursion is to first, understand how to solve a smaller problem, and second, to learn how to trace a recursive function.
+
+Tracing is unbelievably useful when you are just beginning to learn how recursion works. Students mistakenly believe that if a function calls itself, it must behave in some strange and new way. They can't believe that when a function calls itself, it behaves in the same way as if the function called another function.
+
+If you can't properly trace recursion, it's hard to believe it works correctly.
+
+The irony is this: once you have traced recursive functions a few times (say, 10 or 20 times on different functions), then you will begin to trust recursion works, and then, you hardly ever trace code, unless you really need to debug it.
+
+Most people go through three phases when learning recursion. First, they hate it, because they can't understand it. Then, they love it because they understand this mysterious process. Then, they hate it because they think it's inefficient. In particular, recursive solutions often require at least O(n) memory, while iterative solutions can often solve in O(1) space. However, for many problems, the space isn't that big of a concern, and recursive solutions create simple, easy to follow solutions.
+
+CLASSIC RECURSION
+=================
+
+Solving a "big" problem recursively means to solve one or more smaller versions of the problem, and using those solutions of the smaller problems to solve the "big" problem.
+
+In particular, solving problems recursively typically means that there are smaller versions of the problem solved in similar ways. For exmaple, consider the problem of summing values of an array. What's the difference between summing an array of 100 elements versus summing an array of 50 elements?
+
+You use the same technique, but in one case you sum up to 100 elements, and in the other case, you sum up to the first 50 elements. And, even more importantly, you can use the solution to the smaller problem to help you solve the larger problem.
+
+To understand recursion, you must understand that the basic unit of recursion is the function call. In fact, if you avoid using loops and use only recursion, you will find that your function code will generally be much shorter. Writing recursive functions requires you to create more functions that using loops.
+
+THE FOUR STEPS TO UNDERSTANDING RECURSION
+==========================================
+
+    Step 1: Write and define the prototype of the function.
+        Since functions are the basic unit of recursion, it's important to know what the function does. The prototype you use will dictate how the recursion behaves.
+    Step 2: Write out a sample function call
+    Step 3: Think of the smallest version of the problem
+        The smallest version is called the base case. Most people mistakenly pick a base case that's too large.
+    Step 4: Think of smaller versions of the function call.
+
+
+ It's important to note that there may be more than one base case, and there may be more than one recursive case.
+
+ BACKWARD AND FORWARD RECURSION
+ ===============================
+
+To me, classic recursion uses "backward" recursion. Backward recursion is the following idea. You want to solve a problem of size N. So, assume a solution of a smaller size, say, N - 1. Use that solution to solve the problem of size N.
+In classic recursion, you avoid, as much as is reasonably possible, global variables and reference parameters. You generally write everything (except arrays) pass-by-value. However, for efficiency reasons (and ease of writing), you may wish to use reference parameters.
+
+Forward recursion basically means you are trying to convert a loop into recursive call. One of the parameters is a looping variable, and you are trying to get that variable to reach a stopping point, such as N.
+
+The main drawback when working forward is the need to have N as a parameter, since it doesn't change (at least, once initialized). There, it may make some sense to pass N as a const reference, instead.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

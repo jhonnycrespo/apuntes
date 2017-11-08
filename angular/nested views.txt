@@ -1,0 +1,23 @@
+ui-router
+==========
+
+Nested Views
+============
+   States can be nested within each other. there are several ways of nesting states:
+	- using 'dot notation'. for example .state('contacts.lists', {})
+	- using the 'parent' property with the parent name as string. for example: parents: 'contacs'
+	- using the 'parents' property with the parent object. For example parent: contacs (where contacs)
+	  is a stateObjects.
+
+NESTED STATES & VIEWS
+======================
+	- 
+
+WHAT DO CHILD STATES INHERIT FROM PARENT STATES
+================================================
+	- resolved dependencies viaa 'resolve'
+	- custom 'data' properties
+	- nothing else is inherited (no controllers, templates, urls, etc).However, children of abstract states
+	  do inherit the 'url' property of their parents as a prefix of their own 'url'.
+
+	- 

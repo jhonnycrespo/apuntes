@@ -1,0 +1,9 @@
+
+
+
+properties
+===========
+	- target
+		- _blank: the link will be opened in a new window
+
+

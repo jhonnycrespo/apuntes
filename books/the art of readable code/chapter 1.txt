@@ -1,0 +1,34 @@
+Como decides (que criterio es mas importante) en que forma programar algo??
+
+
+
+The fundamental theorem of readability
+=======================================
+
+KEY IDEA: code should be written to minimize the time it would take for someone else to understand it.
+
+Is Smaller always better?
+==========================
+generally speaking, the less code you write to solve a problem, the better.
+
+but fewer lines isn't always better!!
+
+So even though having fewer lines of code is a good goal, minimizing the time-till-understanding is an even better goal.
+
+Does Time-Till-Understanding conflict with other goals
+========================================================
+You might be thinking, what about other constraints, like making code efficiont, or well-architected, or easy to test,
+and so on? Don't these sometimes conflict with wanting to make code easy to understand?
+
+We have found that these other goals don't interfere much at all. Even in the realm of highly optimized code, there are
+still ways to make it highly readable as well. And making your code easy to understand often leads to code that is well
+architected and easy to test.
+
+Remember, the fundamental theorem of readibility trumps any other rule of principle in this book.
+
+
+
+
+
+
+

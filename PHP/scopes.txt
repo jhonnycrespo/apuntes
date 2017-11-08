@@ -1,0 +1,1 @@
+ - foreach does not create a scope. The last element is still available outside the foreach block

@@ -1,0 +1,29 @@
+CONTROLLERS
+============
+	- in angular, a controller is defined by a javascript constructor function that is used to 
+	  augment the angular scope.
+	- if the controllers has been attached using the 'controller as' syntax then the controller instance will be assigned to a property 
+	  on the new scope.
+use controllers to
+==================
+	- set up the initial state of the $scope object.
+	- add behavior to the $scope object.
+
+Do not use controllers to
+=========================  
+
+	- Manipulate DOM — Controllers should contain only business logic. Putting any presentation logic into Controllers significantly affects its testability. 
+	  Angular has databinding for most cases and directives to encapsulate manual DOM manipulation.
+	- Format input — Use angular form controls instead.
+	- Filter output — Use angular filters instead.
+	- Share code or state across controllers — Use angular services instead.
+	- Manage the life-cycle of other components (for example, to create service instances).
+
+ASSOCIATING CONTROLLERS WITH ANGULAR SCOPE OBJECTS
+===================================================
+	- you can associate controllers with scope objects implicitly via 'ngController directive' or '$route service'
+
+
+USAGE
+=====
+	- angular.module('<appName>').controller('<NameCtrl>', function(){});

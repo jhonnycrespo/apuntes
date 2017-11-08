@@ -1,0 +1,29 @@
+CountDownLatch
+===============
+
+   - CountDownLatch in Java is a type of synchronizer which allows one Thread to wait for one or 
+     more Threads before it starts processing.
+
+   - CountDownLatch works in latch principle, main thread will wait until gate is open. 
+   - One thread waits for n number of threads specified while creating CountDownLatch in Java.
+
+   - Any thread, usually main thread of application, which calls CountDownLatch.await() will wait 
+     until count reaches zero or its interrupted by another thread. All other thread are required to 
+     do count down by calling CountDownLatch.countDown() once they are completed or ready.
+
+   - As soon as count reaches zero, Thread awaiting starts running. One of the disadvantages/advantages of 
+     CountDownLatch is that its not reusable once count reaches to zero you can not use CountDownLatch any more.
+
+
+
+When to use it
+===============
+   - Use CountDownLatch when one thread like main thread, requires to wait for one or more thread to complete, 
+     before it can start processing.
+
+
+Example
+========
+   - Classical example of using CountDownLatch in Java is any server side core Java application which uses 
+     services architecture, where multiple services are provided by multiple threads and application can not 
+     start processing until all services have started successfully.

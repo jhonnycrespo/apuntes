@@ -1,0 +1,23 @@
+1er metodo (literal constructor)
+==========
+	var person = {
+		name: 'marcela',
+		apellido: '',
+		edad: 22
+	}
+
+	- usar este metodo si solo necesitamos un objeto del tipo (como un singleton).
+
+
+2do metodo (function constructor)
+===========
+
+	var Person = function(name, apellido, edad)
+	{
+		this.name = name;
+		this.apellido = apellido;
+		this.edad = edad;
+	}
+
+	- usar este metodo si lo que quereos es crear muchos objetos similares.
+	- El nombre de la clase siempre empieza con mayuscula (best practice).

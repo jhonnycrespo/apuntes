@@ -1,0 +1,4 @@
+COMPONENT MODEL
+===============
+	- ReactJS and Angular 2 are based on the same concept: build an app using small pieces called "components"
+	- ejm: un componente puede ser simplemente una clase

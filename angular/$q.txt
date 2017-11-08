@@ -1,0 +1,41 @@
+$q service
+==========
+
+	- Es un servicio que nos ayuda a ejecutar funciones de manera asincrona, y usar sus valores de retorno o excepciones
+	  cuando terminen de procesarse.
+	- is a service that helps you to run functions asynchronously, and use their return values
+	  or exceptions when they are done processing.
+
+	- this is an implementation of promise/deferred objects.
+	- Es una implementacion de los objetos promise/deferred.
+
+API
+===
+	- a new instance of deferred is constructed by calling $q.defer()
+
+	- var deferred = $q.defer()
+
+METHODS
+========
+	* resolve(value)
+		- resolves the derived promise with the 'value'. if the value is a rejection constructed
+		  via $q.reject, the promise will be rejected instead.
+	* reject(reason)
+		- rejects the derived promise with the reason. this is equivalent to resolving it with a
+		  rejection constructed via $q.reject.
+
+PROPERTIES
+===========
+	* promise: promise object associated with this deferred.
+
+THE PROMISE API
+===============
+	- A new promise instance is created when a deferred instance is created and can be retrieved by calling
+	  deferred.promise
+
+	* methods
+	=========
+		- then(sucessCallback, errorCallback, notifyCallback)
+
+		- this method returns a new promise wich is resolved via the return value of successCallback,
+		  errorCallback, 

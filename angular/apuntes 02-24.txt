@@ -1,0 +1,50 @@
+* Modulos
+	- crear (set)
+		angular.module('app', []);
+	- get
+		angular.module('app')
+
+* Buenas practicas al momento de definir controlladores
+	- definir la funcion del controllador de forma explicita y no
+	como callback
+
+* Como relacionar un div?? con un controlador?
+	- usando la directiva ng-controller
+
+* Porque angular llama 2 veces al controlador??
+	- por que estamos especificando la directiva ng-controller en el div, 
+	  y esto no es necesario porque angular ya se encarga de esto.
+	- El enlace ya esta creado en el archivo app.js (que se encarga del routing).
+	- podemos hacerlo de las 2 formas, pero es aconsejable dejarle el trabajo al archivo de routing.
+
+* Controller as
+	- se elimina la necesidad de usar el objeto $scope
+	- los objetos se definen usando this en lugar de $scope
+	- Se puede usar la directiva ng-controller en un tag html y especificar el controlador
+	  con un alias usando ng-controller = "mainCtrl as main" o dejarle la tarea a angular
+	  que define un atributo 'controllerAs' en el archivo app.js (routing)
+
+* Crear servicio
+	yo angular:service user-service
+
+* Directivas (core)
+	- ng-model: Un enlace entre modelo, controller y vista. El controlador se entera del cambio, y actualiza el documento html
+		    crea la variable especificada en <input> automaticamente en el controlador	
+	- ng-click: Maneja eventos del mouse
+	- ng-href:
+	- ng-src:
+	- ng-class: debe usarse junto con la etiqueta class="notification" en el div
+	- ng-show: puede usarse con ng-click
+	- ng-if: visualmente el mismo efecto que ng-show, pero ng-if elimina del documento lo que se
+		 encuentre dentro de la etiqueta, y al mostrar vuelve a crearlo
+	- ng-switch: se usa con ng-switch on, ng-switch-when
+	- ng-bind: define value en un tag, puede usarse en lugar de definir explicitamente con {{ <variable> }}
+	- my-element: sirve para crear tags personalizados, y para mas ...
+* Filtros:
+	- json
+	- limiTo: limitar la cantidad de elementos mostrados de un arreglo
+	- orderBy:
+	- tambien podemos crear filtros personalizados:
+		yo angular:filter <nombreFiltro>
+* Controladores
+	- podemos definir sub-controladores

@@ -1,0 +1,37 @@
+thread safe
+============
+   - A piece of code is thread-safe if it only manipulates shared data structures in a manner that 
+     guarantees safe execution by multiple threads at the same time.
+
+   - Thread-safe code is code that will work even if many Threads are executing it simultaneously, or Thread-safe 
+     describes a program portion or routine that can be called from multiple programming threads without 
+     unwanted interaction between the threads.
+
+   - The concept of thread safe is simply that the program state (fields/objects/variables) behaves correctly 
+     when multiple simultaneous threads are using a resource.
+
+   - The term can be applied to a section of code, a method, a class, a library, an application, etc.  
+    The basic meaning remains the same across these scopes, but what is required to be thread safe can vary widely.
+
+   - It's perhaps more useful to look at what it means to not be thread safe.  Code is not thread safe when 
+     it performs an operation that relies on the underlying state not being changed by another thread 
+     without guaranteeing that the state cannot be changed by another thread.
+
+
+methods
+========
+
+   - Java provides various ways to ensure "Thread Safety":
+	- Use of the keyword "Synchronized".
+	- Use of Atomic Wrapper classes from java.util.concurrent.atomic package. e.g. AtomicInteger
+	- Use of locks from java.util.concurrent.locks package.	
+	- Using thread safe collection classes.
+	- Using volatile keyword with variables to make every thread read the data from memory, not read from thread cache.
+
+example
+========
+   - To put it simply "Thread safety" ensures that a piece of code will execute correctly when multiple 
+     threads are executing that code.
+
+
+

@@ -1,0 +1,96 @@
+TESTING
+=======
+existen 2 tipos¨:
+
+	- UNIT TESTS
+	- E2E TESTS
+
+TESTING E2E
+============
+	- how a user can interact with my application
+	- is my frontend communicating with my backend correctly?
+	- are there synchronizations issues between pages?
+
+  * Protractor
+	- test framework for angularJS applications.
+	- protractor necesita un archivo de configuracion inicial.
+	* ejecutar: protractor <archivoConfiguracion>
+
+  * Jasmine
+	- otra vez nos ayudara a escribir los tests.
+	- defines the syntax of the tests.
+	* alternativa: mochajs
+
+PROTRACTOR
+==========
+
+ARCHITECTURE OF E2E TESTS
+==========================
+	- primero se define el escenario
+	- despues los specs (tambien llamados tests cases)
+	- expectations: lo que esperamos que suceda.
+	- beforeEach: se ejecuta antes de cada test case.
+	- afterEach: se ejecuta despues de cada test case.
+	- beforeAll():
+	- afterAll():
+
+WIRITNG E2E TESTS
+==================
+	- usamos matchers jasmine.
+
+ELEMENT LOCATORS
+=================
+	- by.css('.myClass')
+	- by.id('myId')
+	- by.model('name')
+	- by.binding('bindingName')
+
+ELEMENT ACTIONS
+================
+	- var el = element(locator)
+	- el.click() : simular un click
+	- el.sendKeys('my text')
+	- el.clear()
+
+INSTALACION
+	- npm install -g protractor
+	- 
+
+
+	* plugin de grunt para ejecutar protractor: grunt protractor runner
+
+EJECUTAR E2E TEST
+
+	- grunt test:e2e
+
+.PO.JS
+======
+	- en este archivo definimos la estructura?? de la pagina
+
+REPORTES
+=========
+	- npm install protractor-html-screenshot-reporter --save-dev
+
+
+
+//Esto no es correcto. no hay garantia de que el codigo se ejecute correctamente.
+var nombre = page.getText(page.nombre);
+
+
+//esto si funciona
+/*page.getText(page.nombre).then(function(text){
+            expect.(text).toBe('Maria');
+        })*/
+
+
+Revision de Practicas
+======================
+	- miercoles 6 de abril
+
+clase extra
+============
+	- sabado 9 de abril
+	- deployment en la nube.
+	- otros.
+
+

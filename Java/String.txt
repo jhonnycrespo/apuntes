@@ -1,0 +1,14 @@
+
+
+
+METHODS
+=======
+
+    substring()
+
+    ex: String str = "a";
+    str.substring(1); -> ""
+
+
+NOTES
+=====

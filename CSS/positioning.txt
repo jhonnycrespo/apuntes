@@ -1,0 +1,35 @@
+position
+========
+	- position doesn't cascade
+
+absolute
+========
+
+	- usa como referencia el primer padre con position: relative o absolute.
+	- permite "literalmente" ubicar cualquier elemento exactamente donde queremos.
+	- Usando los atributos "top, left, bottom, right" para fijar la ubicacion.
+
+	- Los elementos con position: absolute son removidos del "flow of elements" de la pagina. Un elemento con
+	  este tipo de posicionamiento no es afectado por otros elementos y a su vez no afecta a otros elementos.
+
+
+relative
+========
+	- permite usar z-index (esto no funciona si queremos poner al elemento por debajo de otro elemento con position: static)
+	- z-index es un atributo cuyo valor definira si el elemento va por delante o debajo de otro elemento.
+	- tambien se puede usar "top, left, bottom, right" pero empiezan a contar desde la posicion en la que el elemeto
+	  estaria si siguiera el "normal flow".
+
+
+static 
+=======
+	- esta es la position por defecto de cada elemento en la pagina.
+	- static significa que los elementos will flow en la pagina como normalmente lo harian.
+
+
+fixed
+=====
+
+	- Un elemento con este tipo de position es ubicado de manera relativa al "viewport" o la ventana del navegador.
+	- El viewport no cambia cuando hacemos scroll en la ventana, por lo tanto un elemento con position: fixed se
+	  mantendra en su posicion cuando la pagina sea deslizada.

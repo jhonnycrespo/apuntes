@@ -1,0 +1,24 @@
+Object Oriented:
+	- encapsulation
+
+
+
+
+separation of concerns
+modularity
+maintainability
+
+
+
+front-end:
+	- data binding
+
+
+design patterns:
+	- singletons
+
+
+software architecture:
+	- client-server
+	- p2p
+	- REST

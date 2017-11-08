@@ -1,0 +1,5 @@
+you shouldn't commit based on time basis, but on feature basis.
+
+
+- what is wrong with commiting a huge number of changes, with no relations between each other. it makes
+  it hard to detect the commit source of a given regression.

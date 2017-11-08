@@ -1,0 +1,1 @@
+- usar siempre comillas dobles, json no soporta comillas simples

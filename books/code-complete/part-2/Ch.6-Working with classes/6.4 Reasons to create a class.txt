@@ -1,0 +1,23 @@
+Si crees todo lo que lees, podrias tener la idea de que la unica razon para crear una clase es para 
+modelar objetos del mundo real. En la practica, las clases son creadas por muchas mas razones que esa.
+Aqui tienes una lista de buenas razones para crear una clase:
+
+* Modelar objetos del mundo real
+* Modelar objetos abstractos
+* reducir complejidad
+* Aislar la complejidad
+* Esconder detalles de implementacion
+* Limitar los efectos de los cambios
+* Esconder datos globales
+* Streamline parameter passing
+* Make central points of control
+* Facilitate reusable code
+* Plan for a family of programs
+* Empaquetar operaciones relacionadas
+* Accomplish a specific refactoring
+
+Classes to avoid
+================
+  * Avoid creating god classes
+  * Eliminate irrelevant classes
+  * Avoid classes named after verbs

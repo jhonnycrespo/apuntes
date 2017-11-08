@@ -1,0 +1,34 @@
+INTRODUCCION
+=============
+
+   - Los analizadores de codigo son herramientas que realizan la lectura del codigo fuente y devuelve
+     observaciones o puntos en los que tu codigo puede mejorarse desde la percepcion de buenas practicas
+     de programacion y codigo limpio.
+
+   - La finalidad de los analizadores es medir la calidad de nuestro codigo.
+
+   - La utilizacion de estas herramientas debe ser pruedente, a modo de consejos sobre nuestro codigo fuente
+     y no como reglas estrictas. En todo caso, no hay que ofuscarse pensando que nuestro codigo esta absolutamente
+     bien o mal segun los resultados obtenidos considerando que un positivo es una tarjeta roja mostrada por un arbitro.
+
+JSLint
+=======
+   - Es un analizador de codigo javascript que nos permitira mostrar puntos en los que nuestro codigo no cumpla
+     unas determinadas reglas establecidas de "codigo limpio".
+
+   - JSLint no es una herramienta optima ya que es bastante exhaustiva y da muchos falsos positivos. Por todo ello  
+     algunos desarrolladores crearon un fork llamado JSHint. El objetivo de JSHint es mejorar las mediciones que eran
+     bastante arbitrarias en JSLint. Es frustrante ejecutar un codigo realizado por ti y ver como la herramienta
+     menoscaba tu aplicacion de una manera innecesaria.
+
+JSHINT
+======
+   - El objetivo de JSHint es no imponer un convenio particular.
+
+   - JSHint permite configurar una serie de parametros dependiendo de nuestro estilo de programacion para que los 
+     pase por alto cuando realice la validacion.
+
+	- Permitir estamentos de debu y logging (los tipicos console.log())
+	- Exigir siempre igualdad estricta "==="
+	- Permitir asignaciones dentro de los bucles if/for/while/do
+	- etc... 

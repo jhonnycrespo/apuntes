@@ -1,0 +1,25 @@
+DEVELOPMENT
+============
+
+
+TESTING
+========
+
+Testing environment sometimes is called "QA environment".
+
+This is a functional or non-functional testing environment where developers push the builds with new implementations. QA engineers make sure that the new code will not have any impact on the existing functionality and they test major functionalities of the software. Developers mainly work on their development environment and verify every small change on it. Once after completing the implementation of feature on development environment, they then push the build to this environment for functional & integration testing.
+
+STAGING
+========
+This environment is normally a mirror of the production environment. The staging area contains the "next" version of the
+application and is used for final stress testing and client/manager approvals before going live.
+
+A stage environment should mirror the production environment as closely as possible. It is used for verification of
+deployment procedures, making sure that when code is production ready it can be deployed without causing problems.
+
+Testing on an accurate staging environment is essential to the QA team's ability to accurately determine how applications
+will perform in production.
+
+PRODUCTION
+===========
+This is the currently released version of the application, accessible to the client/end users.

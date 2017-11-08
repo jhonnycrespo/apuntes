@@ -1,0 +1,19 @@
+LayoutInflater
+==============
+   - Instantiates a layout XML file into its corresponding View objects.
+
+   - It is never used directly. Instead, use getLayoutInflater() or getSystemService(Class) to retrieve a 
+     standard LayoutInflater instance that is already hooked up to the current context and correctly configured 
+     for the device you are running on.
+
+
+Methods
+========
+   * inflate(int resource, ViewGroup root)
+   - Inflate a new view hierarchy from the specified xml resource.
+
+   * from(Context context)
+   - Obtains the LayoutInflater from the given context.
+
+   * getContext()
+   - Return the context we are running in, for access to resources, class loader, etc.

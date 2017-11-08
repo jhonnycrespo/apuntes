@@ -1,0 +1,7 @@
+Split window
+============
+  * Split into two columns
+	- alt + shift + 2
+
+  * Revert to single column
+	- alt + shift + 1

@@ -1,0 +1,72 @@
+WHAT IS A REGULAR EXPRESSION?
+=============================
+
+Is sequence of characters that define a search pattern
+
+/ => delimiters, indicate start and the end of a regular expression
+[] => group range of acceptable characters
+{} => match exactly quantity of characters
+| => or
+() => group - remember submatch
+i => insensitive
+^ => beginning of the string
+$ => end of the string
+\s* => match whitespaces
+ 
+cuatifier characters
+=====================
+
+? => match zero or one time (optional)
+* => match zero or more times
++ => match one or more times
+
+
+Example 1: find hex color code (#AB1234, #FFFFFF)
+
+/#?([A-F0-9]{6}|[A-F0-9]{3})/
+
+what about lower case??
+
+    /#?([A-F0-9]{6}|[A-F0-9]{3})/i
+
+what about?:
+    
+    - #ABCDEF123456
+    - ab1258
+
+    /^#?([A-F0-9]{6}|[A-F0-9]{3})$/i
+
+what about whitespaces??:
+
+    -    #AbcD84
+
+    /^\s*#?([A-F0-9]{6}|[A-F0-9]{3})\s*$/i
+
+
+Test cases:
+#AB1234
+#FFFFFF
+CD5678
+3F
+EF90
+s87effe
+
+
+visit: regexper.com
+
+
+CHARACTER CLASSES
+=================
+
+positive: [abcdef]
+negative: [^abcdef]
+positive: [a-f]
+negative: [^a-f]
+
+REPETITION QUANTIFIERS
+=======================
+
+{n} exactly n times
+{n,} n or more times (unlimited)
+{n, m} between n and m times
+{,m} between 0 and m times; same as {0,m}

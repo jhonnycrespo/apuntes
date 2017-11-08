@@ -1,0 +1,34 @@
+ROUTER
+======
+
+A router object is an isolated instance of middleware and routes. You can think of it as a "mini-application"
+capable only of performing middleware and routing fuctions.
+- Every Express application has a built-in app router.
+
+- A router behaves like a middleware itself, so you can use it as an argument to app.use() or as the argument
+  to another router's use() method.
+
+- The top leve express object has a Router() method that creates a new router object.
+
+- Once you’ve created a router object, you can add middleware and 
+  HTTP method routes (such as get, put, post, and so on) to it just like an application. 
+
+	- ejm:
+		//invoked for any requests passed to this router
+		router.use(function(req, res, next){});
+
+		router.get('/events', function(req, res, next){});
+
+- You can then use a router for a particular root URL in this way separating your routes into files or even
+  mini-apps.
+
+	// only requests to /calendar/* will be sent to our "router"
+	app.use('/calendar', router);
+
+METHODS
+========
+   * router.all(path, [callback, ...] callback)
+
+	- This method is just like the router.METHOD() methods, except that it matches all HTTP methods (verbs).
+
+   * router.METHOD(path, [callback, ...] callback)

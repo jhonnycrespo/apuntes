@@ -1,0 +1,18 @@
+Controller
+===========
+   - A controller is an instance of CController or of a class that extends CController. 
+     It is created by the application object when the user requests it.
+
+
+
+   - A controller has a default action. When the user request does not specify which action to execute, 
+     the default action will be executed. By default, the default action is named as index. It can be changed by setting 
+     the public instance variable, CController::defaultAction.
+
+
+
+
+
+Controller Instantiation
+==========================
+   - 

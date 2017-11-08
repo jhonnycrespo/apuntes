@@ -1,0 +1,17 @@
+the angular.module is a global place for creating, registering and retrieving angular modules. 
+All modules (angular core or 3er party) that should be available to an application must be registered using this mechanism.
+
+Passing one argument retrieves an existing angular.Module, whereas passing more than one argument creates a new angular.Module
+
+MODULE
+======
+   - A module is a collection of services, directives, controllers, filters and configuration information.
+   - angular.module is used to configure the $injector (services).
+
+USAGE
+=====
+   - angular.module(name, [requires], [configFn]);
+	* name (string): the name of the module to create or retrieve.
+	* requires (array <string>): If specified then new module is being created. 
+		    If unspecified then the module is being retrieved for further configuration.
+	* configFn (function): Optional configuration function for the module

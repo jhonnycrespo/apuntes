@@ -1,0 +1,79 @@
+The best way to manage locally installed npm packages is to create a package.json file.
+- A package.json file affords you a lot of great things:
+	- It serves as documentation for what packages your project depends on.
+	- It allows you to specify the versions of a package that your project can use using semantic versioning rules.
+	- Makes your build reproducable which means that its way easier to share with other developers.
+
+REQUIREMENTS
+=============
+As a bare minimum, a package.json must have:
+   * "name"
+	- all lowercase
+	- one word, no spaces
+	- dashes and unserscores allowed
+
+   * "version"
+	- version of the project
+
+CREATING A PACKAGE.JSON
+=========================
+To create a package.json run:
+	> npm init
+This will initiate a command line questionnaire that will conclude the creation of a package.json
+in the directory you initiated the command.
+
+- You can get a default package.json by running:
+	> npm init --yes o npm init -y
+
+  This will ask you only one questiong, "author". Otherwise it will fill in default values.
+
+
+
+
+SPECIFYING PACKAGES
+=====================
+
+There are 2 types of packages you can list:
+	* "dependencies": These packages are required by your application in production.
+	* "devDependencies": these packages are only needed for developing and testing
+
+	npm install <package_name> --save
+	npm install <package_name> --save-dev
+
+
+
+
+* scripts
+==========
+	- la propiedad "scripts" es un diccionario que contiene comandos que son ejecutados muchas veces en el ciclo de vida (lifecycle)
+	  del paquete (package). The key is the lifecycle event, and the value is the command to run at that point.
+
+	* keys examples:
+		- install: Run AFTER the package is installed.
+		- start: Run by the 'npm start' command.
+		- test: Run by the npm test command.
+
+  **ref: https://docs.npmjs.com/misc/scripts
+
+* engines
+==========
+   You can specify the version of node that your stuff works on:
+
+	ejm: { "engines" : { "node" : ">=0.10.3 <0.12" } }
+
+   And, like with dependencies, if you don't specify the version (or if you specify "*" as the version), 
+   then any version of node will do.
+
+   If you specify an "engines" field, then npm will require that "node" be somewhere on that list. 
+   If "engines" is omitted, then npm will just assume that it works on node.
+
+   You can also use the "engines" field to specify which versions of npm are capable of properly installing your program. 
+   For example:
+
+	{ "engines" : { "npm" : "~1.0.20" } }
+
+* private
+=========
+   If you set "private": true in your package.json, then npm will refuse to publish it.
+
+   This is a way to prevent accidental publication of private repositories.

@@ -1,0 +1,17 @@
+Components
+==========
+   - Components acts as service locators that host a specific set of application components that provide different services
+     for the processing of requests. Each component in Yii2 can be accessed using the following syntax:
+
+	Yii::$app->componentID
+
+	ejm:
+	Yii::$app->db
+
+Objects
+=======
+   - almost every class that doesn't extend from the Component class extends from the Object class.
+   - The Object class is the base class that implements the property feature.
+
+
+   ** do not use the magical methods by your self.

@@ -1,0 +1,61 @@
+Gathering Requirements
+=======================
+  - The following sections describe several techniques you can use to gather and refine requirements.
+
+  Listen to Customers (and users)
+  ===============================
+    - Muy seguido, los clientes tienes un problema que quieren resolver y una nocion vaga de como una
+      computadora puede ayudar.
+
+    - Empieza escuchando a los clientes. Aprende lo mas que puedas sobre el problema que tratan de 
+      resolver y sobre las ideas que tienen de como podria el sistema resolver ese problema. Inicialmente
+      enfocate lo mas que puedas en el problema, no en las soluciones que sugieren los clientes, de tal
+      forma que puedas mantener los requerimientos flexibles.
+
+  Use the five Ws (and one H)
+  ============================
+    - A veces los clientes tiene problemas para articular sus necesidades. Puede ayudarlos usando
+      las cinco Ws (who, what, when, where, and why) and one H (how).
+
+    Who
+      - Pregunta quien/quienes usaran el sistema. Averigua si los usuarios y los clientes son los mismos
+        y aprende los mas que puedas sobre los usuarios.
+    What
+      - Averigua para que necesitan el/los clientes la aplicacion. Enfocate en los objetivos lo mas que
+        puedas en lugar de en las ideas de los clientes sobre como deberia funcionar la solucion.
+    When
+      - Averigua cuando la aplicacion es necesaria. Si la aplicacion sera desarrollada en fases, 
+        averigua cuando seran necesarias que features.
+    Where
+      - Averigua donde sera usada la aplicacion. Sera usada en computadoras de escritorio ubicada
+        en una oficina? o sera usada en telefonos en un metro ruidoso?
+    Why
+      - Pregunta porque el/los clientes necesitan la aplicacion.
+      - A veces los clientes no tienen una razon bien pensada para construir un sistema. Ellos 
+        simplemente piensan que ayudara pero realmente no saben como.
+
+      - Averigua si realmente existe una razon para creer que una aplicacion ayudara.
+    How
+      - En la seccion sobre "What" se dijo que debes enfocarte en los objetivos en lugar de en las 
+        ideas de los clientes sobre la solucion. Eso es verdad, pero no debes ignorar completamente
+        las ideas de los clientes. A veces, los clientes tienen buenas ideas, particularmente cuando
+        estas se relacionan a practicas o costumbres existentes. Si los usuarios estan acostumbrados
+        en hacer algo de una cierta manera, puedes reducir el tiempo de capacitacion haciendo que la
+        aplicacion imite ese enfoque al que estan acostumbrados los clientes.
+
+      - No pienses que automaticamente que los desarrolladores siempre toman mejores decisiones
+        que los clientes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

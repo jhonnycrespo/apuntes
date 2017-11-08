@@ -1,0 +1,33 @@
+class
+=====
+
+- a class is a container of information
+
+- provides access control to its contents
+
+
+encapsulation
+==============
+   - encapsulation is the packing of data and functions into a single component.
+   - it allows to selective hiding of properties and methods in an object by building 
+      an impenetrable wall to protect the code.
+
+
+
+Objects
+========
+   - an object is a collection of common and similar data values.
+
+
+create an object
+=================
+   - use the key word.
+
+
+instantiating a new class
+===========================
+ - hay 2 formas de instanciar una clase:
+	- usando parentetsis
+	- sin usar parentesis
+
+	- Si el constructor no recibe ningun parametro, no hay diferencia entre uno y otro.

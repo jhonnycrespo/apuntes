@@ -1,0 +1,4 @@
+Padding & Spacing
+=================
+
+The padding property can be set to manage the distance between the nodes and the edges of the HBox pane. Spacing can be set to manage the distance between the nodes. 

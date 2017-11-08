@@ -1,0 +1,22 @@
+- el array tiene un tamaño definido
+- el ArrayList es dinamico, es decir, es posible agregar elementos de forma dinamica
+
+
+array
+======
+   - no es una clase
+   - tamaño fijo (fixed)
+   - almacena datos primitivos y Objetos
+   - no tiene metoos para acceder y modificar sus elementos
+
+ArrayList
+=========
+   - es una clase
+   - tamaño dinamico
+   - no almacena datos primitivos (int, boolean, char, floats)
+   - solo almacena objetos (String, Integer)
+   - tiene metodos para acceder y modificar sus elementos
+
+   - pero, como guardamos datos de tipo int??
+   * usando Object grabbers. si queremos guardar datos de tipo int, podemos usar el Object grabber Integer.
+

@@ -1,0 +1,32 @@
+NodeJS + Express
+================
+	* yo angular-fullstack:endpoint curso
+	* npm install jsonfile --save 
+
+	* Modulo path
+		- resuelve direcciones
+
+	* git
+	=====
+		- git stash
+			
+
+Integrar servicios rest
+=======================
+	$http
+	=====
+	
+	$resource
+	=========
+		- a factory which creates a resource object that lets you interact with
+		  RESTful server-side 
+
+	$promise
+	========
+		- es una variable que espera recibir un valor
+	
+	angular-busy
+	============
+
+	ui.bootstrap
+	================

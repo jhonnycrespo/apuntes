@@ -1,0 +1,16 @@
+WHAT IS OOP?
+=============
+OBJECT ORIENTED PROGRAMMING is a programming paradigm where the complete system operates as a bunch of objects
+talking to each other.
+
+
+Fundamental OOP concepts
+=========================
+
+Encapsulation, inheritance, polymorphism, and abstraction.
+
+
+What is an Object?
+===================
+
+An object is a collection of data and methods that operate on its data.

@@ -1,0 +1,29 @@
+NEW
+====
+  ng new <project-name> [--routing] [--]
+
+GENERATE
+========
+  COMPONENT
+  =========
+    ng generate component <component-name> [--module=app.module.ts]
+
+BUILD
+=====
+compile the application into an output directory
+
+  > ng build <--prod> <--watch> <--environment=dev/prod or --env=prod/dev> <--target=production/development or --prod/--dev>
+      watch: run build when files change
+      environment: by default, the development environment is used
+      target: by default, the development target is used
+
+
+# these are equivalent
+  ng build --target=production --environment=prod
+  ng build --prod --env=prod
+  ng build --prod
+# and so are these
+  ng build --target=development --environment=dev
+  ng build --dev --e=dev
+  ng build --dev
+  ng build

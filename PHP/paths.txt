@@ -1,0 +1,24 @@
+absolute paths
+==============
+	C:/xampp/htdocs/sistema_unilever/
+
+relative paths
+===============
+	/upload/salud/pacientes
+		- el primer "/" le dice que vaya al root directory y busque desde ahi (root host)
+
+
+
+
+	$_SERVER["DOCUMENT_ROOT"]
+	dirname(__FILE__)
+	__DIR__
+
+		la constante __FILE__ contiene el full path y el nombre del archivo del script
+
+
+Siempre usar relative paths en sistemas web
+
+Estrategias
+============
+	1. definir una constante dentro de un archivo config (dev.php o prod.php)

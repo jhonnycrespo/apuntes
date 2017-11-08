@@ -1,0 +1,4 @@
+- central repository that contains open-source components.
+    search.maven.org
+
+- local repository

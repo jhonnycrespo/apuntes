@@ -1,0 +1,138 @@
+User story for a User
+======================
+   - example: "As a user i want to be able to manage ads, so that i can remove expired and arroneous ads."
+
+   - Who is the user for whom you are going to build that feature of ads management and what does he understand
+     for ads management? Is that a portal administrator, who wants to have possibly of database clean-up and
+     ads moderation? or maybe it is an advertiser, who wants to have list of all ads he submitted to the side and
+     have possibility of removing ads when they are not needed any longer or there was error found in the content?
+
+   - If it’s not clear who the user is, why should the story be developed? How can we be confident that the story 
+     will benefit someone?
+
+
+Read more http://www.romanpichler.com/blog/5-common-user-story-mistakes/
+
+User Story for Product Owner
+===============================
+   - example: "As a Product owner, i want the system to have possibility of deleting ads, so that users have possibiility of deleting ads"
+
+   - this user story is type of "you want a user story, here you have it"
+
+No Business value or benefit for costumers
+============================================
+   - example: "as an commercial advertiser i want to have filtering option"
+
+   - we have the role, we have the need, but reason and business value are missing. Why does an commercial
+     advertiser want to have filtering option? what does he want to achieve?
+
+No Acceptance criteria or conditions of satisfaction
+=====================================================
+   - not having acceptance criteria sometimes referred as "conditions of satisfaction" can cause the whole chain of
+     mistakes starting with wrong definition of development tasks or wrong estimation. Story can failed the tests or test cases
+     will cover different criteria due to lack of understanding.
+
+   - Acceptance criteria pay great role is confirmation of requirement uderstanding and decide about acceptance of iteration 
+     deliverables. Conditions of satisfaction question the user story enable conversation between the product owner and the team.
+
+   - Good way of gathering acceptance criteria is asking questions such as:
+	- What if...?
+	- Where...?
+	- When...?
+	- How...?
+
+   - Use examples and simple drawings to remove assumptions. it can happen that story needs to be refined and re-planed or quite
+     often split to smaller stories.
+
+   - The idea behind acceptance criteria is simple: They allow you to describe the conditions that have to be fulfilled so 
+     that the story is done, that it can be exposed to the users and the other stakeholders. This ensures that you gather 
+     feedback and/or release features, and it helps the team plan and track their work: The criteria enrich the story and make 
+     it more precise and testable. (The criteria all stories have to fulfil such as “online help is available” are not stated 
+     in the acceptance criteria but in the Definition of Done.)
+
+
+
+
+
+Story Mania
+=============
+   - Some product owners and teams are so fond of user stories that everything is expressed as a story. This results in some
+     odd stories. Stories that capture the user interface design, complex user interactions, and technical requirements.
+
+   - Like any technique, user story writing has its strengths and limitations. I find stories particularly well suited to 
+     capture product functionality, and when applied properly, nonfunctional requirements. But user interface design and 
+     complex user interactions are better described by other techniques including design sketches, mock-ups, scenarios, 
+     and storyboards. Complement your user stories therefore with other techniques, and don’t feel obliged to only use stories.
+
+
+Disastroues Details
+====================
+    - Some stories are too big and vague for the team to understand and implement. Others contain too much detail, or even prescribe
+      a solution.
+
+    - Recomendation: start with epics. Epics allow you to capture an idea without commiting to the details. Then break an epic
+      into more detailed user stories. The new user stories replace the epic, and the provide more information abour the product's
+      functionality. Pay particular attention to the user stories that are pulled into a sprint. These stories have to be ready:
+      clear, feasible and testable.
+
+    - Progressively refining your stories keeps your product canvas or backlog concide, it makes it easier to integrate new insights,
+      and it reduces the effor required to stock your initial canvas or backlog. This is particularly valuable for new products 
+      and new features. Make sure you do not prescribe a solution in your stories. Rather focus on the “what”, nor the “how”. 
+      The latter is best captured in an architecture diagram.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     

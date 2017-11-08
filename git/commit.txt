@@ -1,0 +1,5 @@
+change most recent commit message
+==================================
+   - this works if the commit only exists in your local repository and has not been pushed to GitHub
+   - git commit --amend
+

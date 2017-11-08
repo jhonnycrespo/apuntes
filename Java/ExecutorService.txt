@@ -1,0 +1,39 @@
+Executors
+===========
+   - The "Concurrency" API introduces the concept of an "ExecutorService" as a higher level replacement
+     for working with threads.
+
+   - Executors are capable of running asynchronous tasks and typically manage a pool of threads.
+
+   - permite administrar varios Threads.
+
+Single Thread Executor
+======================
+   - A thread pool with only one thread. So all the submitted tasks will be executed sequentially.
+		
+		> Executors.newSingleThreadExecutor();
+
+Cached Thread Pool
+===================
+   - A thread pool that creates as many Threads it needs to execute the tasks in parrallel.
+   - The old available threads will be reused for the new tasks
+   - if a thread is not used during 60 seconds, it will be terminated and removed from the thread pool.
+		
+		> Executors.newCachedThreadExecutor();
+
+Fixed Thread Pool
+==================
+   - A thread pool with a fixed number of threads.
+   - if a thread is not available for the task, the task is put in queue waiting for an another task to ends.
+
+		> Executors.newFixedThreadPool(int <numberOfThreads>);
+
+Scheduled Thread Pool
+======================
+   - A thread pool made to schedule future task.
+
+Single Thread Scheduled Pool
+=============================
+   - A thread pool with only one thread to schedule future task. 
+
+

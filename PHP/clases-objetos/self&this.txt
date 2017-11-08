@@ -1,0 +1,7 @@
+This vs Self
+============
+   - use $this to refer to the current object.
+   - use self to reger to the current class.
+
+   - use $this for non-static members.
+   - use self for static members.

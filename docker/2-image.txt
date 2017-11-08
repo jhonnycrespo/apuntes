@@ -1,0 +1,27 @@
+IMAGES
+=======
+An image is an inert, immutable, file that's essentially a snapshot of a container. Images are created
+with the "build" command, and they'll build a container when started with "run".
+
+Images are designed to be composed of layers of other images because they can become quite large allowing a minimal
+amount of data to be sent when transferring images over the network.
+
+Images are build from a dockerfile.
+
+
+CONTAINER
+==========
+
+To use a programming metaphor, if an image is a class, then a container is an instance of a class, a runtime object.
+Containers are hopefully why you're using Docker, They're lightweight and portable encapsulations of an
+environment in which to run applications.
+
+
+IMAGES AND CONTAINERS
+======================
+
+An image is really a template that can be turned into a container. To turn an image into a container, the docker
+engine takes the image, add a read-write filesystem on top and initializes varios settings including network ports,
+container name, ID and resource limits. A running container has a currently "executing process", but a container
+can also be stopped (or exited to use dockers's terminology). An exited container is not the same as an image, as it
+can be restarted and will retain its settings and any filesystem changes.

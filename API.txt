@@ -1,0 +1,9 @@
+API (Application Programming Interface)
+========================================
+
+An API is an interface through wich you can access someone else code
+or through which some else's code access yours.
+
+An API is the way for an application to interact with certain system/application/library etc.
+
+API stands for Application Programming Interface through which softwares can interact with each other. Note not a human interaction.

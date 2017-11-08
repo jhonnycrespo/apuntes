@@ -1,0 +1,43 @@
+/**
+ * https://blog.stackpath.com/glossary/cdn/
+ */
+
+WHAT IS A CDN?
+===============
+
+A content delivery network (CDN) is a collection of global servers that caches and delivers web content.
+
+Performance and reliability are major factors for web services that directly impact profitability and customer satisfaction. To improve these factors, developers leverage commercial CDNs to cache (store) and deliver web content. This includes static content such as images, videos, stylesheets, JavaScript files, and file downloads.
+
+By caching content on a CDN, content is physically closer to people in various regions, thereby improving page load time. In addition to caching static content on a CDN, developers can also port dynamic content through a CDN to bypass the congested networks of Internet Service Providers (ISPs).
+
+HOW A CDN WORKS
+===============
+
+When a user visits a website that doesn't use a CDN, the browser downloads every referenced asset from a single origin server. If the origin is in New York and the user is in Japan, each asset must be downloaded from across the world. In a case like this, users experience longer page load times due to higher latency. 
+
+A CDN distributes files to servers around the globe, reducing the time needed to access a file. For example, users in Japan could download files from a nearby server in Asia instead of one in North America.
+
+Here is an excample of how a CDN works:
+
+    1. The developer for example.com (the origin server) signs up with a CDN provider. The CDN provider gives the developer a URL for the CDN such as site-alias.stackpathdns.com (example of the URL StackPath provides).
+
+    2. The developer configures the site to load static assets from the CDN URL instead of the origin server. With software like WordPress, this change can be made using a plugin.
+
+    3. A user opens example.com in their browser. The browser requests assets that are referenced inside the page using a CDN URL such as site-alias.stackpathdns.com/image.png.
+
+    4. The CDN automatically distributes incoming requests to the nearest CDN server, using technologies like DNS load balancing and Anycast routing. Files not already on the CDN are pulled from the origin server and stored for future requests.
+
+    5. The browser downloads assets from a nearby CDN server, which improves performance and reduces load on the origin server.
+
+EXAMPLE OF A CDN
+================
+
+Many developers use third party libraries like Twitter Bootstrap to improve their layout and functionality. However, the developer may not want to host the libraries on the origin in order to save on bandwidth costs and improve performance.
+
+Open source CDNs like BootstrapCDN let users load the CSS and JS files for Twitter Bootstrap from a CDN. This reduces server load and speeds up access for users. Additionally, users can avoid re-downloading the files if they’ve already visited a site that uses the same files on BootstrapCDN.
+
+CONCLUSION
+==========
+
+CDNs are a popular way to distribute traffic and nearly a requirement in order to run fast, reliable web applications at scale. With a CDN soultion in production, users download content from local third party servers instead of distant owned servers. This improves performance and also reduces the need for companies to build and maintain their own global network. When it comes to the actual delivery of the web service and online experience, developers can lean on CDNs to take the brunt of responsibility.

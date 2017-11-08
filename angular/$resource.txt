@@ -1,0 +1,8 @@
+$resource
+==========
+
+	- a factory wich creates a resource object that lets you interact with RESTful server-side dara sources.
+	- The returned resource object has action methods wich provide high-level behaviours without the need
+	  to interact with the low level '$http'
+   * Usage
+	- $resource(url, [paramDefaults], [actions], options);

@@ -1,0 +1,10 @@
+WHAT IS DOCKER?
+================
+
+Docker is an open-source system of software containers. Container help software to run while it is being moved from one
+environment to another. Such as from a developer's ckomputer to staging to production - and have all of the things that are needed
+to run a program inside the container itself. The host, runtime, code, os, tools, libraries and other components are all inside an
+isolated environment.
+
+Simply put, Docker is a containerization technology that enables us to cleanly abstract an environment configuration to a file or set
+of files, and run it an a protected, isolated environment on a host.

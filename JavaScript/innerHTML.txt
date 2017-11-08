@@ -1,0 +1,29 @@
+innerHTML
+=========
+   - Elimina todos los descendientes de element, analiza la cadena content y asigna los nodos
+     resultantes como descendientes de element.
+   - Parses content as HTML and takes longer.
+   - Outputs text/html
+
+	* Sintaxis
+		element.innerHTML = content;
+
+Node.appendChild
+=================
+   - Agrega un nuevo nodo al final de la lista de un elemento hijo de un elemento padre especificado.
+     Si el nodo ya existe, es eliminado del actual nodo padre, para posteriormente ser agregado al nuevo nodo padre.
+
+   * Sintaxis
+	- var child = element.appendChild(child);
+
+Node.textContent
+=================
+
+   - Lee o escribe el contenido textual de un nodo y sus descendientes. El texto que esta entre las etiquetas.
+     ejm: <div> Este texto es recuperado <div>.
+   - Uses straight text, does not parse HTML, and is faster.
+   - Outputs text/plain.
+
+	* Sintaxis
+		- var texto = elemento.textContent;
+		- elemento.textContent = "texto de ejemplo"

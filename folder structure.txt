@@ -1,0 +1,35 @@
+app/
+	controllers/
+	models/
+	view/
+	layouts/
+	helpers/
+
+config/ (archivos de configuracion de la aplicacion)
+	prod
+	dev
+
+public or public_html/
+  - 404.html
+  - 500.html
+  - favicon.ico
+  - robots.txt
+  - assets/
+      - js/
+      - css/
+      - images/
+      - fonts/
+
+vendor or node_modules/
+	jquery/
+	bootstrap/
+
+bower/
+
+lib or assets
+  - js
+  - css
+  - images (imagenes que son usadas por index.html o cualquier pagina de nuestra aplicacion)
+  - fonts
+db o database/
+  

@@ -1,0 +1,25 @@
+* path.resolve([from], to)
+
+    Resolves to to an absolute path. All arguments must be strings.
+
+	path.resolve('foo/bar', '/tmp/file/', '..', 'a/../subfile')
+	cd foo/bar
+	cd /tmp/file/
+	cd ..
+	cd a/../subfile
+	pwd
+
+
+* path.join([path1][,path2])
+	
+    Join all arguments together and normalize the resulting path.
+
+	path.join('/foo', 'bar', 'baz/asdf', 'quux', '..')
+	// returns '/foo/bar/baz/asdf'
+
+* path.normalize(path) 
+
+    Normalize a path, taking care of '..' and '.' parts. path must be a string.
+
+	path.normalize('/foo/bar//baz/asdf/quux/..')
+	// returns '/foo/bar/baz/asdf'

@@ -1,0 +1,13 @@
+ARRAYS
+======
+There are two ways to define an array:
+  1. Using literal Arrays
+	var pets = ['cat', 'dog', 'parrot']
+  2. Using the array object
+	var pets = new Array(3)
+
+
+METHODS
+=======
+* forEach()
+	pets.forEach(function(pet){...})

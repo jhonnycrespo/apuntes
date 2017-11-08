@@ -1,0 +1,11 @@
+float
+=====
+	- la propiedad float especifica si un elemento debe salir del flujo normal y aparecer
+	  a la izquierda o a la derecha de su contenedor, donde los elementos de texto y los en linea
+	  apareceran a su alrededor.
+
+valores
+=======
+	* left: el elemento flota a la izquierda de su bloque contenedor.
+	* right: El elemento flota a la derecha de su bloque contenedor.
+	* none: el elemento no flota

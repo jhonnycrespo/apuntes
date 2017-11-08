@@ -1,0 +1,21 @@
+Pre-requisitos:
+	- nodejs
+	- NPM
+	- bower
+	- grunt-cli
+	- git
+	
+Tools:
+	YO:
+		npm install --global yo
+	- Como usar el generador¨:
+		 $ yo angular
+		 
+		 
+- buscar dependencias con bower
+	bower search *
+	bower install ui-router --save : guarda la dependencia en bower.json
+- agregar dependencias en index.html
+	$ grunt serve o  $ grunt wiredep : ejecutar una tarea de grunt
+- task wiredep:
+	busca en el archivo html por las etiquetas <!-- bower:js -->

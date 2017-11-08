@@ -1,0 +1,20 @@
+Usar eventos o Scope?
+=====================
+	- depende de la aplicacion
+
+ui-bootstrap
+============
+	- son directivas AngularJS nativas
+
+
+Best Practice
+==============
+	- si vamos a usar modulos externos, buscar siempre una version "adaptada" a angular
+
+
+PRACTICA 1
+	- login localhost:9000/login
+	- 
+	- 
+
+git clone https://JhonnyCrespo@bitbucket.org/JhonnyCrespo/practica-1.git

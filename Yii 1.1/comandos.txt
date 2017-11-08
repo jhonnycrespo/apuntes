@@ -1,0 +1,9 @@
+crear nuevo proyecto
+	> YiiRoot/framework/yiic webapp WebRoot/testdrive
+
+
+
+accerder a interfaz web grafica 
+	- activar gii en config/main.php
+
+	:: ?r=gii

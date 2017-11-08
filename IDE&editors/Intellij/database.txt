@@ -1,0 +1,17 @@
+RUN SQL FROM A FILE
+===================
+    * select all files
+    > Run <file_name> or Ctrl + Shift + F10
+    > select data source
+
+EXECUTING INDIVIDUAL STATEMENTS
+===============================
+    1. Open the sql file
+    2. Place the cursor within the statement you want to execute.
+
+        If you want to run more than one statement, select (highlight) the necessary statements.
+
+    3. Press Ctrl+Enter or select "Execute" from the context menu.
+       Press Alt+Enter
+
+    4. Select the database

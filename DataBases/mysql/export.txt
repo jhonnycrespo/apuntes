@@ -1,0 +1,6 @@
+export a single table
+======================
+	* dumping from a remote database
+		mysql> mysqldump -u <db_username> -h <db_host> -p db_name table_name > table_name.sql
+
+	mysql> mysqldump <db_name> <table_name> > <table_name.sql>

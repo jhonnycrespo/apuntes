@@ -1,0 +1,19 @@
+Despues de registrar los requerimientos (con cualquier metodo que prefieras), aun necesitas validarlos
+y luego verificarlos. Los dos terminos validacion y verificacion son a veces usados de manera indistinta.
+Estas son las definiciones que uso:
+
+  * Requirements Validation: Es el proceso que asegura que los requerimientos dicen lo correcto (no deben ser ambiguos). Algunos,
+    usualmente los clientes o usuarios, necesitan trabajar a traves de todos los
+    requerimientos y asegurarse de que ellos:
+
+	1. Describen las cosas que la aplicacion debe hacer
+	2. Describen "todo" lo que la aplicacion debe hacer
+
+  * Requirements Verification: Es el proceso de verificar que la aplicacion terminada satisface los requerimientos.
+
+  Otra forma de pensar sobre esto es:
+	- Validation: Are we doing the right things?
+	- Verification: Are we doing the things right?
+
+  Es dificil recordar cual es cual. Quiz una mejor manera de recordar la diferencia es que la "validacion" viene antes
+  de la "verificacion".

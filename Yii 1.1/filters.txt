@@ -1,0 +1,13 @@
+filter
+=======
+   - a filter in Yii is a bit of code that is configured to be executed either before or after a controller action
+     is executed.
+
+	- ejm: one commong example is if we want to ensure a user is logged in prior to executing a controller action
+          method, then we could write a simple access filter that would check this requirement before the action is
+	  executed.
+
+   - a filter can be defined as a controller class method or it can be a separate class.
+   - when using the simple method approach, the method name must begin with word "filter".
+   - the other approach is to write a separate class to perform the filter logic. when using the separate class
+     approach, the class must extend "CFilter"

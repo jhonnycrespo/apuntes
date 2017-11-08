@@ -1,0 +1,6 @@
+<script>
+=========
+
+  * src
+  * type
+  * async

@@ -1,0 +1,7 @@
+- Summarizes the important information of the app in a single place. like a content table of a book.
+
+
+
+intent-filter
+=============
+   - with this apps announce which intents they can receive and handle.

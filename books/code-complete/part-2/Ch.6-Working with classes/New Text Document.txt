@@ -1,0 +1,20 @@
+Abstraction is the ability to view a complex operation in a simplified form
+
+
+
+la busqueda de buenas interfaces abstractas da lugar a muchas guias sobre como crear
+interfaces de una clase.
+	- Presenta un nivel de abstraccion consistente en las interfaces de la clase
+
+Una buena manera de pensar sobre una clase es como un mecanismo para implementar "Abstract data types".
+
+	* Be sure you understand what abstraction the class is implementing
+	* Provide services in pairs with their opposites
+	* Move unrelated information to another class
+	* Make interfaces programmatic rather than semantic when possible
+	* Beware of erosion of the interface's abstraction under modification
+	* Don't add public members that are inconsistent with the interface abstracion
+	* Consider abstraction and cohesion together
+	* Minimize accessibility of classes and members
+	* Don't expose member data in public
+	* Avoid putting private implementation details into a class's interface

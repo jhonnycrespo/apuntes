@@ -1,0 +1,10 @@
+overflow
+========
+	- la propiedad "overflow" especifica si 
+
+
+syntax
+======
+	* visible: content is not clipped, podria ser renderizado fuera de la caja de contenido.
+	* hidden: content is clipped, with no scrollbars.	
+	* scroll: content is clipped with scrollbars.

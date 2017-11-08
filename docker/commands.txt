@@ -1,0 +1,28 @@
+KEY COMMANDS
+============
+> docher-machine
+- Lists all commands
+
+> docker-machine ls
+- list all the different machines
+
+> docker-machine start <machine name>
+-
+
+> docker-machine stop <machine name>
+-
+
+> docker-machine env <machine name>
+-
+
+> docker-machine ip <machine name>
+-
+
+> docker-machine status <machine name>
+-
+
+> docker ps
+- list the running containers
+
+
+

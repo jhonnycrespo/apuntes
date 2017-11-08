@@ -1,0 +1,35 @@
+ui-router vs ngRoute
+====================
+
+	* ngroute se organiza en funcion a URLs
+	* ui-Router se organiza en funcion a estados. Esto permite cambiar partes de nuestra 
+	  aplicacion de una manera sencilla, incluso manteniedo la URL
+
+Single Page Application (SPA)
+=============================
+
+ui-Router
+=========
+	
+	*
+
+	* Directiva ui-view: Indica un espacio donde se cargara contenido de forma dinamica.
+
+
+
+
+Mostrar lista de usuario por cursos
+===================================
+	* yo angular-fullstack:route angular
+	* editar el archivo main.html
+	* Usar vm (Visual model) en lugar de this en el controller.
+
+Servicios:
+==========
+	* $stateProvider
+	* $stateParams
+	* $state
+	
+
+Google Drive:
+	http://goo.gl/Ik31ji

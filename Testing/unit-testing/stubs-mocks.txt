@@ -1,0 +1,22 @@
+/**
+ * http://stackoverflow.com/questions/346372/whats-the-difference-between-faking-mocking-and-stubbing
+ */
+
+STUBS
+=====
+
+Stubs provide canned answers to calls made during the test, usually not responding at all to anything outside what's programmed in for the test. Stubs may also record information about calls, such as an email gateway stub that remembers the messages it 'sent', or maybe only how many messages it 'sent'.
+
+A stub is a controllable replacement for an existing dependency (or collaborator) in the system. By using a stub, you can test your code without dealing with the dependency directly.
+
+MOCKS
+=====
+
+Mocks are what we are talking about here: objects pre-programmed with expectations which form a specification of the calls they are expected to receive.
+
+
+
+STUBS VS MOCKS
+==============
+
+The main thing to remember about mocks versus stubs is that mocks are just like stubs, but you assert against the mock object, whereas you do not assert against a stub.

@@ -1,0 +1,22 @@
+	* select word inside simple quotes
+	> viw
+
+	* edit text inside quotes or parenthesis or brackets, etc
+	> ci'
+	> ci{
+	> ci(
+
+	* cw
+
+	* select text
+	>vt,
+
+	* Go to beginning of the line
+	> I
+
+	* Go to end of the line
+ 	> A
+
+	* Select entire line
+	> V
+	

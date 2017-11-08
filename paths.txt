@@ -1,0 +1,57 @@
+absolute paths
+==============
+	C:/xampp/htdocs/sistema_unilever/
+
+relative paths
+===============
+	/upload/salud/pacientes
+		- el primer "/" le dice que vaya al root directory y busque desde ahi (root host)
+
+
+
+
+	$_SERVER["DOCUMENT_ROOT"]
+	dirname(__FILE__)
+	__DIR__
+
+		la constante __FILE__ contiene el full path y el nombre del archivo del script
+
+
+Siempre usar relative paths en sistemas web
+
+Estrategias
+============
+	1. definir una constante dentro de un archivo config (dev.php o prod.php)
+
+
+
+
+This is how relative paths is supposed to work.
+Pretend that the current address is this:
+
+	Absolute: protocol://some.domain.name/dir1/dir2/filename
+
+* If you specify only a new filename "foo", you get the same protocol, host and dirs, only the file name is changed:
+Relative: foo
+
+	Absolute: protocol://some.domain.name/dir1/dir2/foo
+
+* If you specify a whole path "/dir3/filename2" you get the same protocol and hostname but with another path:
+Relative: /dir3/filename2
+
+	Absolute: protocol://some.domain.name/dir3/filename2
+
+* You can also specify host name "//another.domain.name/dir5/filename3" and get the same protocol but another host, dir and filename:
+Relative: //another.domain.name/dir5/filename3
+
+	Absolute: protocol://another.domain.name/dir5/filename3
+
+
+
+
+
+
+
+
+
+

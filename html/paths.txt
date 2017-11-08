@@ -1,0 +1,2 @@
+best to use relative paths
+usar absolute paths es un dolor de cabeza cuando se cambia de dominio

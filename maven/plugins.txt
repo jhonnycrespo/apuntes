@@ -1,0 +1,44 @@
+BUILD PLUGINS
+=============
+Build plugins will be executed during the build and they should be configured in the <build/> element from the POM.
+
+REPORTING PLUGINS
+=================
+Reporting plugins will be executed during the site generation and they should be configured in the <reporting/> element from the POM. Because the result of a Reporting plugin is part of the generated site, Reporting plugins should be both internationalized and localized.
+
+PLUGINS
+========
+    - core plugins
+    - packaging tools
+    - reporting plugins
+    - tools
+
+Maven has several core plugins. A plugin is a collection of one ore more goals.
+
+A goal is a "unit of work" in maven.
+
+Maven consists of several core plugins:
+    - JAR plugin: create the jar file
+    - compiler plugin: contains the goals for compiling source code and unit tests
+    - surfire plugin: is used for executing unit tests and generating reports
+
+maven also provides the ability to create custom plugins.
+
+the complete plugins list can be found at maven.apache.org/plugins
+
+example: compiler plugin
+
+    goals:
+        - compile: is bound to the compile phase and is used to compile source files
+        - testCompile: is bound to the test-compile phase and is used to compile test source files.
+
+to execute a single maven goal execute:
+    > mvn <pluginName:<goal>
+
+TOOLS
+=====
+    - archetypes: generates a skeleton project structure from an archetype
+
+    > mvn help:describe -D plugin=<pluginName>
+
+

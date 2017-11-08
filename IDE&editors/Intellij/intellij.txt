@@ -1,0 +1,120 @@
+- Press Ctrl+W to select the word where the caret is currently located.
+
+- search class: ctrl+N
+
+search file
+==============
+	> ctrl+shift+N
+
+remove a line
+==============
+	> ctrl+y
+
+duplicate line
+================
+	> ctrl+d
+
+move line
+=========
+	> Shift+Alt+Up or Shift+Alt+Down
+
+
+indent
+========
+	> ctrl+alt+l
+
+go to line
+===========
+	> ctrl+G
+
+code completion
+================
+	> ctrl+space
+
+comment line
+=============
+	> 
+
+argument documentation for method
+==================================
+	> ctrl+p
+
+multiple selection
+===================
+	> ctrl+w y luego ctrl+j
+
+select all ocurrences
+=====================
+    > shift + ctrl + alt + j
+
+multiple caret selection
+========================
+    > alt + shift + click
+
+Reindent
+=========
+	> ctrl+alt+l
+
+Go to implementation
+=====================
+	> ctrl+f12 or ctrl+alt+click
+
+find & replace
+===============
+	> 
+
+Show Settings
+==============
+    > ctrl + alt + s
+
+Show whitespaces
+================
+    > editor > general > appearance
+
+Use tab character
+=================
+    > settings > editor > code style > java > tabs and indents > use tab character
+
+search action
+==============
+    > ctrl + shift + a
+
+
+tabs to spaces and vice versa (current file)
+=============================
+    > ctrl + shift + a > "tabs" > "To Tabs"
+    > ctrl + shift + a > "spaces" > "To Spaces"
+
+import code styles
+===================
+    > editor > code style > java > manage > import
+
+go to declaraction
+===================
+    > ctrl + b
+
+go to implementation
+====================
+    > ctrl + alt + b
+
+add external jars
+=================
+    > file > project structure or "ctrl + alt + shift + s"
+    > project settings > modules > dependencies > "+"
+
+add library
+===========
+    > ctrl + shift + alt + shift > modules
+
+
+file structure popup
+====================
+    > ctrl + F12
+
+view method parameter information
+==================================
+    > ctrl + p
+
+show javadoc
+=============
+    > ctrl + q

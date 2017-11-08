@@ -1,0 +1,57 @@
+FORMULARIOS
+============
+   * Validacion
+
+	- formController hace seguimiento de todos sus "controls" y "nested forms"  como tambien de sus estados (valid/invalid o dirty/pristine).
+	- cada directiva "form" crea una instancia de formController.
+
+	- AngularJS provee propiedades a los formularios.
+	- dichas propiedades nos ayudan a validar los campos presentes en el.	
+
+	- ng-show"<formNAme.inputName.>"
+	- $invalid
+	- ng-class=""
+	- novalidate: se usa para desactivar el validacion de formularios nativa del navegador.
+	- ng-disabled:
+	
+	* Propiedades
+
+		- $pristine: es verdadero si el usuario no ha interactuado con el formulario aun.
+		- $error: es un objeto que contiene referencias a "controls" o "forms" con validadores fallidos.
+   
+   * Reglas de validacion
+
+	- ng-minlength
+	- ng-maxlength
+	- ng-pattern
+	- ng-required
+	- required
+	- ng-change
+
+   * Diferencia entre required y ng-required ??
+
+
+
+
+DUDAS RELACIONADAS A LAS VALIDACIONES
+======================================
+	- Diferencia entre required y ng-required
+
+
+DUDAS CON LA PRACTICA
+======================
+	* redireccionar
+		- podemos usar ui.router y ui-sref (usando boton o link)
+		- usando el servicio $state.go() desde el controller.
+DUDAS CON GIT
+==============
+
+	* Diferencia entre Tag y Branch
+		- tags specify points in history that are important. typically people use
+		  this function to mark release points (v 1.0 and so on).
+
+	* en caso de problemas con git
+
+		- git checkout .
+		- git clean -fd 
+		- git reset --hard

@@ -1,0 +1,4 @@
+- no crees los elementos manualmente 
+ - polymer y x-tag permiten crear elementos personaizados.
+ - usa un template engine
+ - usa polifylls o polymer

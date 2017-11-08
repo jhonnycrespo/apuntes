@@ -1,0 +1,26 @@
+sequelize.sync()
+=================
+	- Cuando se inicia un nuevo proyecto no se tiene una estructura de base de datos y usando Sequelize no sera
+	  necesaria. Simplemente especifica la estructura de tu modelo y deja que la libreria haga el resto.
+
+	- Ya que sincronizar y eliminar todas nuestras tablas puede incluir escribir muchas lineas de codigo, pudes dejar
+	  que Sequelize haga el trabajo.
+
+   USSAGE
+   ======
+	sequelize.sync()
+	  .then(function(){
+	  })
+	  .catch(function(error){
+	  })
+
+
+sequelize.import()
+===================
+	- Tambien puedes guardar tu definicion de modelo en un archivo usando el metodo "import".
+	- El objeto que retorna es exactamente el mismo que el definido en el archivo importado por la funcion.
+
+	var Project = sequelize.import(__dirname + "/path/to/models/project")
+
+
+	**ref: http://docs.sequelizejs.com/en/latest/docs/models-definition/#import

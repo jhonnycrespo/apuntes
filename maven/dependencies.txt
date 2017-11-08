@@ -1,0 +1,14 @@
+maven provides support internal and external dependencies.
+
+if the scope tag is not included, the default is the "compile" phase.
+
+When you add dependencies you can add the "scope" tag to indicate which lifecycle phase uses this component.
+
+The <Test></Test> scope tag is used for the junit dependency.
+
+Other scopes include <compile, provided, runtime and system>
+    - compile is the default scope
+    - provided: is used when the jdk is expected to provide them
+    - runtime: is required for executing and testing, no compiling.
+    - test: is not required for the normal operation of the application
+    - system: similar to provided

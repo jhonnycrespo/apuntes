@@ -1,0 +1,17 @@
+display
+=======
+	- Esta propiedad especifica el tipo de caja de representación que se usará para un elemento
+
+sintaxis
+========
+	* none: oculta un elemento y sus hijos del DOM
+	* inline: Hace que el elemento genere uno o más elementos en la misma línea.
+
+		- Lo bueno es que inline ubica todos tus elementos en una sola línea. 
+		  Lo malo es que no conserva sus características de caja.
+		- El valor de display inline se ajusta mejor a los elementos de HTML que son bloques 
+		  de forma predeterminada, como los encabezados y los párrafos.
+
+	* block: Hace que el elemento genere una caja de bloque.
+	* inline-block: Hace que un elemento se represente como una caja seguida de forma fluida, por un contenido, 
+	  como si formase parte de la misma caja.

@@ -1,0 +1,39 @@
+Layout Panes
+=============
+
+A JavaFX application can manually lay out the UI by setting the position and size properties for each UI element. However, an easier option is to make use of layout panes. The JavaFX SDK provides several layout panes for the easy setup and management of classic layouts such as rows, columns, stacks, tiles, and others. As a window is resized, the layout pane automatically repositions and resizes the nodes that it contains according to the properties for the nodes.
+
+There are 6 Panels in javaFX such as: BorderPane, StackPane, GridPane, FlowPane,TilePane and AnchorPane.
+
+
+
+
+
+
+After constructing all the required nodes in a scene, we will generally arrange them in order.
+
+This arrangement of the components within the container is called the Layout of the container. We can also say that we followed a layout as it includes placing all the components at a particular position within the container.
+
+JavaFX provides several predefined layouts such as HBox, VBox, Border Pane, Stack Pane, Text Flow, Anchor Pane, Title Pane, Grid Pane, Flow Panel, etc.
+
+Each of the above mentioned layout is represented by a class and all these classes belongs to the package javafx.layout. The class named Pane is the base class of all the layouts in JavaFX.
+
+
+Class Pane
+==========
+
+Base class for layout panes which need to expose the children list as public so that users of the subclass can freely add/remove children.
+
+This class may be used directly in cases where absolute positioning of children is required since it does not perform layout beyond resizing resizable children to their preferred sizes. It is the application's responsibility to position the children since the pane leaves the positions alone during layout.
+
+AnchorPane
+===========
+
+AnchorPane allows the edges of child nodes to be anchored to an offset from the anchor pane's edges. If the anchor pane has a border and/or padding set, the offsets will be measured from the inside edge of those insets.
+
+BorderPane
+===========
+
+The BorderPane layout pane provides five regions in which to place nodes: top, bottom, left, right, and center.
+
+If your application does not need one of the regions, you do not need to define it and no space is allocated for it.

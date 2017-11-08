@@ -1,0 +1,20 @@
+services
+=========
+	- debemos registrar el servicio y angular creara una unica instancia del servicio (singletons)
+	- registramos los eervicios con el "injector" de angular.
+
+dependency injection
+=====================
+	- es un patron de diseño en el que una clase recibe las instancias de los objetos que necesita desde una
+	  fuente externa (angular injector) en lugar de crear las instancias por si mismo.
+	- estas instancias se llaman dependencias	
+
+
+como crear un servicio
+=======================
+	- crear el servicio
+	- registrarlo en el injector
+
+
+
+	- el servicio se inyecta en el constructor de una clase

@@ -1,0 +1,54 @@
+application
+============
+
+   - The application object encapsulates the execution context within which a request is processed. 
+     Its main task is to collect some basic information about the request, and dispatch it to an appropriate 
+     controller for further processing.
+
+   - The application object is instantiated as a singleton by the entry script. The application singleton can be accessed 
+     at any place via Yii::app().
+
+
+application configuration
+===========================
+
+   - 
+
+   protected/config/main.php
+
+
+   - To apply the configuration, we pass the configuration file name as a parameter to the application's constructor, 
+     or to Yii::createWebApplication() in the following manner, usually in the entry script:
+
+	> $app=Yii::createWebApplication($configFile);
+
+
+application base directory
+===========================
+   - The application base directory is the root directory under which all security-sensitive PHP scripts and data reside. 
+
+   - By default, it is a subdirectory named protected that is located under the directory containing the entry script. 
+     It can be customized by setting the basePath property in the application configuration.
+
+
+Applications Components
+=========================
+
+   - To access an application component, use Yii::app()->ComponentID, where ComponentID refers to the ID of the component 
+     (e.g. Yii::app()->cache).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

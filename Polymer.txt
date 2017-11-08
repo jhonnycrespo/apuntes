@@ -1,0 +1,2 @@
+ - Polymer is a framework that is based on Web Components technologies.
+

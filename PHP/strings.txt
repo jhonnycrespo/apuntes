@@ -1,0 +1,3 @@
+concatenation
+===============
+   - to concatenate two strings use the concatenation operator "."

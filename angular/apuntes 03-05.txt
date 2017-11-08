@@ -1,0 +1,33 @@
+$scope: es un objeto que referencia al modelo de la aplicacion
+======
+	* Jerarquia de controladores
+		- la jerarquia la define el template .html
+		- los nombres de los alias deben ser diferentes.
+		- podemos acceder a variables del controlador padres desde un hijo, usando $scope
+		- es posible acceder directamente especificando el alias, pero es mala practica
+
+
+	* $scope.$emit(<nombreEvento>, <datos>)
+	  ==============
+		- enviar ensajes de un controller hijo al controller padre
+
+	* $scope.$broadcast(<nombreEvento>, <datos>)
+	  ===================
+		- enviar mensajes de un padre a todos los hijos.
+
+	* $scope.$on(<nombreEvento>, function(event, datos){})
+	  ==========
+		- Listener para un evento
+
+	* $rootScope
+	  ==========
+
+$scope.$watch(<nombre>, function(){}, [DeepLock <true/false>])
+==============
+	- nos sirve para observar cambios sobre un campo especifico.
+	- DeepLock [opcional] : true: monitorear cambios a cualquier nivel de la estructura.
+				false: valor por defecto
+
+ng-include
+==========
+	- incluye documentos html al template actual

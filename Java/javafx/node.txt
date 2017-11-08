@@ -1,0 +1,8 @@
+Node
+====
+
+Base class for scene graph nodes. A scene graph is a set of tree data structures where every item has zero or one parent, and each item is either a "leaf" with zero sub-items or a "branch" with zero or more sub-items.
+
+Each item in the scene graph is called a Node. Branch nodes are of type Parent, whose concrete subclasses are Group, Region, and Control, or subclasses thereof.
+
+Leaf nodes are classes such as Rectangle, Text, ImageView, MediaView, or other such leaf classes which cannot have children. Only a single node within each scene graph tree will have no parent, which is referred to as the "root" node.

@@ -1,0 +1,13 @@
+ - vagrant boxes are stores at C:/Users/USERNAME/.vagrant.d/boxes 
+
+
+> vagrant up
+
+
+ - remove the guest machine 
+ > vagrant destroy
+
+
+
+ - Shut dow the running machine vagrant is managing
+ > vagrant halt

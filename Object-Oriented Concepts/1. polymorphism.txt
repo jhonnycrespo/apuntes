@@ -1,0 +1,53 @@
+/**
+ * https://www.tutorialspoint.com/java/java_polymorphism.htm
+ * https://simpleprogrammer.com/2013/01/13/so-you-think-you-can-polymorph/
+ * http://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used
+ */
+
+POLYMORPHISM
+=============
+
+Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
+
+Any Java object that can pass more than one IS-A test is considered to be polymorphic. In Java, all Java objects are polymorphic since any object will pass the IS-A test for their own type and for the class Object.
+
+EXAMPLE
+=======
+
+public interface Vegetarian{}
+public class Animal{}
+public class Deer extends Animal implements Vegetarian{}
+
+Now, the Deer class is considered to be polymorphic since this has multiple inheritance. Following are true for the above examples −
+
+    - A Deer IS-A Animal
+    - A Deer IS-A Vegetarian
+    - A Deer IS-A Deer
+    - A Deer IS-A Object
+
+There two types of polymorphism: compile time polymorphism (overloading) and runtime polymorphism (overriding).
+
+From John Sonmez
+==================
+
+John Sonmez says:
+
+"Polymorphism is sharing a common interface for multiple types, but having different implementations for different types."
+
+This basically means that in any situation where you have the same interface for something but can have different behavior based on the type, you have polymorphism.
+
+Think about a Blu-ray player.
+
+When you put a regular DVD in the player what happens?
+
+How about when you put a Blu-ray disc in the player?
+
+The interface of the player is the same for both types of media, but the behavior is different.  Internally, there is a different implementation of the action of playing a disc depending on what the type is.
+
+In code polymorphism can be exhibited in many different ways.
+
+Consider method overloading.
+
+If I create two methods with the same name, but they only differ in type, I have polymorphic behavior.
+
+The interface for calling the method will be the same, but the type will determine which method actually gets called.

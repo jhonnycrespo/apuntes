@@ -1,0 +1,25 @@
+Object.create()
+================
+   - The object used as parameter in Object.create(<x.prototype>) form the prototype of the new object, whereas
+     in the "new Function()" form the declared properties/functions do not form the prototype.
+
+	> Object.create(X.prototype)
+
+	- 
+
+new Object
+===========
+	> new Test()
+
+	> var obj = new Object()
+	> obj.__proto__ = Test.prototype
+
+
+DIFERENCIAS
+============
+   - This two methods for creatign ojects are quite similar:
+
+	- var foo = new Foo()
+	- var foo = Object.create(Foo.prototype);
+
+   - One important difference is that "new Foo()" actually runs constructor code.

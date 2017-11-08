@@ -1,0 +1,3 @@
+- ListView is a viwe group that displays a list of scrollable items. The list items are automatically
+  inserted to the list using and "Adapter" that pulls content from a source such as an array or database query
+  and converts each item result into a view that's place into the list.

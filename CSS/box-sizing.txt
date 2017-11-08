@@ -1,0 +1,10 @@
+
+
+
+
+
+syntax
+======
+	* border-box:
+		width = padding + border + content
+		425 = 320 + 2 +	103

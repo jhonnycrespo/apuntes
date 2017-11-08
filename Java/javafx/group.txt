@@ -1,0 +1,9 @@
+Group Class
+============
+
+A Group node contains an ObservableList of children that are rendered in order whenever this node is rendered.
+
+
+A Group will take on the collective bounds of its children and is not directly resizable.
+
+Any transform, effect, or state applied to a Group will be applied to all children of that group. Such transforms and effects will NOT be included in this Group's layout bounds, however if transforms and effects are set directly on children of this Group, those will be included in this Group's layout bounds.

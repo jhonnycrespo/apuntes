@@ -1,0 +1,25 @@
+* MVW:
+* data binding: 
+	- cambios en tiempo real
+* Dependency inyection (DI): 
+	- aplicacion diseñada  para crecer modularmente
+  	- al  usar modulos se puede mantener el codigo encapsulado
+* Directivas
+	- permiten agregar propiedades adicionales al codigo html
+	- son elementos de programacion que se inyectan en un documento
+	  html, siendo compatible con su sintexis.
+	- permiten crear elementos html personalizados
+* testing
+	- Karmajs/Jasmine
+* E2E testing
+	- protractor/Jasmine
+	- head-less browser-> Phantomjs
+* Yeoman
+	- scaffolding tool
+ 	- permite iniciar rapidamente un proyecto
+	- 
+* grunt
+	- permite definir tasks automatizadas.
+* bower
+
+the yeoman workflow comprises three types of tools 	

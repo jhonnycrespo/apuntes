@@ -1,0 +1,22 @@
+MONGODB
+=======
+
+
+
+
+USSAGE
+======
+	* Iniciar servicio
+		>mongod --dbpath C:\data --rest
+
+		[--rest]: starts the mongoDB HTTP console
+		[--dbpath]: specifies custom data store
+
+		- El puerto por defecto para comunicarse con mongoDB es el 27017
+
+	* HTTP Console
+		- The HTTP console esta configuraco implicitamente para usar un puerto mayor que el puerto de datos
+		  en 1000.
+		- La console HTTP provee informacion util sobre la base de datos, como logs, status, available databases
+		  y mas.
+		  

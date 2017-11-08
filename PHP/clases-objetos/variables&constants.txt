@@ -1,0 +1,16 @@
+Constants
+=========
+   - Class constants belong to the class
+   - are always publicly visible.
+   - do not use $ sign.
+
+
+   - constants need asignment, cannot be an expresion or function return value
+   - a class constant only exists within the class scope.
+
+
+   ** Always use UPPERCASE constant names.
+
+
+
+   - use the keyword "const" to create a constant.

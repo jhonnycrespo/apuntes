@@ -1,0 +1,128 @@
+DATA VOLUMES
+============
+  - In order to understand what a Docker volume is, we first need to be clear about how the filesystem normally works
+    in Docker.
+
+    Docker images are stored as series of read-only layers. when we start a container, Docker takes the read-only image
+    and adds a read-write layer on top. If the running container modifies an existing file, the file is copied out of the
+    underlaying read-only layer and into the top-most read-write  layer where the changes are applied. The version in the
+    read-write layer hides the underlying file, but does not destroy it, it still exists in the underlying image.
+      - When a docker container is deleted, relaunching the image will start a fresh container without any of the changes
+        made in the previously running container-those changes are lost. Docker calls this combination of read-only layers with
+        a read-write layer on top a "Union File System".
+
+    In order to be able to save (persist) data and share data between containers, Docker came up with the concept of volumes.
+    Quite simply, volumes are directories (or files) that are outside of the default Union File System and exist as normal directories
+    and files on the host filesystem.
+
+    There are two ways to initialize volumes, with some subtle differences that are important to understand. We can declare a
+    volume at run-time with the -v flag:
+
+      $ docker run -it --name container-test -h CONTAINER -v /data debian /bin/bash
+
+    This will make the directory /data inside the container live outside the "Union File System" and directly accessible on the host.
+    Any files that the image held inside the /data directory will be copies into the volume. We can find out where the volume lives
+    on the host using the dockers inspect command on the host.
+
+      $ docker inspect -f {{.Volumes}} container-test
+
+    And you should see something like:
+
+      map[/data:/var/lib/docker/vfs/dir/cde167197ccc3e138a14f1a4f7c0d65b32cecbada822b0db4cc92e79059437a9]
+
+    Telling us that docker has mounted "/date" inside the container as a directory somewhere under "/var/lib/docker". Let's add a file
+    to the directory from the host:
+
+      sudo touch /var/lib/docker/vfs/dir/cde167197ccc3e138a14f1a4f7c0d65b32cecbada822b0db4cc92e79059437a9/test-file
+
+    Then switch back to our container and have a look:
+      $root@CONTAINER:/# ls /date
+      test-file
+
+    Changes are reflected immediately as the directory on the container is simply a mount of the directory on the host. We can achieve
+    exactly the same effect by using VOLUME instruction in A "Dockerfile":
+        FROM debian:wheezy
+        VOLUME /data
+
+    But there's one more thing the "-v" argument to docker run can do and that can't be done from a Dockerfile, and that's mount
+    a specific directory on the host to the container. For example:
+      $ docker run -v /home/adrian/data:/data debian ls /data
+
+    Will mount the directory /home/adrian/data on the host as "/data" inside the container. Any files already existing in the
+    "/home/adrian/data" directory will be available inside the container. This is very useful for sharing files between the host and
+    the container, for example mounting source code to be compiled. The host directory for a volumen cannot be specified from a
+    dockerfile, in order to preserve portability (the host directory may not be available on all systems). When this form of the
+    "-v" argument is used any files in the image under the directory are not copied into the volume.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

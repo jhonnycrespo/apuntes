@@ -1,0 +1,15 @@
+backslash "\"
+==========
+	* windows
+		- directories
+		- paths
+
+forwardslash "/"
+==============
+	* Unix bases OPs
+		- paths and directories
+
+	* URLs
+
+	* IDEs
+		- URLs

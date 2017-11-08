@@ -1,0 +1,116 @@
+DATA VOLUMES
+=============
+
+A data volume is a specially designed directory within one or more containers that bypasses the "UNION FILE SYSTEM".
+Data volumes provide several useful features for persistent or shared data:
+  - Volumes are initialized when a container is created. If the container's base image contains data at the specified
+    mount point, that existing data is copied into the new volume upon volume intialization. (Note that this does not apply
+    when mounting a host directory.)
+  - Data volumes can be shared and reused among containers
+  - Changes to a data volume are made directly
+  - Changes to a data volume will  not be included when you update an image
+  - Data volumen persist even if the container itself is deleted
+
+Data volumes are designed to persist data, independent of the container's life cycle. Docker therefore never automatically deletes
+volumes when you remove a container, nor will it "garbage collect" volumes that are no longer referenced by a container.
+
+
+ADDING A DATA VOLUME
+=====================
+
+You can add a data volume to a container using the '-v' flag with the "docker create" and "docker run" command.
+You can use the "-v" multiple times to mount multiple data volumes. Now, mount a single volume in your web application container.
+
+    $ docker run -d -P --name web -v /webapp training/webapp python app.py
+
+This will create a new volume inside a container at /webapp.
+
+You can also use the VOLUME instruction in a "Dockerfile" to add one or more new volumen to any container created from that image.
+
+LOCATING A VOLUME
+==================
+
+You can locate the volume on the host by utilizing the "docker inspect" command.
+    $ docker inspect web
+  This output will provide details on the container configurations including the volumes.
+  * Source: Specifies the location on the host
+  * Destination: Specifies the volume location inside the container
+  * RW: Shows if the volume is read/write
+
+MOUNT A HOST DIRECTORY AS DATA VOLUME
+======================================
+
+In addition to creating a volume using the "-v" flag you can also mount a directory from your Docker engine's host
+into a container.
+
+    $ docker run -d -P --name web -v /src/webapp:/webapp training/webapp python app.py
+
+This command mounts the host directory "/src/webapp" into the container at "/webapp". If the path "/webapp" already
+exists inside the container's image, the "/src/webapp" mount overlays but does not remove the pre-esisting content.
+Once the mount is removed, the content is accessible again. This is considered with the expected behavior of the "mount"
+command.
+
+The "container-dir" must always be an absolute path such as "/src/docs". The "host-dir" can either be an absolute path
+or a "name" value. If you supply an absolute path for the "host-dir", Docker bind-mounts to the path you specify. If you
+supply a "name", Docker created a named volume by that "name".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

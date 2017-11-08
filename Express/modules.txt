@@ -1,0 +1,15 @@
+MODULES
+=======
+   - Node.js has a simple module loading system.
+
+	- the content of foo.js:
+		const circle = require('./circle.js');
+		console.log('the area of a circle of radius 4 is ${circle.area(4)}');
+
+	- the content of circle.js:
+		const PI = Math.PI;
+		exports.area = (r) => PI*r*r
+
+   - If you want the root of your module's export to be a function(such as constructor) or if you want to export
+     a complete object in one assignment instead of building it obe property at a time, assing it to "module.exports"
+     instead of "exports".

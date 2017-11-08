@@ -1,0 +1,9 @@
+ignore a folder a its content
+==============================
+folder
+
+ignore the content of a folder
+================================
+
+folder/*
+folder/subfolder/*

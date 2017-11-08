@@ -1,0 +1,86 @@
+
+
+generar un proyecto nuevo:
+	yo angular <>
+yo angular
+	- crea una base de proyecto
+	- instala dependencias
+		- package.jason
+		- bower.json 
+
+* Data Binding en angularJs
+
+* Crear nuevos modulos
+	angular.module
+
+* Uso de $scope
+----------------
+	- instanciar controller:
+		<div ng-controller='AppCtrl'>
+
+1) inyectar el servicio $scope en main.js
+	-controller:
+		$scope.precio = 500;
+		$scope.producto = 'laptop'
+		$scope.propiedades = {
+			color: 'azul',
+			marca: 'Dell'
+		};
+		 	
+	- leer los valores desde la vista:
+		{{precio}}
+		{{propiedades.color}}
+
+	- para evitar la sincronizacion automatica
+		one-time  binding
+			{{::<variable>}}
+		Normal binding
+			{{<variable>}}
+	- agregar el script del controller de manera explicita
+	en el archivo html sobre el que actua
+
+2) Crear un controller usando yo
+
+	yo angular:controller <NombreControlador>
+
+	- esto genera 2 archivos. el 2do es para las pruebas unitarias
+	- Actualiza automaticamente el index.html
+
+3) Crear vistar
+	yo angular:view prueba (sin la extension)
+
+4) Crear directiva
+	yo angular:directive <nombreDirectiva>
+
+5) Crear un filtro
+	yo angular:filter <nombreFiltro>
+	Componente de angular que permite.....
+
+6) Crear ruta
+	yo angular:route <NombreRuta>
+	Esto crea la vista html, el controlador y la ruta en app.js
+	y agrega en index.html la url del script del controlador
+
+7) crear servicio
+	yo angular:service <nombreServicio>
+
+
+
+
+Directivas:
+	son extensiones al comportamiento de un elemento html.
+	Comportamiento personalizado
+Filtro:
+	angular ya viene con algunos filtros.
+	* los filtros pueden recibir parametros
+
+Controladores:
+	*logica del negocio
+
+vista:
+	*renderizacion
+
+Servicio:
+	* Sirve para abstraer la logica y reutilizarla
+	* Es un objeto??
+	* Un servicio puede ser inyectado en un controlador (inyeccion de dependencias)

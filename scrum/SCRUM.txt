@@ -1,0 +1,237 @@
+SCRUM
+======
+
+SCRUM MASTER
+=============
+	- El scrum master es el responsable de asegurar que el "scrum team" practica scrum.
+	- El scrum master es comunmente considerado como el "coach" del equipo, ayudando al equipo
+	  a hacer mejor su trabajo.
+	- El scrum master tambien puede ser considerado como el responsable de crear el equilibrio con
+	  product owner
+
+	- El scrum master hace todo lo posible para ayudar al equipo a rendir a su mas alto nivel. Esto incluye
+	  eliminar cualquier obstaculo que afecte al proyecto, facilitar reuniones, y hacer cosas como trabajar con
+	  el "product owner" para asegurar que el "product backlog" esta bien hecho y listo para el siguiente sprint.
+
+	- El scrum master es tambien visto como el "protector del scrum team". El ejemplo mas comun es que el scrum master
+	  protege al equipo asegurandose que ellos no se sobre-comprometan a lo que pueden lograr durante un sprint, a causa
+	  de la presion de un product owner agresivo. Sin embargo, un buen scrum master tambien protege al equipo de "complacency".
+
+	- Podemos pensar en el scrum master como un "entrenador personal" que nos ayuda a estar enfocados en un regimen de 
+	  ejercicios y a realizar los ejercicios correctamente.
+
+SPRINT PLANNING MEETING
+========================
+	- El sprint planning se hace con el product owner, scrum master, y el scrum team.
+
+	- Durante la reunion del sprint planning, el product owner describe las caracteristicas con mas alta prioridad al equipo.
+	- El equipo hace las suficientes preguntas para convertir una historia de usuario de alto nivel del product backlog en tareas mas
+	  detalladas para el spring backlog.
+
+	- Hay dos artefactos definidos que resultan de un "sprint planning meeting"
+		- 1. El objetivo del sprint.
+		- 2. El sprint backlog.
+
+	- El sprint goal es una descripcion de una o dos lineas de lo que el team planea lograr durante el sprint. Esta escrito en forma
+	  colaborativa por el equipo y el product owner. 
+
+	* Ejemplo: eCommerce application
+		- Implement basic shopping cart functionality including add, remove, and update quantities.
+		- Develop the checkout process: pay for an order, pick shipping, order gift wrapping, etc.
+
+	1. Sprint goal
+
+	- El sprint goal puede ser usado para dar un reporte rapido a aquellas personas ajenas al sprint. Siempre hay clientes que quieren
+	  saber en que esta trabajando el equipo, pero no es necesario saber sobre cada item del product backlog (user story) en detalle.
+
+	- El exito del sprint luego sera comprobado durante el "sprint review" contra el "sprint goal", en lugar de ser comprobado cada item
+	  seleccionado del product backlog.
+
+	2. Sprint backlog
+	- El sprint backlog es el otro resultado del "sprint planning". Un sprint backlog es una lista de items del product backlog que el equipo
+	  ha escogido y a los que se ha comprometido a terminar mas las tareas necesarias para terminar esos items. Usualmente se estima cada tarea
+	  del sprint backlog.
+
+SCRUM TASK BOARD
+================
+	- Cuando se practica scrum, posemos hacer el sprint backlog visible poniendolo en un "scrum task board".
+	- Los miembros del equipo actualizan el "task board" de manera continua durante todo el sprint; si alguien piensa en una nueva tarea,
+	  escribe una nueva tarjeta y la pone en el board. Ya sea antes o despues del "daily scrum", las estimaciones son actualizadas (aumentan
+	  o disminuyen), y las tarjetas son movidas si fuera necesario.
+
+	- Cada fila del "scrum board" es una historia de usuario, que es la unidad de trabajo que se recomienda usar a los equipos para su product backlog.
+	  Durante el sprint planning meeting, el equipo selecciona los items del product backlog que pueden ser completados durante el siguiente sprint.
+
+	- Cada item del product backlog es convertido en multiples items para el sprint backlog, cada uno de estos items es representado por una
+	  tarjeta que se pone en el "scrum board". Cada tarjeta empieza en la columna "TO DO". las columnas que generalmente se usan son:	
+
+		* Story
+		* To do
+		* Work in process
+		* To verify
+		* Done
+
+DAILY SCRUM MEETING
+===================
+	- Cada dia en el transcurso de un sprint, el equipo tiene una reunion llamada "daily scrum".
+	- Las reuniones son tipicamente en el mismo lugar y a la misma hora todos los dias. Por lo general estas reuniones se dan en la
+	  mañana ya que ayuda a entrar en el contexto para el dia de trabajo.
+	- Estas reuniones no deben sobrepasar los 15 minutos. Esto mantiene la discusion corta pero relevante.
+
+	- El "daily scrum" no es usado para resolver problemas o resolver conflictos. Durante el daily scrum, cada miembro del
+	  equipo responde a las siguientes preguntas:
+		- que hiciste ayer?
+		- que haras hoy?
+		- Hay algun impedimento en tu camino?
+
+	- Enfocandose lo que cada persona realizo el dia anterior, y en lo que realizara hoy, el equipo obtiene conocimiento
+	  de que trbajo se ha hecho y cuanto y que trabajo queda. 
+	- El daily scrum no es una reunion en la que el jefe recolecta informacion sobre que esta retrasado.
+
+	- cualquier impedimento que pueda aparecer en el scrum meeting se vuelve responsabilidad del scrum master resolverlo
+	  lo mas rapido posible. Algunos impedimentos son:
+
+		- My ____ broke and I need a new one today.
+		- I still haven't got the software I ordered a month ago.
+		- I need help debugging a problem with ______.
+		- I'm struggling to learn ______ and would like to pair with someone on it.
+		- I can't get the vendor's tech support group to call me back.
+		- Our new contractor can't start because no one is here to sign her contract.
+		- I can't get the ____ group to give me any time and I need to meet with them.
+		- The department VP has asked me to work on something else "for a day or two."
+
+PRODUCT OWNER
+==============
+
+	- El product owner es tipicamente el cliente clave de un proyecto (proyect's key stakeholder). Parte de las responsibilidades 
+	  del product owner, es tener la vision de lo que quiere construir, y comunicar esa vision al "scrum team".
+
+	- el product owner es comunmente el usuario principal del sistema.
+
+	- el Product Owner prioriza el "product backlog" durante la reunion del "sprint planning".
+
+	- En retorno al compromiso hecho por el scrum team de completar las historias de usuario seleccionadas de lo mas alto 
+	  del product backlog, el product owner hace el compromiso de no lanzar nuevos requerimientos durante el sprint.
+
+	- Esta permitido cambiar los requerimientos, pero solo si no se ha iniciado el sprint. Una vez que el equipo ha
+	  iniciado el sprint, se mantiene enfocado en el objetivo de ese sprint.
+
+
+
+
+SCRUM TEAM
+===========
+	- Un scrum team en un entorno scrum no incluye ninguno de los roles de la "ingenieria de software tradicional" como
+	  programador, designer, tester or architect. Todos trabajan juntos para completar las historias de usuario a las que
+	  se han comprometido en un sprint. Gracias a esto los equipos de scrum desarrollan una profunda sensacion de camaraderia
+	  y el sentimiento de que "todos estamos en esto juntos".
+
+	- Los anteriores roles en equipos tradicionales comunmente se adaptan a un rol agil que los hace miembros integrales
+	  de "scrum teams", de todas forman mantienen algunos aspectos de su rol antiguo, pero tambien agrega nuevas caracteristicas.
+
+SPRINT RETROSPECTIVE
+=====================
+	- Sin importar que tan bueno sea un scrum team, siempre hay oportunidades para mejorar, Si bien un scrum team estara
+	  constantemente buscando por oportunidades para mejorar, el equipo debe dedicar un tiempo al final de cada sprint 
+	  para reflexionar en como se estan haciendo las cosas y buscar formas para mejorar. Esto ocurre durante el "sprint retrospective".
+
+	- El "sprint retrospective" es usualmente la ultima cosa que se hace durante un sprint. Muchos equipos lo hacen
+	  inmediatamente despues de cada "sprint review". El equipo entero, incluyedo al scrum master y el product owner deben
+	  participar.
+
+
+SCRUM PRODUCT BACKLOG
+======================
+	- El product backlog es una "lista priorizada de caracteristicas", que contiene descripciones cortas de toda la funcionalidad
+	  deseada en un producto. Cuando se aplica scrum, no es necesario empezar un proyecto con un gran esfuerzo inicial de 
+	  documentar todos los requerimientos. Tipicamente, el scrum team y el product owner empiezan escribiendo todo lo que se les
+	  ocurra for agile backlog prioritization. Este product backlog agil es casi siempre mas que suficiente para un primer sprint.
+
+	- El product backlog, entonces, tiene permitido crecer y cambiar a medida que se aprenda mas sobre el producto y sus clientes.
+
+	- Un scrum backlog tipico comprende los siguientes tipos de items:
+		1. Features
+		2. Bugs
+		3. Technical work
+		4. Knowledge acquisition
+
+	- por lejos, la mejor manera de un scrum team para expresar las caracteristicas en el product backlog is en forma de 
+	  historias de usuario, que son descripciones simples y cortas de la funcionalidad deseada descrita desde la perspectiva
+	  del usuario.
+
+	- Los bugs tambien son puestos en el product backlog
+	- Trabajo tecnico y actividades de adquisicio de conocimiento tambien pertenecen al product backlog.
+		- un ejemplo de trabajo tecnico podria ser: actualizar los equipos de los desarrolladores a windows 10
+		- un ejemplo de actividad de adquisicion de conocimiento podria ser: investigar y analisar librerias de javascript para hacer una seleccion.
+
+	- el product owner presenta el product backlog priorizado al scrum team en la reunion del "sprint planning" y describe los items mas importantes
+	  al equipo. El equipo, entonces, determina que items pueden completar durante el siguiente sprint. El equipo, entonces, mueve items del
+	  product backlog al sprint backlog.
+
+SPRINT BACKLOG
+===============
+	- El sprint backlog es una lista de tareas identificadas por el scrum team a ser completadas durante un sprint.
+	- durante el sprint planning, el equipo selecciona una cantidad de items del product backlog, usualmente en forma de historias de usuario, e identifica
+	  las tareas necesarias para completar cada historia de usuario
+	- Algunos equipos tambien estiman la cantidad de horas que tomara cada tarea para ser completada.
+	
+	- Es muy importante que el equipo sea el que seleccione los items y el tamaño del sprint backlog, por que son ellos los que se comprometen
+	  a terminar las tareas.
+
+	- El sprint backlog es comunmente representado como una tabla, pero tambien es posbile usar un sistema de seguimiento o algun producto 
+	  diseñado especificamente para scrum.
+
+	- Durante un sprint, se espera que  los miembros del equipo actualicen el sprint backlog a medida que nueva informacion es disponible, pero	
+	  minimamente una vez al dia. Muchos equipos hacen esto durante el "daily meeting".
+	- Una vez al dia, el trabajo estimado restante en el sprint es calculado y graficado por el "scrum master", resultado en un "sprint burndown chart".
+
+	- El equipo hace lo mejor que puede para poner la cantidad correcta de trabajo en un sprint, pero a veces muy poco o demasiado es puesto durante
+	  el "sprint planning". En estos casos, el equipo agregar o quitar tareas, pero primero el scrum master debe consultar y ponerse de acuerdo
+	  con el product owner.
+
+SPRINT REVIEW MEETING
+=======================
+	- En scrum, se requiere que cada sprint entregue un incremento del producto potencialmente entregable. Esto significa que al final de cada sprint,
+	  el equipo ha producido una pieza de software codificada, testeada y usable.
+
+	- Asi, al final de cada sprint, una "sprint review" se lleva a cabo. Durante esta reunion, el scrum team muestran lo que han logrado durante
+	  el sprint. Tipicamente esto toma la forma de un demo de las nuevas caracteristicas.
+
+	- Tipicamente participan en el "sprint review" el product owner, el scrum team, el scrum master, administracion o gerencia, clientes y desarrolladores
+	  de otros proyectos.
+
+	- Durante el sprint review, el proyecto es comparado con el "sprint goal" determinado durante el "sprint planning". Idealmente, el equipo
+	  ha completado cada item del sprint backlog, pero es mas importante que se alcance el objetivo general del sprint.
+
+USER STORIES
+=============
+	- las "user stories" son descripciones simples y cortas de una caracteristica, descritos desde la perspectiva
+	  de la persona que desea la caracteristica, usualmente un usuario o cliente del sistema. Por lo general las historias
+	  de usuario siguen la siguiente plantilla:
+		
+		* As a <type of user>, I want <some goal> so that <some reason>. 
+
+
+	* Como se añade detalle a las historias de usuario?
+	- el detalle puede ser añadido de 2 formas:
+		- dividiendo la historia de usuario, en historias de usuario mas pequeñas.
+		- Añadiendo condiciones de satisfaccion.
+			- Las condiciones de satisfaccion son simplemente un "acceptance test" de alto nivel que debera ser
+			  aceptado despues que la historia de usuario este completada.
+
+	* Quien escribe las historias de usuario?
+	- Durante el desarrollo de un proyecto agil, se espera tener historias de usuario escritas por todo el equipo.
+
+	* Cuando se escriben las historias de usuario?
+	- las historias de usuario se escriben durante todo el desarrollo del proyecto agil. Usualmente un "taller para escribir
+	  historias de usuario es montado cerca del inicio del proyecto agil". Todos en el equipo participan con el objetivo de crear
+	  el "product backlog" que describa totalmente la funcionalidad que sera agregada durante el trayecto del proyecto agil.
+
+	* Las historias de usuario reemplazan a un documento de requerimientos?
+	- Si bien puede pensarse del "product backlog" como un reemplazo del "documento de requerimientos". Es importante recordar que la parte escrita 
+	  de una "historia de usuario agil" esta incompleta hasta que ocurra una discusion sobre esa historia de usuario.
+
+	- Es mejor pensar en la parte escrita de una historia de usuario como un puntero al requerimiento real. Una historia de usuario
+	  puede apuntar a un diagrama que representa el flujo de trabajo, una hoja de calculo que muestra como realizar un calculo, o 
+	  cualquier otro artefacto que el "product owner" o el equipo desee.
+	

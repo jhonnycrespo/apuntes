@@ -1,0 +1,5 @@
+compile
+    compile is the group of dependencies you need to build you application
+
+testCompile
+    group of dependencies that you need only for testing

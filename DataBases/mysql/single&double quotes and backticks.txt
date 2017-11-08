@@ -1,0 +1,37 @@
+﻿Backticks
+==========
+   - Backticks are to be used for table and column identifiers, but are only necessary when the identifier 
+     is a MySQL reserved keyword, or when the identifier contains whitespace characters or characters beyond 
+     a limited set (see below) It is often recommended to avoid using reserved keywords as column or table identifiers 
+     when possible, avoiding the quoting issue.
+
+   - for enclosing identifiers such as table and column names
+
+
+Single quotes
+==============
+
+   - Single quotes should be used for string values like in the VALUES() list. Double quotes are supported by 
+     MySQL for string values as well, but single quotes are more widely accepted by other RDBMS, so it is a good 
+     habit to use single quotes instead of double.
+
+   - for enclosing string literals
+
+
+Double Quotes
+==============
+
+
+
+
+
+Backtick (`)
+table & column ───────┬─────┬──┬──┬──┬────┬──┬────┬──┬────┬──┬───────┐
+                      ↓     ↓  ↓  ↓  ↓    ↓  ↓    ↓  ↓    ↓  ↓       ↓
+$query = "INSERT INTO `table` (`id`, `col1`, `col2`, `date`, `updated`) 
+                       VALUES (NULL, 'val1', 'val2', '2001-01-01', NOW())";
+                               ↑↑↑↑  ↑    ↑  ↑    ↑  ↑          ↑  ↑↑↑↑↑ 
+Unquoted keyword          ─────┴┴┴┘  │    │  │    │  │          │  │││││
+Single-quoted (') strings ───────────┴────┴──┴────┘  │          │  │││││
+Single-quoted (') DATE    ───────────────────────────┴──────────┘  │││││
+Unquoted function         ─────────────────────────────────────────┴┴┴┴┘ 

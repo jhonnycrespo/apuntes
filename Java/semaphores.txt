@@ -1,0 +1,30 @@
+* Java 5
+
+Class Semaphore
+================
+
+   - A Semaphore is a thread synchronization tool that can be used either to send signals between threads to avoid
+     missed signals, or to guard a critical section like you would do with a lock.
+
+
+Parameters
+===========
+   - int permits: the number of permits
+   - boolean fair: Creates a Semaphore with the given fairness setting.
+
+Methods
+========
+   - acquire(): Acquires a permit from the semaphore, blocking until one is available, or the thread is interrupted.
+   - release(): Releases a permit, returning it to the semaphore. 
+
+
+
+
+
+example
+=======
+   - There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed 
+     to enter, but as soon as one person leaves another person might enter.
+
+   - It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number 
+     of simultaneous calls to a database in an application.

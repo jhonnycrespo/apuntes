@@ -1,0 +1,65 @@
+POM stands for Project Object Model. This model has "a set of standarts, a project lifecycle, a dependency management system, and logic for executing plugin goals at defined phases in a lifecycle"
+
+projects are set up with default behaviors.
+    - source code must be in the src/main folder
+    - resources necessary for the project are in another folder
+    - test cases are in a specifically name folder
+    - target folder is used for the final JAR file
+
+
+maven has adopted convention over configuration. Always using a standart folder structure.
+
+
+example for a calculator:
+
+    calculator
+        src
+            main
+                java
+                    com
+                        lynda
+                resources
+            test
+                java
+                    com
+                        lynda
+        target
+        pom.xml
+
+
+
+    - the jar file will be stored in the "target" folder
+
+
+The project model includes:
+    - project description
+    - unique set of "coordinates"
+    - project attributes
+    - project's license information
+    - project version
+    - program authors and contributors
+    - list of project dependencies
+
+
+Let's take a look at a pom.xml file:
+    - groupId (*)
+    - artifactId: (*) it is used for the name of the program
+    - packaging: for java is jar
+    - version: (*)
+    - description: (optional)
+    - name: (optional)
+    - url: (optional)
+
+    (*) are the coordinates of the project. Must be a unique combination
+
+    * dependencies: automatically adds a junit dependency
+
+
+features that are enabled by using the pom include:
+    - dependency management
+    - access to remote repositories
+    - universal reuse of build logic
+    - tool portability and integration
+    - easy searching and filtering of project artifacts
+
+

@@ -1,0 +1,30 @@
+Projects
+=========
+
+When you first start using sublime text, the way in which projects work may not inmediately make sense. What is
+a project? Wait, i have to save a file? Where do I save the file?.
+
+Every time you have something open in sublime text, you are working in a new project. Until you save the project,
+there's no record of your current setup.
+
+Where do I save my projects?
+=============================
+
+You could either save the .sublime-project file in the same folder as the project you are working on, or in one
+folder that containes all of your project definition files. Or somewhere else entirely. I prefer keeping them 
+in one single folder, since I’d rather have my project directory only contain files that will be uploaded to 
+the server (mirroring its contents), and because I can see and open all projects from one location.
+
+Projects in sublime text are made up of two files:
+  - the .sublime-project file, which contains the project definition and
+  - the .sublime-workspace file, which contains user specific data, such as the open files and the modifications to each.
+
+Project Format
+===============
+.sublime-project files are JSON, and support three top level sections: 
+	- "folders", for the included folders
+	- "settings" for file-setting overrides
+		- tab_size
+		- font_size
+		- bold_folder_labels
+	- "build_systems" for project specifig build systems

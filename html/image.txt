@@ -1,0 +1,4 @@
+<img>
+
+  - alt: specifies an alternate text for an image
+  - use alt="" if the image is only for decoration

@@ -1,0 +1,21 @@
+Updating npm
+==============
+	> npm install npm@latest -g
+
+
+update local package
+====================
+	> npm update
+
+
+updating global packages
+=========================
+	> npm update -g <package> or npm update -g
+
+which packages need to be updated
+===================================
+	> npm outdated -g --depth=0
+
+uninstalling global packages
+=============================
+	> npm uninstall -g <package>

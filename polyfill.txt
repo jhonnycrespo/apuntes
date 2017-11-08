@@ -1,0 +1,5 @@
+ - The term polyfill itself refers to some code that "allows you to have some specific functionality that you expect in 
+   current or “modern” browsers to also work in other browsers that do not have the support for that functionality built in. "
+
+ - ejmk: sessionStorage is available in all the latest browsers (IE8 and upward) but isn't in IE7 and below.
+ - A polyfill can be used to "plug the supports" for older browsers that don't provide sessionStorage.

@@ -1,0 +1,37 @@
+DOCKER CLIENT
+=============
+it's a tools that interacts with the docker daemon.
+
+Las imagenes sirven para crear contenedores.
+De una imagen se pueden crear varios contenedores iguales.
+
+
+
+COMMANDS
+========
+> docker
+- show the list of commands
+
+> docker pull <image name>
+- download image (lo mismo que usar kitematic) 
+
+> docker run <image name>
+- 
+
+> docker images
+- lists all images
+
+> docker ps [-a]
+- lists all containers
+
+> docker rm <container name or id>
+- remove container
+
+> docker rmi <image name or id>
+- remove an image
+
+> docker run -p <port of the machine:port in the container> <image name>
+- run an image
+- ejm: docker run -p 80:80 kitematic/hello-world/nginx
+
+> docker run -p <port of the machine:port in the container> -v <path of the directory> <image name>

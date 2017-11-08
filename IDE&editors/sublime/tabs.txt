@@ -1,0 +1,7 @@
+Tabs
+====
+  * Open last closed tab
+	- ctrl + shift + t
+
+  * cycle down through open tabs
+	- Ctrl+PgDn or Ctrl+PgUp

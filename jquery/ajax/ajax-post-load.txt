@@ -1,0 +1,11 @@
+load()
+======
+  - load data from the server and place the returned HTML into the matched element.
+
+   .load(url [, data][, complete])
+	url: A string containing the URL to which the request is sent
+	data: PlainObject or String
+	complete: callback 
+
+  * Example
+	$( "#result" ).load( "ajax/test.html" );

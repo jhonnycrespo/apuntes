@@ -1,0 +1,22 @@
+SINGLE PAGE APPLICATIONS
+=========================
+	- Un SPA es una aplicacion web que se ejecuta en una unica pagina, logrando asi una experiencia de usuario mas
+	  cercana a una aplicacion de escritorio. En un SPA el usuario no navega por un engorroso sistema de enlaces
+	  tradicionales, si no que en su lugar, medianto el uso de JavaScript, Ajax, HTML5 se actualiza lo que el usuario
+	  ve siempre desde la misma pagina.
+
+	- La tendencia actual es llevar cada vez mas caracteristicas al navegador, al lado del cliente. En lugar de
+	  depender tanto del servidor o de plugins.
+	- El servidor se limita a enviar y recibir los datos de manera rapida y eficiente.
+
+
+	- A Single Page Application (SPA) is a web application or website that loads all of the resources required 
+	  to navigate throughout the site on the first page load. As the user clicks links and interacts with the page, 
+	  subsequent content is loaded dynamically. The application will often update the URL in the address bar to 
+	  emulate traditional page navigation, but another full page request is never made.
+
+	- La idea de las SPAs es la de crear smooth browsing experience like the one found in native desktop apps.
+	- All of the necessary code for the page is loaded only once and its content gets changed dynamically through
+	  JavaScript. If everything is done right the page shouldn't ever reload, unless the user refreshes it manually.
+
+	- There are many frameworks for single page applications. for example: Backbone, Angular and React.

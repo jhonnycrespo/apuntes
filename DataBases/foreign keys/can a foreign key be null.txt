@@ -1,0 +1,17 @@
+Escenario:
+
+Diagamos que tenemos una tabla "Order" con una fk a "customer_id". Ahora, supongamos que queremos agregar una orden sin 
+"customer_id", tendriamos que poner NULL en la fk. Es esto bad practice?? o es mejor usar una tabla de enlace entre "Order" y "Costumer".
+
+
+RESPUESTAS
+===========
+
+    - Having the link table is probably a better option. At least it does not violate normalization BCNF (Boyce-Codd normal form). however I would favor being pragmatic. If you have very few of these null values and they are only temporary I think you should skip the link table since it only adds complexity to the scheme.
+
+    - No There is nothing wrong with Nullable FKs. This is common when the entity the FK points to is in a (zero or one) to (1 or many) relationship with the primary Key referenced table.
+
+
+REFERENCIAS
+============
+ - http://stackoverflow.com/questions/1723808/nullable-foreign-key-bad-practice

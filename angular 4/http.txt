@@ -1,0 +1,29 @@
+HTTP
+====
+
+PROMISE
+========
+
+  - A promise handles a "single event" when an async operation completes or fails
+
+OBSERVABLE
+===========
+
+Each Http service method returns an Observable of HTTP Response objects.
+
+An Observable is a stream of events that you can process with array-like operations
+
+Converting to a promise is often a good choice. You tipically ask http.get() to fetch a single chunk of data. When you 
+receive that data, you're done. The calling component can easily consume a single result in the form of a Promise.
+
+But requests aren't always done only once. You may start one request, cancel it, and make a different request
+before the server has responded to the first request.
+
+A request->cancel->new request sequence is difficult to implement with Promises, but easy with Observables.
+
+
+OBSERVABLE VS PROMISE
+=====================
+
+  - Observable supports cancellation while Promise doesn't
+  - Using subscribe() and map() instead of then() doesn't and much complication

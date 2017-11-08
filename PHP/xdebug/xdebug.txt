@@ -1,0 +1,9 @@
+sublime
+=========
+	* Run: run the application until the next breakpoint or until the ending
+	* Run to line: will run until the line you clicked
+	* Step into: will step into the current function and stops right after
+	* Step over: will step over the current function and stops right after
+	* Step out : will step out of the current function and stop right after
+	* Stop: will stop debugging
+	* Detach: will also stop debugging

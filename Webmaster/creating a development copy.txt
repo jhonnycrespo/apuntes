@@ -1,0 +1,12 @@
+moving from server to local
+=============================
+Usa estos pasos cuando el sitio web este ya subido en el servidor y necesites una copia
+para desarrollar o hacer pruebas.
+
+  - Instala las dependencias necesarias
+	* ejm: php, apache, mysql en el equipo local
+
+  - Descarga los archivos del servidor FTP a tu equipo local
+	* ejm: xampp/htdocs
+
+  - 

@@ -1,0 +1,4 @@
+- Typically, when you create and application you need to set up the initial state for the Angular $scope.
+- You set up initial state of a scope by attaching properties to the $scope object.
+- The properties contain the 'view model' (the model that will be presented by the view.)
+- All the $scope properties will be available to the 'template' at the point in the DOM where the controller is registered.

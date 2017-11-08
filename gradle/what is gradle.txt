@@ -1,0 +1,7 @@
+WHAT IS GRADLE?
+
+Gradle is a project automation tool that builds upon the concepts of "Apache Ant" and "Apache Maven" and introduces a "Groovy" based "domain-specific language" (DSL) instead of the more traditional XML, which defines lifecycles, and "Apacha Ant", where targets are invoked based upon a depends on partial ordering, Gradle utilizes a directed acyclic graph (DAG) to determine the order in which tasks can be run.
+
+WHAT IS ITS PURPOSE?
+
+Its purpose is to automate complex builds.

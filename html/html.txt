@@ -1,0 +1,9 @@
+HTML <html> Tag
+
+
+The <html> tag tells the browser that this is an HTML document.
+
+The <html> tag represents the root of an HTML document.
+
+
+The HTML <html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.

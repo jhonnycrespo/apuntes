@@ -1,0 +1,15 @@
+Para servir archivos estaticos, por ejemplo, imagenes, css y archivos javaScript debemos utilizar el middleware
+'express.static'.
+
+USSAGE
+=======
+	* express.static(root, [options])
+		- root: el nombre del directorio que contiene los archivos estaticos.
+	- El archivo a servir sera determinado combinando 'req.url' con el valor de 'root'.
+	- Cuando un archivo no es encontrado, en lugar de devolver una respuesta 404, este modulo llamara a next() para
+	  moverse al siguiente middleware.
+
+Para user multiples directorios, debemos llamar al middleware express.static varias veces.
+   ejm:
+	app.use(express.static('public'));
+	app.use(express.static('files'));

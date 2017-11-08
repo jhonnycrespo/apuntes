@@ -1,0 +1,6 @@
+
+usar document.createDocumentFragment()
+
+no conviene usar innerHTML a no ser q queramos reemplazar contenido.
+
+y usar closures para los eventos

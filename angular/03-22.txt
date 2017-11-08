@@ -1,0 +1,112 @@
+TESTING
+========
+	- TDD
+	- BDD
+	- Karma
+	- Jasmine
+	- PhantomJS
+
+UNIT TEST
+=========
+	- es tarea del desarrollador.
+	- lo ideal es que los test se implementen al inicio.
+	- Es una mecanismo que nos permite comprobar el correcto funcionamineto de una parte de la
+	  aplicacion.
+	- probar bloques de codigo con funcionalidad isolada.
+	- predecir la salida de datos en funcion a los de entrada.
+KARMA
+======
+	- test runner for JS creado por el equipo de Angular.
+	- Los servicios, controllers tambien deben tener unit tests.
+
+  * instalacion
+ 
+	- npm install -g karma-cli
+	- npm install --save-dev karma
+	- karma init (genera el archivo karma.conf.js)
+
+   
+	- exclude: archivos que no queremos testear.  
+	- .spec.js: son archivos para escribir unit tests.
+	- autoWatch: ver resultados de los unit tests en tiempo real.
+	- browsers: navegador a usar.
+
+JASMINE
+========
+	- BDD
+	- framework que ayuda a 'escribir' los unit tests.
+	- karma los ejecuta, jasmine nos ayuda a escribirlos.
+
+   * como se usa:
+ 
+	- debemos definir un escenario usando describe(<nombreEscenario>, function(){})
+
+   * Specs
+	- se definen llamando a la funcion global it()
+
+   * Expectation
+	- es una afirmacion (assertion)
+	- puede ser evaluado como true or false
+	- un spec con todos los expectations evaluados en true, significa que paso el test.
+
+   * Matchers
+	- implementa una comparacion booleana entre el valor actual y el esperado.
+	- es el responsable de informar a jasmine si...
+	- ejemlos:
+		- toBe()
+		- toEqual()
+		- toBeTruthy() : verifica que es verdadero
+		- not.toBeTruthy() : verifica que es falso
+		- toBeFaisy() : verifica que es falso
+		- toBeGreaterThan() :  
+		- toHaveBeenCalled: verifica si una funcion ha sido llamada  	
+
+	- jasmine nos permite crear matchers.
+	- hay modulos externos que extienden los matchers.
+
+ANGULAR-MOCKS
+=============
+   - angular provee el modulo ngMock para los tests.
+   - se usa para inyectar y simular (mock) los servicios que provee angular en el contexto
+     de los unit tests.
+
+	* httpBackend
+		- permite simular peticiones HTTP.
+		- no se hacen peticiones HTTP reales.
+		- flush hara que se espere a las peticiones http.
+	* $controller	
+
+	
+   - los mocks van dentro de inject()
+
+   * Ejecutar un test
+	grunt test:client
+
+
+SPIES
+======
+	- cuando escribimos unit tests, no debemos dejar el dominio del SUT(Subject Under Test).
+	  Ejm: un SUP puede ser un controlador.
+	- Jasmine tiene el concepto de spies.
+	- se puede hacer un spy a una funcion.
+	
+
+GENERANDO REPORTES
+==================
+	* karma-html-reporter
+		- genera reportes html
+	* instalacion
+		npm install karma-html-reporter --save-dev
+	* configurar karma.conf.js
+		- karma.conf.js soporta muchos reportes
+
+   	
+TEST DE INTEGRACION
+===================
+	- Trabajo de equipo de QA.
+
+DUDAS
+======
+	- angular $q service
+	- git checkout -- .
+	- en vez de usar un booleando puedo usar una promise.

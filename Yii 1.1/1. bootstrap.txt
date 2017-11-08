@@ -1,0 +1,9 @@
+the entry script is the bootstrap php script that handles user requests initially.
+
+index.ph
+
+
+
+DEBUG MODE
+===========
+	- A Yii application can run in either debug or production mode, as determined by the value of the constant YII_DEBUG. 

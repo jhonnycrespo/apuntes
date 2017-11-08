@@ -1,0 +1,75 @@
+Yii
+====
+/
+    backend/
+    common/
+        components/
+        config/
+            params.php
+            params-local.php *
+        lib/
+            Pear/
+            yii/
+            Zend/
+        migrations/
+        models/
+            Comment.php
+            Extension.php
+            ...
+    console/
+        commands/
+            SitemapCommand.php
+            ...
+        config/
+            main.php
+            main-local.php *
+            params.php
+            params-local.php *
+        runtime/
+        yiic.php *
+    frontend/
+        components/
+        config/
+            main.php
+            main-local.php *
+            params.php
+            params-local.php *
+        controllers/
+            SiteController.php
+            ...
+        lib/
+        models/ 
+            ContactForm.php
+            SearchForm.php      
+        runtime/
+        views/
+            layouts/
+            site/
+        www/
+            assets/
+            css/
+            js/
+            index.php *
+    yiic
+    yiic.bat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

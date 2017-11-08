@@ -1,0 +1,23 @@
+ - a closure is any function that somehow remains available after the functions that surrounded it have returned.
+
+ - closure is when a function remembers its lexical scope even when the function is executed outside that lexical scope
+
+
+ejm: 
+
+function foo() {
+  var bar = 'bar';
+
+  function baz() {
+    console.log(bar);
+  }
+
+  bam(baz);
+
+}
+
+function bam(baz) {
+  baz();
+}
+
+foo();

@@ -1,0 +1,15 @@
+Lock
+====
+
+   - Synchronized code relies on a simple kind of reentran lock. This kind of lock is easy to use, but has many limitations.
+   - More sophisticated locking idioms are supported by the java.util.concurrent.locks package.
+
+   - Lock objects work very much like the implicit locks used by synchronized code. As with implicit locks, only one thread
+     can own a Lock Object at a time. Lock objects also support a wait/notify mechanism, through their associated
+     "Condition objects".
+
+   - Lock implementations provide more extensive locking operations than can be obtained using synchronized methods 
+     and statements. They allow more flexible structuring, may have quite different properties, and may support multiple 
+     associated Condition objects.
+
+

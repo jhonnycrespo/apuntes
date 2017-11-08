@@ -1,0 +1,14 @@
+almacenar el token. pero, donde?. Tenemos las siguientes opciones:
+	- cookies
+		* caracteristicas:
+			- se puede configurar para solo enviar la cookie sobre HTTPS usando el flag 'Secure'.
+			- una cookie solo puede ser enviada a los dominios en los que se permite. Por defecto, este es el dominio
+			  que originalmente "set" planto la cookie
+		* desventaja:
+			- vulnerables a ataques CSRF
+	- html5 web storage (localStorage / sessionStorate)
+		* desventaja:
+			- propenso a ataques XSS.
+			- web storage es accesible a travez de javascript.
+		*uso:
+			- $window.sessionStorage.accessToken = response.body.access_token;

@@ -1,0 +1,46 @@
+ReentrantLock
+=============
+
+  * java.util.concurrent.locks.ReentrantLock
+
+   - ReentrantLock is a class that implements of the "Lock interface" .
+
+   - Reentrantlock is mutual exclusive lock, similar to implicit locking provided by "synchronized" keyword, but with
+     extended features like:
+	- fairness: which can be used to provide lock to longest waiting thread.
+
+   - Lock is acquired by lock() method and held by Thread until a call to unlock() method.
+
+   - A ReentrantLock is owned by the thread last successfully locking, but not yet unlocking it. 
+     A thread invoking lock will return, successfully acquiring the lock, when the lock is not owned by another 
+     thread. The method will return immediately if the current thread already owns the lock.
+
+Differences between ReentrantLock and synchronized
+=====================================================
+   - Another significant difference between ReentrantLock and synchronized keyword is fairness. synchronized keyword 
+     doesn't support fairness. Any thread can acquire lock once released, no preference can be specified, on the other 
+     hand you can make ReentrantLock fair by specifying fairness property, while creating instance of 
+     ReentrantLock. Fairness property provides lock to longest waiting thread, in case of contention.
+
+   - Second difference between synchronized and Reentrant lock is tryLock() method. ReentrantLock provides convenient 
+     tryLock() method, which acquires lock only if its available or not held by any other thread. This reduce blocking 
+     of thread waiting for lock in Java application.
+
+   - One more worth noting difference between ReentrantLock and synchronized keyword in Java is, ability to interrupt 
+     Thread while waiting for Lock. In case of synchronized keyword, a thread can be blocked waiting for lock, for an 
+     indefinite period of time and there was no way to control that. ReentrantLock provides a method called lockInterruptibly(), 
+     which can be used to interrupt thread when it is waiting for lock. Similarly tryLock() with timeout can be used to 
+     timeout if lock is not available in certain time period.
+
+   - ReentrantLock also provides convenient method to get List of all threads waiting for lock.
+
+
+
+
+
+
+
+
+
+
+

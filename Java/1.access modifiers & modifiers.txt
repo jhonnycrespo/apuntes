@@ -1,0 +1,9 @@
+final
+=====
+   - the variable can never change its value (por convencion, la variable se escribe totalmente en mayusculas)
+   - It's only possible to initialize the variable only once.
+
+
+static
+======
+   - podemos acceder a la variable sin necesidad de instanciar la clase a la que pertenece.

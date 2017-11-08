@@ -1,0 +1,22 @@
+Docker can buil images automatically by reading the instructions from a Dockerfile. A dockerfile is a text
+document that contains all the commands a user could call on the command line to assemble an image. Using "docker build"
+users can create an automated build that executes several command-line instructions in succession.
+
+The "docker build" command builds an image from a Dockerfile and a context. The build's context is the files at a specified
+location PATH or URL. The PATH is a directory on your local filesystem. the URL is a Git repository location.
+
+A context is processed recursively. So, a PATH includes any subdirectories and the URL includes the repository and it's submodules.
+
+FORMAT
+=======
+  FROM <Image>:<tag> Base image from which to build
+  MAINTAINER <name>
+  RUN <command>
+  ENV <key>=<value> or <key <value>>: Environment variables
+  LABEL <key>=<value>
+  EXPOSE <port> [<port>]
+  ADD ["<src",... "<dest>"]
+  COPY <src>... <dest> or ["<src>",... "<dest>"]
+  ENTRYPOINT ["executable", "param1", "param2"]
+  VOLUME ["/data"]
+  WORKDIR

@@ -1,0 +1,20 @@
+FIRST NORMAL FORM (1NF)
+========================
+ - Valores atomicos
+
+
+SECONDS NORMAL FORM (2NF)
+==========================
+
+
+THIRD NORMAL FORM (3NF)
+========================
+
+La tercera forma normal indica que cada atributo no-primitivo de una tabla debe ser dependiente de la
+llave primaria, o podriamos decir que, no deberia haber un caso en que un atributo no-primitivo es determinado
+por otro atributo no-primitivo. Esta dependencia functional transitiva debe ser removida de la table.
+
+BOYCE AND CODD NORMAL FORM (BCNF)
+===================================
+
+Una tabla que no tiene multiples candidatos a pk se dice que esta en BCNF.

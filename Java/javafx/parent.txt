@@ -1,0 +1,11 @@
+Parent
+=======
+
+The base class for all nodes that have children in the scene graph.
+
+This class handles all hierarchical scene graph operations, including adding/removing child nodes, marking branches dirty for layout and rendering, picking, bounds calculations, and executing the layout pass on each pulse.
+
+There are two direct concrete Parent subclasses
+
+    Group effects and transforms to be applied to a collection of child nodes.
+    Region class for nodes that can be styled with CSS and layout children.

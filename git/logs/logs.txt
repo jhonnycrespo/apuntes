@@ -1,0 +1,31 @@
+DISPLAY ALL COMMITS
+=====================
+	> git log -all
+
+VIEW MOST RECENT COMMITS
+=========================
+    > git log -3
+
+FILTER COMMITS BY AUTHOR OR COMMITER
+=====================================
+    > git log --author <name>
+    > git log --committer <name>
+
+FILTER COMMITS BY DATE
+=======================
+    > git log --before <date>
+    > git log --after <date>
+
+FILTER COMMITS BY DATE RANGE
+=============================
+    > git log --after <date> --before <date>
+
+VIEW SUMMARY OF CHANGES FOR EACH COMMIT
+========================================
+    > git log --stat 
+
+FORMAT GIT LOG OUTPUT
+=====================
+    > git log --pretty=format:"<options>"
+
+    > git log --graph --oneline --decorate --all

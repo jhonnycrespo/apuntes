@@ -1,0 +1,14 @@
+DIFFERENCE BETWEEN INCLUDE AND EXTEND
+======================================
+	- Extend is used when a use case adds steps to another first class use case.
+	- Ejm: imagine "withdraw cash"  is a use case for an ATM machine
+
+
+	- Include is used to extract use case fragments that are duplicated in multiple use cases.
+	- The included use case cannot stand aline and the original use case is not complete without the included one.
+	- Ejm: the flow of events that occurs at the beginning of every ATM use case (when the user puts in their ATM card,
+	  enters their PIN, and is shown the main menu) would be a good candidate for an include.
+
+	- ejm: use case: i am going to the city
+		includes -> drive the car
+		extends -> fill the petrol

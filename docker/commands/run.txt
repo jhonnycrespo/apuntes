@@ -1,0 +1,13 @@
+$ docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
+
+OPTIONS:
+
+  -t: allocate a pseudo-tty
+  -i: --interactive: keep STDIN open even if not attached
+  -ti:
+  --name: assign a name to the container
+  -p: public a container's port(s) to the host....hostPort:containerPort
+  -d: run container in background and print container ID
+  -w: working directory inside the container
+  -v: Bind mount a volume.
+  -e: set environment variable

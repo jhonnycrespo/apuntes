@@ -1,0 +1,19 @@
+autoload
+=========
+
+ - PHP5 introduced the magic function __autoload() which is automatically called when your code references
+   a class or interface that hasn't been loaded yet.
+
+ - Every time you want to use a new class, first you need to include this class (using include o require). however if you have
+   __autoload function defined, inclusion will handle itself.
+
+ - In short, it just allows you to define search paths for classes so you wouldn't be required to 
+   include the files containing them manually.
+
+
+spl_autoload_register()
+=======================
+ - PHP 5.12 introduced spl_autoload() which allows you to register multiple autoloader functions, and in the future
+   __autoload() will be deprecated.
+
+ - The introduction of spl_autoload_register() gave programmers the ability to create an autoload chain

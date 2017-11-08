@@ -1,0 +1,28 @@
+init
+====
+  Creates a composer.json file
+
+	> php composer.phar init
+
+installing dependencies
+=======================
+  Reads the composer.json file from the current directory, resolves the dependencies, and installs
+  them into "vendor"
+	> php composer.phar install
+
+require
+========
+  Adds news packages to the composer.json file from the current directory. if no file exists one will be created
+  on the fly.
+	> php composer.php require <>
+
+	* --dev: add packages to require-dev
+
+update
+=======
+  Update all packages
+	> php composer.phar update
+
+global
+=======
+	> php composer.phar global require <package>

@@ -1,0 +1,10 @@
+  - la funcionalidad es la misma
+
+
+$().on('click', function)
+==========================
+  - funciona para elementos creados de forma dinamica
+
+
+
+

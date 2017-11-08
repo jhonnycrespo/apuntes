@@ -1,0 +1,23 @@
+SERVICES
+=========
+   Angular services are:
+
+   * Lazily instantiated: Angular solo crea una instancia de un servicio cuando un "componente de la aplicacion" depende de el.
+   * Singletons: 
+	- Cada componente dependiente de un servicio obtiene una referencia a la unica instancia del objeto generada por el 
+	  "service factory".
+	- Solo hay un objeto, pero es inyectado en varios lugares. Los objetos son pasados por referencia a un metodo.
+	- En ingenieria de software, el patron singleton, es un patron de diseño diseñado para restringir la creacion de objetos
+	  pertenecientes a una clase. Su intencion consiste en garantizar que una clase solo tenga una instancia y proporcionar
+	  un punto de acceso global a ella.
+	
+		
+
+   - Angular ofrece muchos servicios utiles (como $http), pero para la mayoria de las aplicaciones sera necesario crear tu propio servicio.
+   - Los servicios "built-in" de angular siempre empiezan con $ (ejm: $http).
+
+USING A SERVICE
+===============
+   * Para usar un servicio, ya sea propio o built-in, es necesario añadirla como una dependencia de un componente (ejm: controller, service
+     filter or directive) que depende del servicio. El subsistema de "inyeccion de dependencias" de angular se encarga de esto.
+ 

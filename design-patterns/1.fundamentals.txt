@@ -1,0 +1,6 @@
+What is a design pattern
+========================
+
+John Sonmez:
+
+"A design pattern is a solution to common software problem that generally occurs in different situation in software development. It s more of a template for solving the problem rather than a specific implementation. Design patterns originated in architecture and exist in many different fields".

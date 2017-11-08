@@ -1,0 +1,54 @@
+
+Abstraction
+============
+ - is the process of moving from a specific idea to a more general one, thereby reducing complexity to improve comprehension.
+ - ejm:
+	-  For example, take a look at your mouse. Is it wireless? What kind of sensors does it have? How many buttons? 
+	   Is it ergonomic? How big is it? The answers to all of these questions can precisely describe your mouse, 
+	   but regardless of what the answers are, it's still a mouse, because it's a pointing device with buttons
+
+	- That's all it takes to be a mouse. "Silver Logitech MX518" is a concrete, specific item, and "mouse" is an abstraction of that.
+
+	- An important thing to think about is that there's no such concrete object as a "mouse", it's just an idea. 
+	  The mouse on your desk is always something more specific - it's an Apple Magic Mouse or a Dell Optical Mouse or a 
+	  Microsoft IntelliMouse - "mouse" is just an abstract concept.
+
+
+
+ABSTRACTION
+============
+
+/**
+ * http://www.tonymarston.co.uk/php-mysql/abstraction.txt
+ */
+
+One point of confusion regarding abstraction is its use as both a process and an entity.
+
+Abstraction, as a process, denotes the extracting of the essential details about an item, or a group
+of items, while ignoring the inessential details. Abstraction, as an entity,  denotes a model, a
+view, or some other focused representation for an actual item. Abstraction is most often used as a
+complexity mastering technique. For example, we often hear people say such things as: "just give me
+the highlights" or "just the facts, please." What these people are asking for are abstractions.
+
+We can have varying degrees of abstraction, although these "degrees" are more commonly referred to
+as "levels." As we move to higher levels of abstraction, we focus on the larger and more important
+pieces of information (using our chosen selection criteria). Another common observation is that as
+we move to higher levels of abstraction, we tend to concern ourselves with progressively smaller
+volumes of information, and fewer overall items. As we move to lower levels of abstraction, we
+reveal more detail, typically encounter more individual items, and increase the volume of
+information with which we must deal.
+
+
+INFORMATION HIDING
+===================
+
+
+
+
+
+Abstraction is a modeling term
+Encapsulation is a real implementation
+
+
+In java you can use interfaces and abstract classes to achieve abstraction.
+

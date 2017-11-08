@@ -1,0 +1,21 @@
+Runnable
+=========
+   - es una interfaz que solo tiene un metodo: run()
+
+
+
+Thread
+=======
+   - el orden en que se inicia cada hilo no determina que internamente se iniciara en ese orden.
+   - main es un hilo
+
+- usar la interface Runnable
+
+
+Synchronization
+================
+
+
+
+* Que sucede si 2 o mas threads quieren acceder a un mismo recurso??
+- 

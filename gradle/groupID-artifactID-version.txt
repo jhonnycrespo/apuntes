@@ -1,0 +1,1 @@
+A java library is identified by gradle via its project's groupID:artifactID:version (also know as GAV in Maven). This GAV uniquely identifies a library in a certain version

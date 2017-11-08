@@ -1,0 +1,49 @@
+CREATE TABLE `Student` (
+    `StudentID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `FirstName` VARCHAR(25),
+    `LastName` VARCHAR(25) NOT NULL,
+    PRIMARY KEY (`StudentID`)
+) ENGINE=INNODB CHARACTER SET utf8 COLLATE utf8_general_ci
+
+CREATE TABLE `Course` (
+    `CourseID` SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `Code` VARCHAR(10) CHARACTER SET ascii COLLATE ascii_general_ci NOT NULL,
+    `Name` VARCHAR(100) NOT NULL,
+    PRIMARY KEY (`CourseID`)
+) ENGINE=INNODB CHARACTER SET utf8 COLLATE utf8_general_ci
+
+CREATE TABLE `CourseMembership` (
+    `Student` INT UNSIGNED NOT NULL,
+    `Course` SMALLINT UNSIGNED NOT NULL,
+    PRIMARY KEY (`Student`, `Course`),
+    CONSTRAINT `Constr_CourseMembership_Student_fk`
+        FOREIGN KEY `Student_fk` (`Student`) REFERENCES `Student` (`StudentID`)
+        ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT `Constr_CourseMembership_Course_fk`
+        FOREIGN KEY `Course_fk` (`Course`) REFERENCES `Course` (`CourseID`)
+        ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=INNODB CHARACTER SET ascii COLLATE ascii_general_ci
+
+
+Find all students
+==================
+
+SELECT
+    `Student`.*
+FROM
+    `Student`
+    JOIN `CourseMembership` ON `Student`.`StudentID` = `CourseMembership`.`Student`
+WHERE
+    `CourseMembership`.`Course` = 1234
+
+
+Find all courses
+==================
+
+SELECT
+    `Course`.*
+FROM
+    `Course`
+    JOIN `CourseMembership` ON `Course`.`CourseID` = `CourseMembership`.`Course`
+WHERE
+    `CourseMembership`.`Student` = 5678

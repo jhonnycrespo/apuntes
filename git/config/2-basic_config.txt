@@ -1,0 +1,23 @@
+setting username
+  > git config user.name "John Doe"
+	- se puede usar la opcion "--global" para configurar el email en todos los repositorios
+
+setting email
+=============
+
+  > git config user.email <your_email@example.com>
+	- se puede usar la opcion "--global" para configurar el email en todos los repositorios
+
+	- Setting your email address for a single repository
+		> git config user.email "your_email@example.com"
+	- Confirm that you have set your email address correctly with the following command.
+		> git config user.email
+
+SEE YOUR SETTINGS
+==================
+	> git config --list
+
+MAKE GIT IGNORE FILE MODES
+===========================
+	> git config core.filemode false
+	- This option is useful if the file permissions are not important to us, for example when we are on Windows.

@@ -1,0 +1,5 @@
+naming tables
+==============
+   - always use lowecase for tables names and columns
+
+

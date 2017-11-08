@@ -1,0 +1,16 @@
+The disabled and readonly attributes have similar effects — in fact, they look the same from the user's 
+perspective. In both cases, what the user sees is a field that is slightly "grayed out", 
+which cannot be clicked on or edited.
+
+disabled
+=========
+ - If a field is disabled, the value of the field is not sent to the server when the form is submitted
+
+readonly
+=========
+ - If a field is readonly, the value is sent to the server.
+
+
+support
+=======
+ - disabled is supported in all versions of chrome, firefox, IE, Safari, Opera and Edge

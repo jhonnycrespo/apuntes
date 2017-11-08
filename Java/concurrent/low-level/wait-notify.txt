@@ -1,0 +1,27 @@
+   - The Object class in java contains three final methods that allows threads to communicate about the lock
+     status of a resource. These methods are wait(), notify() and notifyAll().
+
+   - The current thread which invokes these methods on any object should have the "object monitor" else it
+     throws java.lang.IllegalMonitorStateException exception.
+
+   - The wait() and notify() methods must be called within a "synchronized" context.
+
+wait
+====
+   - wait() tells the calling thread to give up the monitor and go to sleep until some other thread
+     enters the same monitor and calls notify().
+
+
+notify
+=======
+
+   - notify() wakes up the first thread that called wait() on the same object.
+
+   - If there is no thread which is waiting, using Object.wait() , any calls to Object.notify() or 
+     Object.notifyAll() have no effect
+
+
+
+Observations
+==============
+   - wait and notify is low level...you should use another high level class.

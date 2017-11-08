@@ -1,0 +1,74 @@
+
+ctrl + d: seleccionar toda la palabra teniendo el cursos en medio. Si presionamos otra vez ctrl+d seleccionar la siguiente ocurrencia
+	  y asi sucesivamente. Ahora podemos reemplazar la palabra o agregar texto al principio o al final.
+
+
+
+alt + shift + w : incluir un texto en un elemento html
+
+ctrl + shift + L : seleccionar varias lineas, permitiendo editar al mismo tiempo en cada linea.
+alt + shift + w: incluir cada linea en un elemento html.  
+
+
+LINE AND IDENTATION TOOLS
+===========================
+   LINE
+
+	* ctrl+shift+arrow: permite mover un texto hacia arriba o hacia abajo
+	* ctrl+shift+d: copiar un texto. es necesario tener el cursor dentro el texto.
+	* ctrl+shift+k: eliminar un texto.
+
+   IDENTATION
+
+	* ctrl + [ or ]: identar un texto a la izquierda o derecha.
+	* edit -> line -> Reindent: seleccionar todo un texto para reidentar.
+	* ctrl + shift + v: pegar e identar. para que no se desconfigure al pegar con ctrl+v.
+
+GOTO ANYTHING
+=============
+	* ctrl + p: buscar y abrir un archivo. 
+		-En el cuadro de texto que se abre tambien podemos buscar una funcion en el
+		    archivo agregado @<nombreFuncion>.
+		- ":" para buscar un numero de linea;
+		- "#" para buscar una cadena.
+
+	* Podemos usar directamente los comandos de busqueda anteriores si ya estamos en el archivo .
+
+COMMAND PALETTE
+================
+
+	* ctrl+shift+p: abrir ventana de comandos.
+		- convertir una seleccion a mayuscula
+		- sort lines: cambiar orden de una seleccion
+		- Encode Special Characters: convierte cadenas como {"", &} en html.
+		- set sintax: cambiar sintaxis del archivo.
+
+PACKAGE MANAGER
+================
+	* 
+
+
+SNIPPETS
+=========
+   - Los snippets sirven para autocompletar.
+	* 
+
+Custom Settings and Split Layout
+=================================
+	* view -> layout ->  : insertar columnas.
+	* file -> new view into file: crea un nuevo archivo de la vista actual que puede ser editado en una colummna diferente
+
+Delete Line
+============
+	* ctrl+shift+k
+mis paquetes
+============
+	* javaScriptNext
+	* JsFormat
+	* SideBarEnhacementes
+	* AngularJS
+	* jsHints Gutter
+	* Flatland
+	* Themr
+	* DocBlockr
+	* Typescript-sublime-plugin

@@ -1,0 +1,9 @@
+INTRODUCTION
+=============
+
+React is an open source library for building user interfaces. It lets you create views easily while making sure your UI
+stays in sync with the underlying data mode.
+
+	- React follows component oriented development. The general idea is to break your whole UI into a set of 
+	  components.
+	- React relies on unidirectional data flow.

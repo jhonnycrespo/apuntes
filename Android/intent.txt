@@ -1,0 +1,8 @@
+- an intent is a message that request some type of action to be perfomed by another app.
+
+TYPES OF INTENTS
+=================
+   - IMPLICIT
+	- create an implicit intent if you don't care which app component handles the intent, as long as they can.
+   - EXPLICIT
+	- create an explicit intent if you know exactly which app component should handle your intent.

@@ -1,0 +1,27 @@
+static
+======
+   - static members belong to the class instead of a specific instance. It means that only one instance of a "static" field exists even
+     if we create a million instances of a class or don't create any.
+
+   - It will be shared by all instances of the class.
+
+   - Since static methods do not belong to a specific instance, they can't refer to instance members.
+   - Static members can only refer to static members. Instance members can, of course, access static members.
+
+
+final
+=====
+    - You are always allowed to initialize a final variable. The compiler makes sure that you can do it only once.
+
+    - a final class cannot be subclassed
+    - a final method cannot be overriden by subclasses
+    - a final variable can only be initialized once
+
+    important: when an anonymous inner class is defined within the body of a method, all variables declared final in the scope of that method are accessible from within the inner class.
+
+
+
+
+examples
+=========
+   - The Math library uses static methods.

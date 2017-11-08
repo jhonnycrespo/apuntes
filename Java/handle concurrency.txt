@@ -1,0 +1,18 @@
+
+* low-level
+
+* high-level
+
+   
+- BlockingQueue
+- synchronized keyword used on a method
+- synchronized keyword used on Object
+
+	- It is not possible to interrupt a thread waiting to acquire a lock (lock Interruptibly).
+	- It is not possible to attempt to acquire a lock without being willing to wait for it forever (try lock).
+	- Cannot implement non-block-structured locking disciplines, as intrinsic locks must be released in the same 
+          block in which they are acquired.
+
+- wait/notify
+- ReentrantLocks
+- semaphores

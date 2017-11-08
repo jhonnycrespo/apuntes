@@ -1,0 +1,17 @@
+return false
+=============
+  - return false hace 3 cosas cuando es llamado:
+	1. event.preventDefault(): it stops the browser default behaviour
+	2. event.stopPropagation(): it prevents the event from propagating (or "bubbling up") the DOM
+	3. Stops callback execution and return inmediately when called.
+
+
+
+When to use them
+==================
+  - depends on what you want to accomplish
+
+
+
+
+ref: http://stackoverflow.com/questions/30473581/when-to-use-preventdefault-vs-return-false
