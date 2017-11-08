@@ -1,0 +1,194 @@
+LESSON OVERVIEW
+================
+	- We will cover software testing or more generally, software verification and validation.
+	- Software testing is extremely important.
+
+INTRODUCTION
+=============
+	- First of all, software is buggy.
+	- Building 100% correct mass market-software is impossible.
+	- cost of bugs: $60 B/year
+	- on average: 1 - 5 bugs /K(1000) lines of code
+
+   What can we do?
+	- Verify the software as much as possible
+
+FAILURE, FAULT, AND ERROR
+==========================
+	* Failure
+		- A failure is an observable incorrect behavior of the software.
+		- It is conceptually related to the behavior of the program, rather than it's code.
+	* Fault (aka Bug)
+		- Is an incorrect piece of code. In other words a fault is related to the code. And is a necessary,
+		  but no sufficient condition for the occurrence of a failure.
+	* Error
+		- An error is the cause of a fault. It is usually a human error. A typo or something along these lines.
+
+	**ref: ver ejemplo en udacity
+
+VERIFICATION APPROACHES
+========================
+   - How can we verify software?
+   - There are several ways to verify a software system. Among those, we will discuss four mainstream approaches:
+	1. Testing: Also called dynamic verification. It is the most popular and mos used approach in the industry.
+	2. Static verification
+	3. Inspections 
+	4. Formal proofs of correctness
+
+
+   * Testing
+	- Testing a software testing means exercising the system to try to make it fail.
+	- A test case is a pair that consists of an input and the expected output 
+	- Test suite: Is a set of test cases
+
+   * Static Verification
+	- Static verification tries to identify specific classes of problems in the program. Such as null pointers
+	  dereferences. 
+	- Unlike Testing, what it does is not just consider individual inputs, it instead considers all possible
+	  inputs for the program. So it consider in a sense all possible executions of the program and all possible
+	  behavior of the program.
+
+   * Inspections
+	- Are also called "reviews" or "walkthroughs".
+	- Unlike the previous techniques, inspections are a human intensive activity. They are manual and group
+	  activity in which several people from the organization that developed the software look at the code or other
+	  artifacts developed during the software production and try to identify defects in these artifacts.
+	- Inspections have been show to be quite effective in practice and that's the reason why they are used
+	  quite widely in the industry.
+
+   * Formal proof (of correctness)
+	- Given a software specification, and actually a formal specification, so a document that formally
+	  defines and specifies the expected behavior of the program. A formal proof of correctness proves that the
+	  program being verified, actually implements the program specification and it does that through a 
+	  sophisticated mathematical analysis of the specifications and the code.
+
+PROS AND CONS OF APPROACHES
+============================
+   * Testing
+	* pros
+	   - Does not generate false alarmas (false positive). This means that when testing generates a failure
+	     that means that there is an actual problem int the code.
+	* cons
+	   - Highly Incomplete
+	   - Even in the best scenario, testing can consider only a tiny fraction of the problem domain.
+	     And therefore a tiny fraction of the program's behavior.
+
+   * Static Verification
+	* pros
+	   - Consider all program behaviors.
+	* cons
+	   - Can generate false positives
+
+   * Inspections
+	* pros
+	   - Systematic, thorough
+	* cons
+	   - informal, subjective
+   * Formal proof of correctness
+	* pros
+	   - Provide strong guarantees. They can guarantee that the software is correct.
+	* cons
+	   - need a formal specification. A complete mathematical description of the spected behavior of the whole
+	     program.
+	   - The specification is rarely available and is complex to build one.
+	   - It is expensive to prove that the program corresponds to a specification. It is a proccess that
+	     require strong mathematical skills.
+
+--------------------
+   - Today, QA (Quality assurance) or verification is mostly testing. That is TEsting is the most commonly used activity
+     to perform software verification.
+----------------------
+
+TESTING INTRODUCTION
+=====================
+   - Testing means executing the program on a sample of the input domain. All of the possible input data.
+   - This sample is a tiny sample of the input domain.
+   - There are two important aspects of testing:
+
+	1. Testing is a dynamic technique: The program must be executed in order to perform testing.
+	2. Optimistic approximation: Testing is an optimistic approximation. It means that the program under test
+	   is exercised with a very small subset of all the possible inputs and this is done under the assumption
+	   that the behavior with any other input is consisten with the bbehavior shown for the selected subset
+	   of input data.
+
+
+   * Successful Tests: 
+	- "A test is successful if the program fails" (Gerhart). Testing cannot prove the absence of errors, 
+	   but only reveal their presence.  
+	- If a set of tests does not produce any failure, we are either in the extremely unlikely case of a 
+	  correct program, or the very like situation of a bad set of tests that are not able to reveal failures
+	  in the program.
+
+
+TESTING GRANULARITY LEVELS
+============================
+   - Let's consider a software system, a system made out of components that interact with one another. So the first
+     level  that we can consider  in testing is called Unit Testing.
+
+	* Unit Testing
+		- Which is the testing of the individual units or modules in isolation.
+   	* Integrationg Testing
+		- Is the testing of the interactions among different modules.
+   	* System Testing
+		- Systen testing is the testing of the complete system and it includes both functional (verify functionality provided
+		  by the system) and non-functional (performance tests, load tests, robustness tests). In general no functional
+		  tests will try assess different qualities of the system, such as reliability, maintainability, usability.
+		  testing .
+   	* Acceptance Testing
+		- Validation of the software against the customer requirements. So this is the test that make sure that the system
+		  does what the customer wants it to do.
+	* Regression Testing
+		- Is the type of testing that we perform every time that we change our system. And we need to make sure that the
+		  changes behave as intended and that the unchanged code is not negatively affected by the modification.
+
+		- Regression testing is one of the main causes why software maintenance is so expensive.
+
+
+ALPHA AND BETA TESTING
+========================
+
+   - All the testing level that we've seen so far is what we can call developer's testing. So that's testing that is performed either
+     within the testing organization, or by somebody who's doing like third-party testers on behalf of the testing organization.
+   - There are two other kinds of testing that are worth mentioning that are also related to testing phases and these are alpha and beta
+     testing.
+
+	* Alpha Testing: Is the testing performed by distributing a software system ready to be released to a set of users that are
+			 internal to the organization that developed the system. This users will use an early version of the code and
+			 will likely discover errors that escaped testing. 
+
+	* Beta Testing: Testing is the next step after alpha testing, in which the software is released to a selected subset of users 
+			outside the organization. Again, this users are likely to discover latent errors in the code before it's 
+			officially released.
+
+
+BLACK AND WHITE BOX TESTING INTRODUCTION
+=========================================
+
+   - These 2 techniques are complementary una a la otra. 
+   - Testing techniques:
+	* Black Box Testing:
+		- Is the kind of testing in which we consider the software as a closed box. So we don't look inside the software,
+		  we don't want to look at the code. we just going to look at the description of the software.
+		- Based on a description of the software (an specification).
+		- Tries to cover as much specified behavior as possible.
+		- Cannot reveal errors due to implementation details.
+
+	* White Box Testing:
+		- It is the kind of testing that looks inside the box, so looks at the code and how the code is written an uses
+		  this information to perform the testing.
+		- It's based on the code
+		- Covers as much coded behavior as possible.
+		- It cant reveal errors due to missing paths. Where missing parts are part of a software specification that are not
+		  implemented.
+		- 
+
+   **ref: ver ejemplos en udacity
+		   
+
+
+
+
+
+
+
+	   

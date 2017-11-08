@@ -1,0 +1,108 @@
+PATTERNS CATALOGUE
+===================
+   Design patters classified by purpose. There are five main classes of patterns:
+
+	* Fundamental Patterns: basic patterns
+		- Delegation patterns
+		- interface pattern
+		- proxy pattern
+	* Creational Patterns: patterns that support object creation
+		- abstract factory pattern
+		- factory method pattern
+		- singleton pattern
+	* Structural Patterns: patterns that help compose objects, put objects together.
+		- adapter pattern
+		- decorator pattern
+	* Behavioral Patterns: patterns that are mostly focused on realizing interactions among different objects.
+		- chain of responsability pattern
+		- iterator pattern
+		- observer pattern
+		- state pattern
+		- strategy pattern
+		- visitor pattern
+	* Concurrency Patters: patterns that support concurrency
+		- active object
+		- monitor object
+		- thread pool pattern
+
+   And much more patterns, this are just some examples.
+
+PATTERN FORMAT
+===============
+
+   Let's see how patterns are defined. so what is the format of the pattern definitions.
+
+	* Name
+	* Intent: goal of the pattern
+	* Applicability: the list of situations or context in which the pattern is applicable.
+	* Structure: The static model that describes the elements, so normaly the clases or the object involved in the pattern
+			In addition to that, the structure also describes the relationships, responsabilities and colaborations
+			among the classes.
+
+FACTORY METHOD PATTERN
+========================
+   * intent: allows for creating objects without specifying their class, by invoking what we call a "factory method".
+		And what it is, is a method whose main goal is to create class instances.
+   * applicability: 
+	- A class can't anticipate the type of object it must create. The type of object is not known at
+	  compile time, is not known until the code runs.
+	- A class wants its subclasses to specify the type of objects it creates. (ver ejemplo en el zip).
+	- A class needs control over the creation of its objects. ejm: there is a limit of objects that can be created. 
+
+   ejm: frameworks.  
+
+STRATEGY PATTERN
+==================
+   provides a way to configure a class with one of many behaviors
+
+   * intent: allows for switching between different algorithms for accomplishing a task.
+   * applicability:
+	- different variants of an algorithm.
+	- many related classes differ only in their behavior.
+
+OTHER COMMON PATTERNS
+======================
+   * visitor pattern: Is a way of separating an algorithm from an object structure on which it operates. And the practical
+			result of this operation is the ability to add the new operation to existing objects structures,
+			without modifying the structures.
+			...
+
+  * Decorator pattern: Is basically a wrapper that adds functionality to a class. So the way in which it works, is that you
+			will take a class, you will build a class that basically wraps this class. So it reproduces 
+			the functionality of the original class, but it also adds somes functionality. And for all the
+			functionality that was already in the original class, it will simply invoke this functionality 
+			and for the new one, you will implement it using the services of the class. You can add decorators
+			on decorators on decorators, and increase the functionality provided by your class.\
+
+  * Iterator pattern: It's part of many standard libraries. What the iterator allows you to do, is basically to access
+			elements of a collection without knowing the underlying representation. So the iterator will allow
+			you to just go through a set of objects without worrying about how the objects are stores.
+
+  * Observer pattern: ...
+
+  * Proxy pattern: 
+
+CHOOSING A PATTERN
+===================
+   How do we choose a pattern?
+	- Understand the design context. You understand what you're designing and what are the issues involved with
+	  this design. What are the problems that you need to solve.
+	- Examine the patterns catalogue.
+	- Identify and study related patterns
+	- Apply suitable pattern
+
+NEGATIVE DESIGN PATTERNS
+=========================
+	- how not to (design, manage, etc)
+	- tambien se llaman anti-patterns and bad smells
+
+
+
+
+
+
+
+
+
+
+

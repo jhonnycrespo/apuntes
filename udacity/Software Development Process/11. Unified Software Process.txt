@@ -1,0 +1,218 @@
+6 best practices for software engineering?
+
+* develop iteratively
+* manage requirements
+* component-based arquitecture
+* model software (UML)
+* Continius verify quality
+* control changes
+
+
+El proceso unificado se repite a lo largo de una serie de ciclos que constituyen la vida de un sistema. Cada ciclo concluye con una version
+del producto. El producto terminado incluye los requisitos, casos de uso, especificaciones no funcionales y casos de prueba.
+
+Cada ciclo consta de cuatro fases: inicio, elaboracion, construccion, transicion.
+
+
+Key features of RUP
+===================
+	* The rational unified process is a "software process model". this means 2 main things:
+
+		- It defines an order of phases that have to be followed in the software process.
+		- It also prescribes transition criteria, so when to go from one phase to the next.
+
+	* Component Based: Esto impplica 2 cosas:
+		- The first one is that a software system is defined and built as a set of software component. So software components are the
+		  building blocks of our software system.
+		- The second one is that there must be well-defined interfaces between these components. Interfaces through these components
+		  communicate.
+
+	* Tightly related to UML:
+
+	Finally the three main distinguishing aspects of the Rational Unified Process are that it is:
+		- Use-case driven
+		- Arquitecture centric
+		- iterative and incremental 
+
+Use-Case Driven
+===============
+   Generalmente hablando, podemos ver un sistema como algo que realiza una secuencia de acciones en respuesta o user inputs. so the user submit some
+   request, so requests some functionality, and the system responds to those requests.
+ 
+   Use cases capture exactly this interaction and answer the question what is the system supposed to do for "each user"?. so they can represent what the
+   system can do for each type of user of the system.
+
+   In the rational unified process, use cases are a central element of the whole development cycle. from requirements engineering, all the way through the process
+   until testing and maintenance.
+
+Architecture-Centric
+====================
+	A software architecture is a view of the entire system that represents all high-level principal design decisions. Another way to say this is that
+	use-cases define the function of the system, where as architecture define the form of the system. Use cases give the functionality, architecture tells 
+	us how the system should be structured to provide the functionality.
+
+	So how do we define a software architecture in the rational unified process?. This happens through a sort of iterative process
+		- We start by creating a rough outline of the system independently of the functionality. so this is just the general structure of the system.
+		  Ejm: We model aspects such as the platform on wich the system will run. Wheter is a client-server or peer-to-peer system and so on.
+
+		- We then use the "key use cases" in our use case diagram to define the main subsystems of my architecture.
+		  Ejm: In the case of a banking IT system, one of the subsystems might be the "withdrawal system". So what will happen in that case
+		  is that we will have some use case that refers to the withdrawal activity, and by analyzing that use case, we will realize that we need a
+		  subsystem that implements that piece of functionality. So again, we use the key use cases to identify and define the key subsystems
+		  for my architecture.
+
+		- We keep refining the architecture by using aditional use-cases.So considering more and more pieces of functionality that will help us
+		  to refine the architecture of the system and also leveraging our increasing understanding of the system that we are modeling and this will
+		  continue until we are happy with the architecture that we define.
+
+Iterative and Incremental
+==========================  
+
+Cycle Example
+=============
+
+Phases within a Cycle
+=====================
+
+	Traditional software development activities:
+		- Business modeling
+		- Requirements
+		- Analysis and Design
+		- Implementation
+		- Test
+		- Deployment
+
+	- inception: business modeling, requirements, analysis and desing.
+	- elaboration: business modeling, requirements, analysis and desing, 
+Iterations
+==========
+
+Inception (Inicio)
+==================
+	La fase de inception goes from the idea of the product to the vision of the end of the product. Lo que esto implica es basicamente
+	delimitar el alcance del proyecto y hacer un business case for the product (Porque vale la pena hacerlo? cualos son los criterios de
+	satisfaccion, cuales son los riesgos principales?, que recursos seran necesarios?). Especificamente esta fase responde a 3 preguntas principales:
+	
+		- cuales son los usuarios o actores y que hara el sistema por ellos? (initial use-case model, only a few use-cases are representend and described)
+		- que arquitectura podria servir para el sistema?? (desarrollar una arquitectura inicial que describa los sub-sistemas mas importantes)
+		- Cual es el plan y cuanto costara?? (identificar riesgos principales, y producir un rough plan con recursos estimados, plan inicial)
+
+	the inception phase generates several deliverables:
+
+		- vision document: A document that provides a general vision of the core project requirements, key features and main constraints.
+		- initial model: Use case model that includes an initial set of use cases that will refined later.
+		- initial project glosary: describes the main terms, using the project and their meaning. 
+		- Initial business case: business context and sucess criteria.
+		- initial project plan: shows the phases, iterations, roles of the participants, schedule and initial estimates.
+		- Risk asessment document: describes the main risks and counter measures for this risk
+		- Prototypes [options]:
+
+	There are some evaluation criteria that will tell us whether we can consider the inception phase concluded or not:
+
+		- Stakeholders concurrence: all stakeholders must agree on the scope, definition and cost schedule estimates for the project
+		- Requirements understanding: are the initial, the primary use cases that we hace identified so far, the right one for our system
+		- credibility: credibility of the cost/schedule estimates, priorities, risks identified and development process
+		- 
+	
+	En resumen, la fase de incepcion es la fase en la que producimos la vision inicial, modelo de casos de uso inicial, plan del projecto, risk assessment
+	y posiblemente prototipos del proyecto. Tenemos que asegurarnos que todos los entregables satisfacen un conjunto de criterios para que podamos
+	continuar en el proyecto. Si no debemos cancelar el proyecto o volver a formularlo desde el alcance.
+	
+ 	
+Elaboration (Elaboracion)
+==========================
+   - There are four main goals and activities for the elaboration phase:
+
+	- Analyzing the problem domain: To get a better understanding of the domain.
+	- Establish a solid architectural foundation for the project.
+	- Eliminating the highest risk elements: Which basically means addressing the most critical use cases.
+	- Refine the plan of activities and estimates of resources to complete the project.
+
+   - The outcome of the elaboration phase reflects these activities and also in these case produces several artifacts:
+
+	- almost complete use-case model: with all use cases and actors identified and most use case descriptions developed.
+	- suplementary requirements (non-functional requirements): All the requirements that are not associated with a use case. 
+		(ejm: security, reliability, maintainability and so on).
+
+	- software architecture: the software architecture is developed in an incremental way, so it's not created at once. And this is exactly
+	  what happens in the elaboration phase, that we take the initial architecture that was defined in the inception phase
+	  and we refine it until we get to a software architecture which is complete. And that is part of the deliverables 
+	  for this phase. 
+
+	- define the lower-level design for the system (design model, test cases, executable prototype): 
+		- As part of this phase, we produce as deliverables a design model, and together with that, a complete set of test cases, and an executable
+		  prototype.
+
+	- We also produced a revised project plan. Now that we have more information about the project we can refine the various estimates and the various
+	  pieces of information in the project plan. And also an updated risk assessment document.
+
+	- Finally in this phase we also generate a preliminary user manual that describes to the users how the system can be used and should be used.
+
+
+   - So now let's see what are the evaluation criteria for the elaboration phase:
+
+	- Are vision and architecture stable ?
+	- Does the prototype show that the major risks have been addressed/resolved ?
+	- Is the project plan sufficiently detailed/accurate ?
+	- Do all stakeholders agree that the vision can be achieved with the current plan ?
+	- Is the actual resource expenditure versus the planned expenditure acceptable ? 
+
+	** project may be cancelled or considerably re-thought if it fails to pass this milestone.
+	
+		
+Construction (Construccion)
+===========================
+	- All use cases realized
+	- develop
+	- quality assurance (testing)
+	- user manual
+Transition (Transicion)
+=========================
+
+ciclo 1: gestions de usuarios
+	- inception: modelo de negocio, requerimientos, analisis & diseño.
+		- iteration 1
+		- iteration 2
+		- iteration n
+	- elaboration
+		- iteration 1
+		- iteration 2
+	- construction
+		- iteration 1
+		- iteration 2
+		- iteration n
+	- transition
+		- iteration 1
+		- iteration 2
+		- iteration n
+
+ciclo 2: gestion de cursos
+	- inception: modelo de negocio, requerimientos, analisis & diseño.
+		- iteration 1
+		- iteration 2
+		- iteration n
+	- elaboration
+		- iteration 1
+		- iteration 2
+	- construction
+		- iteration 1
+		- iteration 2
+		- iteration n
+	- transition
+		- iteration 1
+		- iteration 2
+		- iteration n
+
+===== Importante ======
+
+* Cada ciclo se enfoca en diferentes fases del sistema.
+* Escoger casos de uso para cada ciclo
+* En casi todas las iteraciones , los desarrolladores realizan las siguientes actividades:
+	- Identificar casos de uso relevantes
+	- Crear el diseño (casos de uso)
+
+
+
+
+
+	

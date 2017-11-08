@@ -1,0 +1,8 @@
+IDE
+===
+	- Compiling
+	- Debugging
+	- SCM
+	- Testing
+	* Plugins
+		- agregan funcionalidad al IDE

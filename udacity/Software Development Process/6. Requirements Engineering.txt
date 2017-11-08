@@ -1,0 +1,143 @@
+Definition
+==========
+	- es el proceso de establecer los servicios que el cliente requiere del sistema software. La ingenieria de requerimientos tambien tiene
+	  que ver con las restricciones bajo las que el sistema opera y es desarrollado.
+	- Muchos errores se cometen en las especificaciones de los requerimientos porque no se hace ingenieria de requerimientos de la manera correcta
+	  y muchos de estos errores no son detectados temprano. Pero podrian serlo si se hace la ingenieria de requerimientos en la manera correcta.
+	  
+	  No detectar estos errores temprano pueden incrementar dramaticamente el costo del software
+
+	- El resultado final del proceso de ingenieria de requerimientos es una "especificacion de requerimientos de software (Software Requirements Specification, SRS)"
+	
+	- Basicamente el SRS la ingenieria de requerimientos, en general, se concentran en "Que debe hacer el sistema propuesto" y no en "como debe hacerlo".
+
+Software Intensive Systems
+==========================
+
+Software Quality
+================
+	- The software runs on some hardware and is developed for a purpose that is related to human activities.
+	- Software Quality is not just a function of the software . So the software itself does not define the quality of the overall system. Rather, software quality
+	  is a function of the software and its purpose . where has todo with the way in which the software will be used.
+	- so a software system can be of low quality because it does not work well. A software can also be of low quality because it does not fulfill its purpose.
+	- We can define the quality of software in terms of "fitness for purpose". The more the software fulfills its purpose , the more the software is on target, 
+	  the higher is its quality. And "identifying the purpose of the software", is exactly the goal of requirements engineering and it is the reason why software
+	  engineering is such a fundamental activity int he context of software engineering.
+
+Identifiying Purpose
+====================
+	- identifying the purpose of a software system means "defining the requirements for the system".
+	- It is an extremely hard task. Why it is so hard?
+		- First of all, the purpose of most systems is inherently, extremely complex, so this has todo with de sheer complexity of the purpose 
+		  of the requirements. Just think of how complex is the functionality provided by most systems.
+		- It is hard to extract from humans this purpose and make it explicit. "often, people dont know what they want until you show it to them".
+		- Requirements change over time.
+		- multiple stakeholders with conflicting requirements. 
+
+Lack of Completeness and Pertinence
+===================================
+	- Completeness refers to the fact that it is often extremely difficul to identify all of the requirements. It is difficult to have a complete picture of the purpose
+	  of the software. Incomplete requirements are collected and the software is missing functionality that is important for the user.
+	- Pertinence has to do with the relevance of the requirements. To avoid completeness problems developers often end up collecting a lot of irrelevant when not conflicting 
+	  requirements. In these cases what happens is that the software could either end up being bloated that is it might contain "unneeded functionality". Collecting all of these
+	  requirements sometimes doesn't even solve the completeness issues.
+	- The bottom line is gathering an adequate, accurate, complete and pertinent set of requirements that identify the purpose of a software system.
+
+BEST PRACTICE
+=============
+	- In practice, developers or analysts usually identify a whole bunch of requirements. Sometimes the easiests and most obvious ones. They bring 
+	  those to the stakeholders, and the stakeholders have to read the requirements, understand them, and if they agree, sign off on them.
+	- The problem is that these requirements documents are difficult to read. They are long, they are often unstructured. 
+	  They tiplically contain a lot of information, and in general they are not exactly a pleasant read.
+	- So what happens is often stakeholders are short on time, overwhelmed by the amount of information they're given and so, they give in to the pressure and sign.
+
+DEFINITION OF REQUIREMENTS ENGINEERING
+======================================
+	- How can we identify the purpose of the system and collect good requirements?
+		- Requirements engineering is a "set of activities" concerned with "identifying and communicating the purpose" of a software-intensive system, 
+		  and the context in which it will be used. Hence, Requirements Engineering acts as the bridge between the "real-world needs" of users, customers, 
+		  and other constituencies affected by a software system, and the capabilities and apportunities afforded by software-intensive technologies .
+
+DEFINING REQUIREMENTS
+=====================
+	- What are requirements?
+		- 
+
+Functional and Nonfunctional Requirements
+=========================================
+	- Among the requirements that we can collect from the application domain, we need to distinguish between
+	  two main types: Functional Requirements and Non-Functional Requirements.
+	- Functional requirement have to do with the functionality of the system, with what the system does.
+	- Non-functional requirements, conversely, refer to a system's non-functional properties, system qualities.
+	  Ejm:secutiry, accuracy, performance, cost, usability, adaptability, interoperability, reusability and so on.
+		- So, all these qualities the don't necessarily have to do with the functionality. And, unlike functional
+		  requirements, non-functional requirements do not always have clear satisfaction criteria.
+		  ejm: "The elevator must be fast".That is a non-functional requirement, it has todo with the speed
+		  of the elevator. But it it's not clear how the requirement could be satisfied. How could we tell
+		  wheter the elevator is fast or not. So, what we need to do in this cases is that we need to refine
+		  these requirements so that the become verificable => "The elevator must reach the requested floor
+		  in less than 30 seconds from the moment when the floor button is pushed". This is still a non-functional
+		  requirement, but is a verifiable one. 
+
+USER AND SYSTEM REQUIREMENTS
+=============================
+  - Another important distinction when talking about requirements, is that between user and system requirements.
+	* user requirements: Those are requirements that are written for the customers and they are often in natural
+	  language and don't contain technical details. The reason for that is that their purpose is to allow 
+	  customers, stakeholders, to check that the system fill do what the intended. So is a way for the developer to 
+	  communicate the customers or stakeholders.
+	* System requirements: This requirements are written for developers. Contain detailer functional and non functional
+	  requirements. And are clearly and more rigourously specified than the user requirements. And the reason for
+	  this difference is that the purpose of the system requirements is to tell developers what to build. They must
+	  contain enough details so the developers can take then and use them to design and develop the system.
+	- Ver ejemplo en udacity.
+
+MODELING REQUIREMENTS
+=====================
+  - Once we collected the required knowledge on the requirements for the system that we are developing, we need to model it in 
+    an structured and clearly way, so that it can be analyzed and refined. And there are really tons of ways to do that depending
+    on your focus and objectives.
+  - When modeling requirements we need to decide what you want to model and how you want to model it.
+	- What you decide to model depends on where your emphasis is. That is on which aspects of the requirements you want to focus
+	  ejm: 
+ .
+ .
+ .
+
+ANALYZING REQUIREMENTS
+=======================
+
+REQUIREMENTS PRIORITIZATION
+============================
+
+
+
+SOFTWARE REQUIREMENTS SPECIFICATION (SRS)
+==========================================
+  - In order to have a common format for the SRS document, IEEE defined a standard that divides the document in predefined sections.
+  - We will use a simplified version of the IEEE SRS format that includes three main sections: 
+	* Introduction: Which discusess the purpose, context, and objectives of the project
+	* User requirements definition: which contain the user requirements.
+	* System Requirements Specification: Which include both functional and non-functional requirements.
+  - We will recap a few important characteristics that requirements should have:
+	- Requirements should be simple. Not compound. Each requirement should express one specific piece of functionality that the system should provide.
+	- Requirements should be testeable.
+	- Requirements should be organized. Related requirements should be grouped, more abstract requirements should contain more detailed requirements, and
+	  priorities should be clearly indicated when present.
+	- Finally, requirements should be numbered, so that they can be traced    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

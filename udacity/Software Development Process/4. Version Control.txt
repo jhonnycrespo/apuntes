@@ -1,0 +1,38 @@
+Definition
+==========
+	- es el proceso de establecer los servicios que el cliente requiere del sistema software. La ingenieria de requerimientos tambien tiene
+	  que ver con las restricciones bajo las que el sistema opera y es desarrollado.
+	- Muchos errores se cometen en las especificaciones de los requerimientos porque no se hace ingenieria de requerimientos de la manera correcta
+	  y muchos de estos errores no son detectados temprano. Pero podrian serlo si se hace la ingenieria de requerimientos en la manera correcta.
+	  No detectar estos errores temprano pueden incrementar dramaticamente el costo del software
+
+	- El resultado final del proceso de ingenieria de requerimientos es una "especificacion de requerimientos de software (Software Requirements Specification, SRS)"
+	
+	- Basicamente el SRS la ingenieria de requerimientos, en general, se concentran en "Que debe hacer el sistema propuesto" y no en "como debe hacerlo".
+
+Software Intensive Systems
+==========================
+
+Software Quality
+================
+	- The software runs on some hardware and is developed for a purpose that is related to human activities.
+	- Software Quality is not just a function of the software . So the software itself does not define the quality of the overall system. Rather, software quality
+	  is a function of the software and ist purpose . where has todo with the way in which the software will be used.
+	- so a software system can be of low quality because it does not work well. A software can also be of low quality because it does not fulfill its purpose.
+	- We can define the quality of software in terms of "fitness for purpose". The more the software fulfills its purpose , the more the software is on target, 
+	  the higher is its quality. And identifying the purpose of the software, is exactly the goal of requirements engineering and it is the reason why software
+	  engineering is such a fundamental activity int he context of software engineering.
+
+Identifiying Purpose
+====================
+	- identifying the purpose of a software system means "defining the requirements for the system".
+	- It is an extremely hard task. Why it is so hard?
+		- First of all, the purpose of most systems is inherently, extremely complex, so this has todo with de sheer complexity of the purpose of the requirements.
+		  Just think of how complex is the functionality provided by most systems.
+		- It is hard to extrac from humans this purpose and make it explicit. "often, people dont know what they want until you show it to them".
+		- Requirements change over time.
+		- multiple stakeholders with conflicting requirements. 
+
+Completeness and Pertinence
+===========================
+	- 

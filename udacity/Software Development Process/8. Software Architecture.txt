@@ -1,0 +1,78 @@
+WHAT IS SOFTWARE ARCHITECTURE?
+===============================
+   - They define software architecture as elements, form and rationale. In this definition
+    elements are ...(Perry and Alex Wolf)
+
+   * Software Architecture is a level of design that involves four main things:
+	- A description of elements from which the systems are built.
+	- The interaction among those elements.
+	- The patters that guide their composition.
+	- And the constraints on these patters.
+
+   - These two definitons are fairly similar and there are many other alternative definitions of software architecture.
+
+GENERAL DEFINITION OF SOFTWARE ARCHITECTURE
+============================================
+   - Software systems architecture as the set of principal design decisions about the system
+
+PRESCRIPTIVE VS DESCRIPTIVE ARCHITECTURE
+=========================================
+   * We can look at the software architecture from two main standpoints: prescriptive and descriptive:
+
+	- prescriptive: A prescriptive architecture captures the design decisions that are made prior to the system's 
+	  construction. this is what we normally call "as-conceived" software architecture.
+	- Conversely, a descriptive architecture describes how the system has actually been built. So it's based on observing 
+	  the system as it is and extracting from the observations. This is what we call the "as-implemented" software architecture  
+
+
+
+ARCHITECTURAL ELEMENTS
+=======================
+   - A software architecture typically is not a uniform monolith, on the contrary, an architecture should be a composition
+     and interplay of different elements. There are three main types of elements  in an architecture:
+	* Processing elements: Processing elements are those elements that implement the business logic and perform transformations
+	  on data.
+	* Data elements: Also called information or state, are those elements that contain the information that is used and transformed
+	  by the processing elements.
+	* Interaction elements: Are the glue that holds the differents pieces of the architecture together.
+
+   - The "processing elements" and the "data elements" are contained into the "system components", whereas the interaction elements are
+     maintained and controlled by the "system conectors".
+   - And "component" and "connectors" get all cooked together into a systems configuration, which models components, connectors and their
+     relationships.
+
+COMPONENTS, CONNECTORS AND CONFIGURATIONS
+===========================================
+   * Software components
+	- Is an architectural entity that encapsulates a subset of the system's functionality and/or the system's data.
+	- Restricts access to that subset via an explicity defined interface.
+   * Software Connector
+	- A software connector is an architectural building block tasked with effecting and regulating interactions among 
+	  components. So, basically connectors typically provide application independent interaction facilities. In many software
+	  systems, connectors might simply be procedure calls or shared data accesses. So all constants that we're familiar with.
+	  But consider that much more sophisticated and complex connectors are also possible
+   * Architectural Configuration
+	- Components and connectors are composed in a specific way in a given system architecture to accomplish that system's
+	  objective. And this is expressed through an architectural configuration.
+	- More precisely, an architecture configuration, or topology, is a set of specific associations between components and
+	  connectors of a software system's architecture.
+
+   - It is worth recalling here that a component diagram can be used to represent an architectural configuration.
+
+
+ARCHITECTURAL STYLES
+======================
+   * Pipes and Filters
+
+	- Unix Pipes
+   * Event-Driven
+	- 
+   * Publish-Suscribe
+	- Twitter
+   * Cliente-Server
+	- Email
+   * Peer-to-Peer (P2P)
+	- 
+   * REST
+	- World Wide Web
+ 
