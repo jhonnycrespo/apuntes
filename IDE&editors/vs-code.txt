@@ -1,0 +1,81 @@
+FILE NAVIGATION
+================
+
+  - ctrl + tab : view list of all files opened in an editor group
+  - ctrl + p : open any file by its name
+
+GO TO DEFINITION
+================
+
+  - F12 : go to the definition of a symbol
+  - ctrl + hover : show preview of the declaration
+  - ctrl + click : jump to the definition
+  - ctrl + alt + click : open the definiton to the side
+
+GO TO IMPLEMENTATION
+====================
+
+  - ctrl + F12 : For an interface, show all the implementators. For abstract methods, show all concrete implementations of that method.
+
+GO TO SYMBOL
+============
+
+  - ctrl + shift + 0
+
+OPEN SYMBOL BY NAME
+====================
+  - ctrl + T
+
+MULTI-CURSOR
+=============
+
+  - ctrl + d : Selects next occurrence of word under cursor or current selection
+  - ctrl + u : undoes last cursor selection
+  - ctrl + k + d : ?
+  - ctrl + alt + up : add cursor up
+  - ctrl + alt + down : add cursor down
+
+COMMENTS
+========
+  - ctrl + k + c : add comment line
+
+EDITORS
+=======
+  - ctrl + w : close editor
+  - ctrl + k + w : Close all editors
+  - ctrl + k -> right : move editor group right
+  - ctrl + k -> left : move editor group left
+  - ctrl + alt + right : move editor into next group
+  - ctrl + alt + left : move editor into previous group
+
+COPY-PASTE-DELETE
+==================
+  - shift + alt + down : copy line down
+  - shift + alt + up : copy line up
+  - ctrl + shift + k : delete line
+
+COMPARE
+========
+  - ctrl + k -> c : Compare active with clipboard
+  - ctrl + k -> d : Compare active with saved
+  - ctrl + k -> p : Copy path of active file
+
+SELECTION
+=========
+  - shift + alt + right : expand selection
+
+
+SEARCHING
+=========
+  - ctrl + shift + f : Find in files
+
+
+  - ctrl + shift + [ : fold
+
+  - ctrl + k -> o : open active file in new window
+
+  - ctrl + k -> ctrl + s : open keyboard shortcuts
+
+  - ctrl + k -> d : open in default browser
+
+  - ctrl + \ : split editor
