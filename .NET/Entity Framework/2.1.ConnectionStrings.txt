@@ -1,0 +1,54 @@
+https://msdn.microsoft.com/en-us/library/jj653752(v=vs.110).aspx
+
+
+SQL Server
+===========
+
+The following example is for a SQL Server database using SQL Server security (log on to the server by using user credentials in the connection string). The example assumes that you are connecting to the default SQL Server instance on the server.
+
+<add name="ConnectionStringName"
+    providerName="System.Data.SqlClient"
+    connectionString="Data Source=ServerName;Initial Catalog=DatabaseName;Integrated Security=False;
+    User Id=userid;Password=password;MultipleActiveResultSets=True" />
+
+
+
+The following example is for a SQL Server database using integrated security (log on to the server using the credentials of the Windows user account). The example specifies a named instance of SQL Server.
+
+<add name="ConnectionStringName"
+    providerName="System.Data.SqlClient"
+    connectionString="Data Source=ServerName\InstanceName;Initial Catalog=DatabaseName;Integrated Security=True;MultipleActiveResultSets=True" />
+
+
+Common Connection String Settings
+==================================
+
+    * name
+        - the name of the context
+
+    * Data Source
+
+        - For SQL Server Express, LocalDB, SQL Server, and SQL Database, this setting specifies the name of the server and the SQL Server instance on the server. For example, you can specify ServerName\Instancename. You can use ".", "(local)", or "localhost" in place of the server name to specify the local computer, and you can use an IP address instead of the server name. If you omit the instance name, the default instance is assumed. By default, SQL Server Express is installed without a default instance and with a named instance that is named SQLEXPRESS.
+
+            - ServerName: AARSETH-PC
+
+    * Initial Catalog (Database)
+
+        - This setting specifies the name of the database in the SQL Server instance catalog.
+
+    * Integrated Security (Trusted_Connection)
+
+        - This setting specifies whether the connection should use the user ID and password in the connection string to log on to the SQL Server instance, or the current Windows account credentials should be used for authentication:
+
+            - True means use Windows integrated security to log in to SQL Server, even if the connection string includes User ID and Password settings.
+
+            -  False means use SQL Server security to log in by using the User ID and Password values in the connection string, and raise an exception if they are not present.
+
+            - SSPI (Security Support Provider Interface) means use Windows Security if User ID and Password are absent, and use SQL Server security if they are present.
+
+
+Generate Connection String
+==========================
+
+    View -> server explorer
+

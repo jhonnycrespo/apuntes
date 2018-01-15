@@ -1,0 +1,68 @@
+In which project should I enable migrations?
+=============================================
+
+In the project that contains the data context. eg: DAL
+
+
+Enable Migrations
+=================
+
+    Tools -> Nuget Package Manager -> Package Manager Console
+
+    PM> Enable-Migrations
+
+    - run only once, at the beginning of the project
+    - requires EF
+
+
+Add Migration
+==============
+
+    PM> Add-Migration <MigrationName>
+    - this will scaffold the next migration based on the changes you have made to your model since the last
+    migration was created.
+
+    PM> Update-Database [-verbose]
+    - Will apply any pending migrations to the database
+
+
+    * add more changes to model and repeat the same steps
+
+
+Update Database to specific migration
+======================================
+
+    PM> update-database [-TargetMigration: MigrationName]
+
+    - we can use this to upgrade/downgrade our database
+
+Back to initial state
+======================
+
+    PM> Update-Database –TargetMigration: $InitialDatabase
+
+
+Getting a sql script from a migration
+======================================
+    PM> Update-Database -Script -SourceMigration: $InitialDatabase -TargetMigration: AddPostAbstract
+
+        - SourceMigration: $initialDatabase (First migration), we can specify another migration.
+            Default is current migration.
+        - TargetMigration: Default to latest migration.
+
+    - EF instead of apply the changes it will write them in a .sql file
+
+Automatically Upgrading on Application Startup
+===============================================
+
+https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx#Automatically Upgrading on Application Startup (MigrateDatabaseToLatestVersion Initializer)
+
+If you are deploying your application you may want it to automatically upgrade the database (by applying any pending migrations) when the application launches. You can do this by registering the MigrateDatabaseToLatestVersion database initializer. A database initializer simply contains some logic that is used to make sure the database is setup correctly. 
+
+- This logic is run the first time the context is used within the application process (AppDomain).
+
+
+** Check Blog.Console.CodeFirst.Migrations solution
+
+
+Now whenever our application runs it will first check if the database it is targeting is up-to-date, and apply any pending migrations if it is not.

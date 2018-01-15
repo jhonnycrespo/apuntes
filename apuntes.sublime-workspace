@@ -520,140 +520,19 @@
 	"buffers":
 	[
 		{
-			"file": "apuntes.sublime-project",
+			"file": "/F/training/c#/visual studio/readme.txt",
 			"settings":
 			{
-				"buffer_size": 92,
+				"buffer_size": 548,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/JhonnyHoracio/Desktop/tareaMonitor.txt",
+			"settings":
+			{
+				"buffer_size": 1635,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "docker/volumes.txt",
-			"settings":
-			{
-				"buffer_size": 3635,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/data-volumes.txt",
-			"settings":
-			{
-				"buffer_size": 2978,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/docker machine.txt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/docker-client.txt",
-			"settings":
-			{
-				"buffer_size": 776,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/commands/run.txt",
-			"settings":
-			{
-				"buffer_size": 439,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "deployment/environments.txt",
-			"settings":
-			{
-				"buffer_size": 1364,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/Dockerfile.txt",
-			"settings":
-			{
-				"buffer_size": 1060,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/commands.txt",
-			"settings":
-			{
-				"buffer_size": 365,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/container.txt",
-			"settings":
-			{
-				"buffer_size": 142,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/1-introduction.txt",
-			"settings":
-			{
-				"buffer_size": 641,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/2-image.txt",
-			"settings":
-			{
-				"buffer_size": 1289,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "docker/docker-compose.txt",
-			"settings":
-			{
-				"buffer_size": 620,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "DataBases/mysql/having.txt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "DataBases/mysql/order-by.txt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "DataBases/mysql/limit.txt",
-			"settings":
-			{
-				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -1045,14 +924,25 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/C/Users/JhonnyHoracio/Desktop/Apuntes",
-		"/C/Users/JhonnyHoracio/Desktop/Apuntes/deployment",
-		"/C/Users/JhonnyHoracio/Desktop/Apuntes/docker"
-	],
 	"file_history":
 	[
+		"/F/Tutoriales/Videos/dotNet/3. Pluralsight - Become a Full-stack .NET Developer - Architecture and Testing/3-exercise-files/After/GigHub/Controllers/GigsController.cs",
+		"/F/apuntes/IDE&editors/visual studio.txt",
+		"/F/apuntes/apuntes.sublime-project",
+		"/F/apuntes/deployment/environments.txt",
+		"/F/apuntes/docker/volumes.txt",
+		"/F/apuntes/docker/data-volumes.txt",
+		"/F/apuntes/docker/docker-client.txt",
+		"/F/apuntes/docker/commands/run.txt",
+		"/F/apuntes/docker/Dockerfile.txt",
+		"/F/apuntes/docker/commands.txt",
+		"/F/apuntes/docker/container.txt",
+		"/F/apuntes/docker/1-introduction.txt",
+		"/F/apuntes/docker/2-image.txt",
+		"/F/apuntes/docker/docker-compose.txt",
+		"/F/apuntes/DataBases/mysql/having.txt",
+		"/F/apuntes/DataBases/mysql/order-by.txt",
+		"/F/apuntes/DataBases/mysql/limit.txt",
 		"/C/Users/JhonnyHoracio/Desktop/Apuntes/DataBases/mysql/group-by.txt",
 		"/C/Users/JhonnyHoracio/Desktop/Apuntes/docker/1-introduction.txt",
 		"/C/Portables/Sublime Text Build 3103 x64/Data/Packages/User/GitGutter.sublime-settings",
@@ -1163,28 +1053,11 @@
 		"/C/xampp/htdocs/sistema_unilever/protected/components/Controller.php",
 		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludFormulario/create.php",
 		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/models/Paciente.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludArchivo/index.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludTipoArchivo/_form.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/controllers/ConsultaSeguimientoController.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludArchivo/update.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludArchivo/create.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludArchivo/_form.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludConsulta/update.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/models/Pregunta.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/comex/controllers/ComexPlanillaController.php",
-		"/C/xampp/htdocs/sistema_unilever/yii-1.1.13/framework/db/ar/CActiveRecord.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/comex/views/comexPlanilla/update.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/components/UtilModelo.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/components/UtilImagen.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/components/UtilPdf.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/sdg/components/UtilSdg.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludFormulario/index.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salidaAdministrativa/components/UtilSalidaAdministrativa.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/impresionFacturas/controllers/DefaultController.php"
+		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludArchivo/index.php"
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -1370,464 +1243,65 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "apuntes.sublime-project",
+					"file": "/F/training/c#/visual studio/readme.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 92,
+						"buffer_size": 548,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								90,
-								90
+								407,
+								407
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/zz File Icons/dist/languages/JSON (Sublime).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "docker/volumes.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3635,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3571,
-								3571
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
+							"git_gutter_is_enabled": true,
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1458.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "docker/data-volumes.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2978,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2924,
-								2924
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 335.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "docker/docker machine.txt",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "docker/docker-client.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 776,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								385,
-								385
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 108.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "docker/commands/run.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 439,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								344,
-								344
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 62.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "deployment/environments.txt",
+					"buffer": 1,
+					"file": "/C/Users/JhonnyHoracio/Desktop/tareaMonitor.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1364,
+						"buffer_size": 1635,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								305,
-								305
+								1572,
+								1572
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
+							"git_gutter_is_enabled": false,
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 241.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "docker/Dockerfile.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1060,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								952,
-								952
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "docker/commands.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 365,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								199,
-								199
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "docker/container.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 142,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								142,
-								142
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "docker/1-introduction.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								437,
-								437
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "docker/2-image.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1289,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								423,
-								423
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "docker/docker-compose.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 620,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								620,
-								620
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "DataBases/mysql/having.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "DataBases/mysql/order-by.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "DataBases/mysql/limit.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -1835,7 +1309,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -1888,7 +1362,7 @@
 	"project": "apuntes.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2437,7 +1911,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 396.0,
 	"status_bar_visible": true,
 	"template_settings":

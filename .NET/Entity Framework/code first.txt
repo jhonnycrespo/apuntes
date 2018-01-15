@@ -1,0 +1,31 @@
+
+
+For Web Api
+===========
+
+1. Install EF in DataAccessLayer
+2. Add Context (manually or using ADO.NET Entity Data Model wizard -> Empty Code First model)
+    - connectionStrings is added automatically in App.config
+    - modify connectionStrings to use SQLServer
+3. Add the classes to the context
+4. Create models (classes)
+5. Make changes to the models
+6. enable migrations
+
+    PM> enable-migrations
+
+
+
+Setup EF to initialize the database with test data
+===================================================
+
+https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application
+
+
+    - The Entity Framework can automatically create (or drop and re-create) a database for you when the application runs.
+
+    - You can specify that this should be done every time your application runs or only when the model is out of sync with the existing database.
+
+    - The default behavior is to create a database only if it doesn't exist (and throw an exception if the model has changed and the database already exists). In this section you'll specify that the database should be dropped and re-created whenever the model changes. 
+
+    - Dropping the database causes the loss of all your data. This is generally OK during development, because the Seed method will run when the database is re-created and will re-create your test data. But in production you generally don't want to lose all your data every time you need to change the database schema. Later you'll see how to handle model changes by using Code First Migrations to change the database schema instead of dropping and re-creating the database.

@@ -1,5 +1,17 @@
 naming tables
 ==============
-   - always use lowecase for tables names and columns
 
+  - Use singular names when naming a table: Person, User, Employee, Product
+  - always use lowercase for columns
+
+
+
+
+foreign keys
+============
+
+https://stackoverflow.com/questions/199498/foreign-key-naming-scheme
+
+    - FK_ForeignKeyTable_PrimaryKeyTable or fk_tablename_columnname
+ 
 

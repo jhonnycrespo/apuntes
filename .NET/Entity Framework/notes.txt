@@ -1,0 +1,28 @@
+Demoware
+=========
+
+- Demo not always show best practices.
+- Surrounding code is glue.
+- Not built in for reuse.
+- scaffolding in visual studio is good just as a starting point.
+
+
+
+
+- Domain: The part that describes the business problem that the software is solving.
+    - Business logic
+
+
+- The business logic needs to persist data into a database and to retrieve data from it.
+- The business logic don't talk directly with entity framework. The business logic only contains
+code that reflect the problem that we're solving.
+
+
+Prons and Cons of Learning from Demoware
+========================================
+
+    project generated using visual studio templates:
+
+        - breaks separation of concerns: readability, maintainability, manageability, testability.
+        - Data Access code is tightly bound to the controllers.
+

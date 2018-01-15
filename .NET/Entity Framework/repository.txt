@@ -1,0 +1,14 @@
+Encapsulate EF?? -> Repositories
+
+
+* Return IQueryables or IEnumerables?
+- It depends. 
+
+    - IEnumerable: Preferable return IEnumerable
+        - Can return millions of records. How to deal with this situation? The repository can help.
+
+    - IQueryable:
+        - The caller can refine the query however they want (using Linq or EF if it is referenced). In small applications
+        it may work.
+
+        - But in Enterprise application is not convenient. 

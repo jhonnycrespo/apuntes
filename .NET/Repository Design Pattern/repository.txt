@@ -1,0 +1,63 @@
+Encapsulating EF Code: Repositories
+====================================
+
+  * Why to encapsulate EF code??
+  - 
+
+  * Reuse and Separation of Concerns?? Why to use it?
+  - To create reusable components
+
+
+  * What about Repositories??
+  - The repository is one way to contain your EF code in another class and prevent EF code leaking into classes that want to use it but don't need direct access, like controller classes.
+
+  - A repository is a place to store things, a container for a collection, you can add things to a collection and remove things from the collection.
+
+  Debate
+  ======
+
+    * DbSet is a Repository!!
+    - Represents the collection of all entities of a single type.
+
+    * DbContext is a Unit of work!!
+
+  Repositories & EF: Pros, Cons and Observations
+  ==============================================
+
+  - Often when its time to encapsulate EF code devs jump right to the repository pattern. The most common way to encapsulate EF code is using a generic repository along with a Unit of Work.
+
+  - Generic repositories work if the only things we need is CRUD, Basic Queries (GetAll + Filter/Sort/Eager), FindById.
+
+  - If the things get complex is better to use "Explicit Persistence Classes". When the behaviors are unique.
+
+  - Less code duplication
+
+  - Better testability of the consuming class
+
+  - Switching out the persistence technology is not the main purpose of the repository pattern.
+
+  - Using repositories is not about being able to switch persistence technology (i.e. changing database or using a web service etc instead). Repository pattern do allow you to do that, but it’s not the main purpose.
+
+  - A more realistic approach is to use EF in some methods and ADO.NET in other methods when the query is complex.
+
+  * Cons:
+
+    - Generic repositories limit flexibility.
+    - Often you need to reference EF in the client (controllers) to filter the results. (This breaks Separation of Concerns).
+    - Complicates Testing.
+
+  
+  More About Repositories
+  =======================
+
+    - Devs usually start with a simple repository that wraps the DbSet commands.
+    - Then add another repository for another model.
+    - Then they will probably use an interface in order to follow the pattern of the repository (methods).
+    - Then they realize the redundant code.
+    - And simplify things using a Generic Repository.
+    - 
+
+IQueryables or IEnumerables??
+=============================
+
+- Return IEnumerables

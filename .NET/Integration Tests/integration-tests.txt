@@ -1,0 +1,5 @@
+We need to setup up a database in clean state for integration tests. This database should be migrated to the latest version before running our integration tests. How do we do that??
+
+  * Code First
+
+    > 

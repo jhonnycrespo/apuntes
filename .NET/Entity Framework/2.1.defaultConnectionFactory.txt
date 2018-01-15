@@ -1,0 +1,4 @@
+defaultConnectionFactory
+========================
+
+The configuration section allows you to specify a default connection factory that Code First should use to locate a database to use for a context. The default connection factory is only used when no connection string has been added to the configuration file for a context.

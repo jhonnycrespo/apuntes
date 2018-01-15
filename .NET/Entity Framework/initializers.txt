@@ -1,0 +1,2 @@
+https://blog.oneunicorn.com/2013/05/28/database-initializer-and-migrations-seed-methods/
+https://www.tektutorialshub.com/seed-database-entity-framework/

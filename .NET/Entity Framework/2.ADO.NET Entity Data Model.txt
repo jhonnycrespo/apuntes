@@ -1,0 +1,18 @@
+In order to use Entity Framework, you need to create an Entity Data Model.
+
+The Entity Data Model Wizard is used to generate an .edmx file.
+
+EF Designer from database
+==========================
+
+
+Empty EF Designer model
+=======================
+
+
+Empty Code First model
+======================
+
+
+Code First from database
+========================

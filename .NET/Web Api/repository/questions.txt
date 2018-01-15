@@ -1,0 +1,5 @@
+Repository Pattern is an abstraction layer you put on your Data Access Layer. You data access layer
+can be anything from pure ADO.NET stored procedures, Entity Framework or an XML file.
+
+In large systems, where you have data coming from different sources (database/XML/web service), 
+it is good to have an abstraction layer. The Repository pattern works well in this scenario.

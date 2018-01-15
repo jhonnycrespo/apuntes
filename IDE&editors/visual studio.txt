@@ -1,0 +1,39 @@
+Change between tabs
+    ctrl + tab
+
+go to definition
+    F12
+
+go to implementation
+  ctrl + f12
+
+go to all
+  ctrl + t or ctrl + ,
+
+find all references
+  shift + f12
+
+
+show team explorer
+    ctrl \ + m
+
+show solution explorer
+    ctrl + alt + L
+
+rename
+    ctrl + r + r
+
+Go to all
+    ctrl + t
+
+    # symbols
+    : line
+    f files
+    m members
+    t types
+
+show/hide spaces
+=================
+
+    edit -> advanced -> view white space
+    ctrl + r + w
