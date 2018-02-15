@@ -1,0 +1,14 @@
+Continuous Delivery
+===================
+
+You practice continuous delivery when your codebase is always deployable, ready 
+to go to production in one click. While it is recommended to deploy to production 
+as soon as you get a green build, you may decide to slow down the releases on 
+purpose for business reasons.
+
+Continuous Deployment
+=====================
+
+Continuous deployment happens when every change to the main branch that passes the 
+CI tests gets pushed to production without the need for human interaction. This often 
+results in many deployments per day which provide fast feedback to the development team.
