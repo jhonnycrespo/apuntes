@@ -535,6 +535,25 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "/F/Tutoriales/Videos/C#/Udemy - Mosh Hamedani - C# Basic/02 Introduction to C and .NET Framework/011 What is ReSharper.html",
+			"settings":
+			{
+				"buffer_size": 927,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nGitGutter\n---------\n\n  1.7.11:\n  -------\n  \n    Fix:\n     - Settings diff algorithm getter fix\n     - Linter typo in diff popups factory\n     - Clear import caches upon module reloading\n  \n    Internal:\n     - Remove deprecated mdpopups allow_code_wrap argument\n  \n  \n  💛 Git Gutter? Want to support development?\n  \n  I've teamed up with Wes Bos to offer the following discounts:\n  \n  +------------------------------------------------+\n  |                                                |\n  |   Use the coupon code GITGUTTER for $10 off    |\n  |                                                |\n  +------------------------------------------------+\n  \n  🏅 ⭐ ES6 ⭐\n  \n  👉 ES6.io/friend/GITGUTTER\n  \n  🏅 ⭐ Sublime Text Book ⭐\n  \n  👉 SublimeTextBook.com/friend/GITGUTTER\n  \n  🏅 ⭐ React For Beginners ⭐\n  \n  👉 ReactForBeginners.com/friend/GITGUTTER\n  \n  \n  Join 15,000 other developers already learning with Wes Bos.\n  \n  These are fantastic resources - 100% money back guarantee! 🌟\n\n\nMaterial Theme\n--------------\n\n  #### Material Theme for Sublime Text 3\n  \n  ## Version 4.1.4\n  \n  📣 **BUG FIXES**:\n  * Fix some tasks not converting all schemes to .yml files ([364c912](https://github.com/equinusocio/material-theme/commit/364c912))\n  * Minor fixes in scheme file and convert plaintasks file to .yml ([129d114](https://github.com/equinusocio/material-theme/commit/129d114))\n  * Remove unnecessary .yml files in schemes folder ([2b371af](https://github.com/equinusocio/material-theme/commit/2b371af))\n  * Remove unnecessary json file in schemes folder ([7374d56](https://github.com/equinusocio/material-theme/commit/7374d56))\n  \n  ** Check the official changelog (https://github.com/equinusocio/material-theme/blob/master/CHANGELOG.md) **\n\n\nSass\n----\n\n  Here is an announcement about the \"Syntax Highlighting for Sass\"\n  package taking over the name of the \"Sass\" package. \"Syntax\n  Highlighting for Sass\" will be/have been removed from package\n  control, and I will keep maintaining the new \"Sass\" package.\n  \n  For the original \"Sass\" package users, please note that the new\n  package doesn't provide any CSS code snippets, you may need to\n  install Emmet (https://packagecontrol.io/packages/Emmet) for CSS\n  snippets. You could find more details about this package on:\n  https://github.com/P233/Syntax-highlighting-for-Sass\n  \n  For the original \"Syntax Highlighting for Sass\" users, the moving\n  over process will be executed automatically, but for future manual\n  installation, please search the name \"Sass\".\n  \n  If you have any further questions or suggestions, please feel free\n  to create an issue on GitHub.\n  \n  https://github.com/P233/Syntax-highlighting-for-Sass/issues\n  \n  Cheers,\n  Peiwen Lu\n\n  Thank you very much for keeping using this package.\n  \n  I am so sorry for lacking care in this package for such a long period (almost three years). There were lots of issues I haven't had a chance to fix in the last version, most of them are about the auto-completion feature. It was my experiment to reduce noises if you have massive snippets and completions installed, and it's based on tweaking syntax scopes on both syntax definition files and built-in completions. But it may have a bad influence on some other snippets and completions. So I decided to completely remove this feature and re-write this package with the new Sublime Text 3 syntax definition format from scratch in order to purely forced on highlighting the syntax as accuracy as possible. Therefore, this package will be only working on Sublime Text 3 (>= build 3103).\n  \n  Here are the new features:\n  \n  1. Added support for CSS4 variables\n  2. Enhanced Sass map highlighting\n  3. Enhanced CSS functions and Sass functions highlighting\n  4. Enhanced Sass mixin/function name highlighting and their \"Goto Definition\" support\n  5. Removed the built-in completions\n  \n  Besides, the scopes have been changed a lot. Please take a look at https://github.com/P233/Syntax-highlighting-for-Sass#scopes-list\n  \n  If you have any issue or suggestion please open a new issue on GitHub.\n  \n  All the best,\n  Peiwen\n\n  \n  Thank you for using Syntax Highlighting for Sass.\n  \n  With over 80 improvements this package now works much better than ever! Here are some new features:\n  \n  ## Improved lots of highlighting rules and fully support Sass 3.3 syntax\n  \n  ## Built-in Completion Packages\n  \n      There are 8 built-in completion packages. Pick up the package name which you are not intend to use, then add it/them into the `ignored_packages` list of your settings file. (If you know a better way to do this please please let me know.)\n  \n      * SHS-At-Rule\n      * SHS-Bourbon\n      * SHS-Bourbon-Neat\n      * SHS-Compass-Mixins\n      * SHS-Compass-Variables\n      * SHS-CSS-Properties\n      * SHS-CSS-Property-Values\n      * SHS-Sass-Functions\n  \n  ## Smart Completion Rule\n  \n      1. Typing @-rule, ID, class, placeholder-selector, mixin name, function name, comment, and quoted content will never popup any completions.\n      2. ** When typing property values, property name and other completions will no longer popup.\n      3. Built-in mixin name completions will only popup directly behind `@include` or `+`.\n      4. Built-in variable compltions will only popup when you typing variables.\n  \n      ** The latest version of [Emmet CSS Snippets](https://sublime.wbond.net/packages/Emmet%20Css%20Snippets) now fully supports this feature. I recommend to use it instead of the built-in properties completion package.\n  \n  ## Improved support for Goto Symbol and Goto Definition features\n  \n  ## Comment Tag\n  \n      Use `{{` and `}}` to wrap a keyword inside comment, then this keyword (comment tag) will be indexed by the Goto Symbol and Goto Definition features.\n  \n  \n  \n  -------\n  For more details please check https://github.com/P233/Syntax-highlighting-for-Sass/\n  -------\n  \n  -------------\n  Enjoy coding!\n\n\nSQLTools\n--------\n\n  ## v0.9.9 Notes\n  \n  ### Improvements\n  \n  * Use `utf-8` encoding if Connection `encoding` is not a valid python encoding\n  \n  \n  ### Fixes\n  \n  * Exception when Connection `encoding` is set to null [#177]\n\n  ## v0.9.8 Notes\n  \n  ### Improvements\n  \n  * Add MSSQL support via native `sqlcmd` CLI\n  * Add more options for expanding the empty selection. Instead of config option `expand_to_paragraph`, introduce new option called `expand_to`, which can be configured to expand empty selection to: `line`, `paragraph` or `file`\n  * General review/improvement of each DB config\n  * Use the `encoding` option supplied in connection settings when writing to standard input and reading from standard output of CLI command\n  * Changes how top level and per-query `options` apply to CLI invocations\n  * Changes how `before` and `after` applied (top level and per-query)\n  * Introduction of new `execute` named query section which is used when executing statements with `ST: Execute` and friends\n  * Now all named query formatting is done via `str.format()`, therefore all instances of `%s` in template strings got replaced with `{0}`, with back-patch support (i.e. `%s` should still work for those users who have it on their own user config)\n  * Improve the way the output is shown - the output panel is not shown until the first output from DB CLI arrives\n  * Add sample connections for `Vertica` and `Firebird`\n  * [PostgreSQL] Connection options `host`, `port`, `username` are now optional (can be set via environment vars and other means)\n  * [MySQL] Add configurable connection option `default-character-set`\n  * [MySQL] Add `--no-auto-rehash` and `--compress` to improve MySQL startup time and improve latency on slow networks\n  * [MySQL] Connection options `host`, `port`, `username` are now optional (can be set via `--defaults-extra-file` and `--login-path`)\n  * [MySQL] Supply password via environment variable `MYSQL_PWD` to avoid security warning\n  * [Oracle] Add ability to configure `NSL_LANG` to match the server encoding\n  * [Oracle] Add support for quoted table and column names\n  * [Oracle] Add support for functions & procedures completions as well as getting and functions & procedures definitions (both top level and those in packages)\n  * [Vertica] Add support for quoted identifiers\n  * Other minor improvements\n  \n  ### Fixes\n  \n  * Remove unused settings option `unescape_quotes` from config\n\n\nXdebug Client\n-------------\n\n  1.1.0\n  -----\n  \n    Enhancement:\n     - Display error dialog for connection issues upon debug session start\n     - Reformat stack entry output to improve distinction between file/line and function\n     - Improve navigation from Stack/Breakpoint view to file by breakpoint/entry\n     - Highlight current breakpoint/line by selecting row in file\n     - Use current value when editing an existing watch expression\n     - Rename syntax scope definitions to be in accordance with recommendations\n  \n    Feature:\n     - Specify which network interface to listen to with new 'host' setting\n     - With 'fullname_property' setting toggle between short/full name representation of nested properties\n  \n    Fix:\n     - Parsing of non-existent files which are expected to contain breakpoint/watch data\n     - Duplicate entries in Watch view of static variables referencing itself\n     - Opening of file upon (accidental) multiselection in Breakpoint/Stack view\n     - Unable to toggle watch expressions by double click when no connection established\n     - Losing focus of active view upon closing debugging windows\n  \n    Internal:\n     - Enforcing of coding style by running flake8 with TravisCI\n     - Added issue template to encourage detailed bug reports\n  \n    README\n     - Introduce badges for displaying build status and total download count on Package Control\n     - Added documentation for new 'host' and 'fullname_property' settings\n     - Update documentation for 'super_globals', 'hide_password' and 'pretty_output' settings\n     - Properly escape single asterisk character and fixed several typos\n",
+			"settings":
+			{
+				"buffer_size": 10007,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
 		}
 	],
 	"build_system": "",
@@ -1243,7 +1262,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1272,7 +1291,7 @@
 						"translation.y": 62.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -1299,6 +1318,66 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 241.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/F/Tutoriales/Videos/C#/Udemy - Mosh Hamedani - C# Basic/02 Introduction to C and .NET Framework/011 What is ReSharper.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 927,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								430,
+								430
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
