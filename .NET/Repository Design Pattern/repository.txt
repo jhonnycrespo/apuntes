@@ -9,7 +9,9 @@ Encapsulating EF Code: Repositories
 
 
   * What about Repositories??
-  - The repository is one way to contain your EF code in another class and prevent EF code leaking into classes that want to use it but don't need direct access, like controller classes.
+  - The repository is one way to contain your EF code in another class and
+    prevent EF code leaking into classes that want to use it but don't need direct
+    access, like controller classes.
 
   - A repository is a place to store things, a container for a collection, you can add things to a collection and remove things from the collection.
 
