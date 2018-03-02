@@ -1,17 +1,11 @@
-1. What is an object?
-
-According to MSDN, "a class or struct definition is like a blueprint that specifies
-what the type can do. An object is basically a block of memory that has been allocated
-and configured according to the blueprint".
-
 2. What is Boxing and Unboxing?
 
 Boxing and Unboxing both are used for type conversion but have some difference:
 
 Boxing:
 
-Boxing is the process of converting a value type data type to the object or to any interface
-data type which is implemented by this value type. When the CLR boxes a value means when CLR
+Boxing is the process of converting a value type to the type "object" or to any interface
+type implemented by this value type. When the CLR boxes a value means when CLR
 is converting a value type to Object Type, it wraps the value inside a System.Object and stores
 it on the heap area in application domain.
 
@@ -35,7 +29,7 @@ Class and struct both are the user defined data type but have some major differe
 
 Struct
 
-    The struct is value type in C# and it inherits from System.Value Type.
+    The struct is value type in C#.
     Struct is usually used for smaller amounts of data.
     Struct can’t be inherited to other type.
     A structure can't be abstract.
@@ -44,35 +38,12 @@ Struct
 
 Class
 
-    The class is reference type in C# and it inherits from the System.Object Type.
+    The class is reference type in C#.
     Classes are usually used for large amounts of data.
     Classes can be inherited to other class.
     A class can be abstract type.
     We can’t use an object of a class with using new keyword.
     We can create a default constructor.
-
-4. What is the difference between interface and abstract class?
-
-    - A class can implement any number of interfaces but a subclass can at
-      most use only one abstract class.
-
-    - An abstract class can have non-abstract methods (concrete methods) while
-      in case of interface all the methods has to be abstract.
-
-    - An abstract class can declare or use any variables while an interface is not
-      allowed to do so.
-
-    - In an abstract class all data member or functions are private by default while
-      in interface all are public, we can’t change them manually.
-
-    - In an abstract class we need to use abstract keyword to declare abstract methods
-      while in an interface we don’t need to use that.
-
-    - An abstract class can’t be used for multiple inheritance while interface can be
-      used as multiple inheritance.
-
-    - An abstract class use constructor while in an interface we don’t have any type
-      of constructor.
 
 5. What is an Enum?
 
@@ -86,14 +57,19 @@ statement, you can 'jump over one iteration' and then resume your loop execution
 
 7. What is the difference between constant and read only in c#?
 
-Constant is known as “const” keyword in C# which is also known immutable values which are
-known at compile time and do not change their values at run time like in any function or
-constructor for the life of application till the application is running.
+  - do not change their values at run time
+  - They must have a value at compilation-time.
+  - 'const's are implicitly static. You use a ClassName.ConstantName notation to access them
 
 Readonly is known as “readonly” keyword in C# which is also known immutable values and are
 known at compile and run time and do not change their values at run time like in any function
 for the life of application till the application is running. You can assay their value by
 constructor when we call constructor with “new” keyword.
+
+  - readonly can be initialized on the constructor (and thus have a different
+    value depending on the constructor used).
+
+  - Can't be changed in normal functions.
 
 8. What is the difference between ref and out keywords?
 
@@ -216,8 +192,6 @@ http://www.c-sharpcorner.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-a
 
 * Can Multiple Catch Blocks executed in c#?
 
-* What is Singleton Design Patterns and How to implement in C#?
-
 * Difference between Throw Exception and Throw Clause. 
 
 * What is multicast delegate in c#?
@@ -236,9 +210,22 @@ http://www.c-sharpcorner.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-a
 
 * What is Virtual Method in C#?
 
+A virtual function, is basically saying look, here's the functionality that
+may or may not be good enough for the child class. So if it is good enough,
+use this method, if not, then override me, and provide your own functionality.
+
 * What are the Difference between Array and ArrayList in C#.Net?
 
 * What you understand by Value types and Reference types in C#.Net?
+
+- A Value Type stores its contents in memory allocated on the stack. 
+
+- Reference Types are used by a reference which holds a reference (address) to the
+object but not the object itself. Because reference types represent the address of
+the variable rather than the data itself, assigning a reference variable to another
+doesn't copy the data. Instead it creates a second copy of the reference, which refers
+to the same location of the heap as the original value. Reference Type variables are
+stored in a different area of memory called the heap.
 
 * What is Serialization?
 
@@ -261,7 +248,21 @@ used to access the element in the collection.
 
 * What is LINQ in C#?
 
+Linq stands for Language Integrated Query. MS language developers provided a
+way to express queries directly in their languages (such as c# and vb).
+
+Those queries can be on relational databases, but also on XML or in-memory
+container objects, such as arrays and lists.
+
 * What is Reflection in C#.Net?
+
+Reflection is a way for you to programmatically discover Types at
+runtime. This is very important because .NET languages are
+strongly-typed. Being able to access that metadata is extremely useful.
+
+Reflection is the ability of types to provide information about
+themselves. For example, an assembly can tell you what it contains,
+a type can tell you its methods, properties and so on.
 
 * Why to use "using" in C#?
 
@@ -471,3 +472,8 @@ Typically non-functional requirements fall into areas such as:
 Accessibility, Capacity, Efficiency, Extensibility, Fault tolerance, Privacy,
 Portability, Quality, Reliability, Robustness, Scalability, Security, Stability,
 Supportability, Testability.
+
+* Stack and Heap
+
+Stack is used for static memory allocation and Heap for dynamic memory
+allocation, both stored in the computer's RAM.

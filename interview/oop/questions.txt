@@ -1,0 +1,31 @@
+1. What is an object?
+
+According to MSDN, "a class or struct definition is like a blueprint that specifies
+what the type can do. An object is basically a block of memory that has been allocated
+and configured according to the blueprint".
+
+Classes are blueprints/templates describing attributes and behavior that you use to create
+objects while programming.
+
+4. What is the difference between interface and abstract class?
+
+    - A class can implement any number of interfaces but a subclass can at
+      most use only one abstract class.
+
+    - An abstract class can have non-abstract methods (concrete methods) while
+      in case of interface all the methods has to be abstract.
+
+    - An abstract class can declare or use any variables while an interface is not
+      allowed to do so.
+
+    - In an abstract class all data member or functions are private by default while
+      in interface all are public, we can’t change them manually.
+
+    - In an abstract class we need to use abstract keyword to declare abstract methods
+      while in an interface we don’t need to use that.
+
+    - An abstract class can’t be used for multiple inheritance while interface can be
+      used as multiple inheritance.
+
+    - An abstract class use constructor while in an interface we don’t have any type
+      of constructor.
