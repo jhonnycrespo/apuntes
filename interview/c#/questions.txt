@@ -246,10 +246,228 @@ http://www.c-sharpcorner.com/UploadFile/8ef97c/C-Sharp-net-interview-questions-a
 
 * What is Multithreading with .NET?
 
-* Explain Anonymous type in C#?
+* Explain Anonymous types in C#?
+
+This is being added in C# 3.0 version. This feature enables us to create an
+object at compile time. Below is the sample code for the same –
+
+Var myTestCategory = new { CategoryId = 1, CategoryName = “Category1”}
+
 
 * Explain Hashtable in C#?
+
+It is used to store the key/value pairs based on hash code of the key. Key will be
+used to access the element in the collection.
 
 * What is LINQ in C#?
 
 * What is Reflection in C#.Net?
+
+* Why to use "using" in C#?
+
+“Using” statement calls – “dispose” method internally, whenever any exception occurred
+in any method call and in “Using” statement objects are read only and cannot be
+reassignable or modifiable.
+
+* Explain namespaces in C#?
+
+Namespaces are containers for the classes. We will use namespaces for grouping the
+related classes in C#. “Using” keyword can be used for using the namespace in other
+namespace.
+
+* Can we have only "try" block without “catch” block in C#?
+
+Yes we can have only try block without catch block but we have to have finally block.
+
+* List out two different types of errors in C#?
+
+    - Compile Time Error
+    - Run Time Error
+
+* What is the difference between “out” and “ref” parameters in C#?
+
+“out” parameter can be passed to a method and it need not be initialized
+where as “ref” parameter has to be initialized before it is used.
+
+* What are value types in C#?
+
+decimal, int, byte, enum, double, long, float.
+
+* What are reference types in C#?
+
+class, string, interface, object.
+
+* Can we override private virtual method in C#?
+
+No. We can’t override private virtual methods as it is not accessible outside the class.
+
+* Explain access modifier – “protected internal” in C#?
+
+“protected internal” can be accessed in the same assembly and the child
+classes can also access these methods.
+
+* In try block if we add return statement whether finally block is executed in C#?
+
+Yes. Finally block will still be executed in presence of return statement in try block.
+
+* Explain circular reference in C#?
+
+This is a situation where in, multiple resources are dependent on
+each other and this causes a lock condition and this makes the
+resource to be unused.
+
+* List out some of the exceptions in C#?
+
+NullReferenceException, ArgumentNullException, DivideByZeroException
+IndexOutOfRangeException, InvalidOperationException, StackOverflowException etc.
+
+* Explain Generics in C#?
+
+Generics in c# is used to make the code reusable and which intern decreases
+the code redundancy and increases the performance and type safety. 
+
+* Explain object pool in C#?
+
+Object pool is used to track the objects which are being used in the
+code. So object pool reduces the object creation overhead.
+
+* What you mean by delegate in C#?
+
+Delegates are type safe pointers unlike function pointers as inC++. Delegate is
+used to represent the reference of the methods of some return type and parameters.
+
+* What are the types of delegates in C#?
+
+Single Delegate, Multicast Delegate, Generic Delegate.
+
+* What are the three types of Generic delegates in C#?
+
+Func, Action, Predicate.
+
+* What are the differences between events and delegates in C#?
+
+Main difference between event and delegate is event will provide one more
+of encapsulation over delegates. So when you are using events destination
+will listen to it but delegates are naked, which works in subscriber/destination model.
+
+* What are the uses of delegates in C#?
+
+Callback Mechanism, Asynchronous Processing, Abstract and Encapsulate method, Multicasting
+
+* What is Nullable Types in C#?
+
+Variable types does not hold null values so to hold the null values we have
+to use nullable types. So nullable types can have values either null or other values as well.
+
+* What is the difference between “as” and “is” operators in C#?
+
+“as” operator is used for casting object to type or class.
+“is” operator is used for checking the object with type and this will return a Boolean value.
+
+* Why to use lock statement in C#?
+
+Lock will make sure one thread will not intercept the other thread which is
+running the part of code. So lock statement will make the thread wait, block till
+the object is being released.
+
+* What you mean by boxing and unboxing in C#?
+
+Boxing – This is the process of converting from value type to reference type.
+
+int myvar = 10;
+object myObj = myvar;
+
+UnBoxing – It’s completely opposite to boxing. It’s the process of converting
+reference type to value type. For example,
+
+int myvar2 = (int)myObj;
+
+* Explain Copy constructor in C#?
+
+If the constructor contains the same class in the constructor parameter
+then it is called as copy constructor.
+
+  public MyClass(MyClass myobj) // Copy Constructor
+  {
+    prop1 = myobj.prop1;
+    prop2 = myobj.prop2;
+  }
+
+* Explain Static constructor in C#?
+
+If the constructor is declared as static then it will be invoked only once
+for all number of instances of a class. Static constructor will initialize
+the static fields of a class.
+
+* What are the collection types can be used in C#?
+
+ArrayList, Stack, Queue, SortedList, HashTable, Bit Array
+
+* What is a class?
+
+A class is the generic definition of what an object is. A Class describes
+all the attributes of the object, as well as the methods that implement the behavior
+of the member object. In other words, class is a template of an object.
+
+* Can Multiple Inheritance implemented in C# ?
+
+In C#, derived classes can inherit from one base class only. If you want to
+inherit from multiple base classes, use interface.
+
+* What is Polymorphism in C# ?
+
+The ability of a programming language to process objects in different ways
+depending on their data type or class is known as Polymorphism. There are
+two types of polymorphism.
+
+    - Compile time polymorphism. Best example is Overloading
+    - Runtime polymorphism. Best example is Overriding
+
+* Explain the use of Virtual Keyword in C# ?
+
+When we want to give permission to a derived class to override a method
+in base class, Virtual keyword is used.
+
+* What is overriding in c# ?
+
+To override a base class method which is defined as virtual, Override keyword is used.
+
+* What is Method Hiding in C# ?
+
+If the derived class doesn't want to use methods in the base class, derived
+class can implement it's own version of the same method with same signature.
+
+* What is Abstract Class in C#?
+
+If we don't want a class to be instantiated, define the class as abstract. An abstract
+class can have abstract and non abstract classes. If a method is defined as abstract,
+it must be implemented in derived class.
+
+* What is a Destructor in C# ?
+
+Destructor is a special method that get invoked/called automatically whenever
+an object of a given class gets destroyed. Main idea behind using destructor is
+to free the memory used by the object.
+
+* Difference between functional requirements and non-functional
+
+A functional requirement describes what a software system should do,
+while non-functional requirements place constraints on how the system will do so.
+
+An example of a functional requirement would be:
+
+    - A system must send an email whenever a certain condition is met (e.g. an order
+      is placed, a customer signs up, etc).
+
+A related non-functional requirement for the system may be:
+    - Emails should be sent with a latency of no greater than 12 hours from such an activity.
+
+The functional requirement is describing the behavior of the system as it relates to
+the system's functionality. The non-functional requirement elaborates a performance
+characteristic of the system.
+
+Typically non-functional requirements fall into areas such as:
+
+Accessibility, Capacity, Efficiency, Extensibility, Fault tolerance, Privacy,
+Portability, Quality, Reliability, Robustness, Scalability, Security, Stability,
+Supportability, Testability.

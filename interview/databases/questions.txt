@@ -1,0 +1,42 @@
+* Difference between a relational (SQL) and non-relational (NoSQL) database.
+
+    - SQL databases use structured query language (SQL) for defining and manipulating data.
+
+    - A NoSQL database, on the other hand, has dynamic schema for unstructured data,
+      and data is stored in many ways: it can be column-oriented, document-oriented,
+      graph-based or organized as a KeyValue store.
+
+    - You can create documents without having to first define their structure
+    - Each document can have its own unique structure
+    - The syntax can vary from database to database, and
+    - You can add fields as you go.
+
+    Scalability:
+
+        - SQL databases are vertically scalable, which means that you can increase
+          the load on a single server by increasing things like CPU, RAM or SSD.
+
+        - NoSQL databases, on the other hand, are horizontally scalable. This means
+          that you handle more traffic by sharding, or adding more servers in your NoSQL database.
+          It’s like adding more floors to the same building versus adding more buildings to the
+          neighborhood. The latter can ultimately become larger and more powerful, making NoSQL
+          databases the preferred choice for large or ever-changing data sets.
+
+    The Structure:
+
+        - SQL databases are table-based, while NoSQL databases are either document-based,
+        key-value pairs, graph databases or wide-column stores. This makes relational SQL
+        databases a better option for applications that require multi-row transactions - such
+        as an accounting system
+
+* When to use SQL and NoSQL?
+
+MySQL is a strong choice for any business that will benefit from its pre-defined
+structure and set schemas. For example, applications that require multi-row
+transactions - like accounting systems or systems that monitor inventory
+
+MongoDB, on the other hand, is a good choice for businesses that have rapid growth
+or databases with no clear schema definitions. More specifically, if you cannot define
+a schema for your database, if you find yourself denormalizing data schemas, or if your
+schema continues to change - as is often the case with mobile apps, real-time analytics,
+content management systems, etc.

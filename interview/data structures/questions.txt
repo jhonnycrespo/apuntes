@@ -1,0 +1,26 @@
+* Difference between trees and graphs?
+
+A Tree is just a restricted form of a Graph.
+
+Trees have direction (parent / child relationships) and don't contain cycles.
+
+Graph can have loops, circuits as well as can have self-loops.
+
+In tree there is exactly one root node and every child have only one parent.
+
+In graph there is no such concept of root node.
+
+Graph is traversed by DFS: Depth First Search and in BFS : Breadth First Search algorithm
+
+Tree is traversed in Pre-Order, In-Order and Post-Order (all three in DFS or in BFS algorithm)
+
+Different types of trees are : Binary Tree , Binary Search Tree, AVL tree, Heaps.
+
+Tree applications : sorting and searching like Tree Traversal & Binary Search.
+
+There are mainly two types of Graphs : Directed and Undirected graphs.
+
+Tree is a hierarchical model.
+
+Graph is a network model.
+
