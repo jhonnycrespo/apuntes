@@ -1,0 +1,38 @@
+Chapter 7 - What is Agile Design?
+=================================
+
+A set of UML diagrams may represent parts of a design, but
+those diagrams are not the design. The design of a software project
+is an abstract concept. It has to do with the overall shape and structure
+of the program, as well as the detailed shape and structure of each module,
+class, and method. The design can be represented by many different
+media, but its final embodiment is source code. In the end, the source
+code is the design.
+
+Design Smells
+=============
+
+If you are lucky, you start a project with a clear picture of what
+you want the system to be. The design of the system is a vital image
+in your mind. If you are luckier still, the clarity of that design
+makes it to the first release.
+
+But then something goes wrong. The software starts to rot like a piece
+of bad meat. As time goes by, the rotting continues. Ugly, festering sores
+and boils accumulate in the code, making it more and more difficult to
+maintain. Eventually, the sheer effort required to make even the simples
+of changes becomes so onerous that the developers and front-line managers
+cry for a redesign.
+
+Such redesigns rarely succeed. Although the designers start out with
+good intentions, they find that they are shooting at a moving target.
+The old system continues to evolve and change, and the new design must
+keep up. The warts and ulcers accumulate in the new design before it
+ever makes it to its first release.
+
+Design Smells the Odors of Rotting software
+===========================================
+
+You know that the software is rotting when it starts to exhibit any
+of the following odors: Rigidity, Fragility, Immobility, Viscosity,
+Needless complexity, Needless repetition, Opacity.

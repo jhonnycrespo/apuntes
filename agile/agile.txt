@@ -1,0 +1,113 @@
+Iteration Planning
+==================
+
+The purpose of the iteration planning meeting is for the team
+to commit to the completion of a set of the highest-ranked
+"product backlog items" for the next iteration. This commitment
+define the iteration backlog and is based on the team's velocity
+or capacity and the length of the iteration timebox.
+
+The output of the iteration planning is:
+
+    - The iteration backlog, consisting of the stories committed
+      to the iteration, with acceptance criteria where appropriate.
+    - A statement of iteration goals, typically a sentence or two
+      stating the business objectives of the iteration
+    - A commitment by the team to the work needed to achieve the goals
+
+Who is Involved?
+================
+
+    - Scrum Master: Facilitates the meeting
+    - Product Owner: Represents the details of the PBIs and their
+      acceptance criteria.
+    - Delivery Team: Define the tasks and effort necessary to fulfill
+      the commitment.
+
+Before the Planning meeting
+===========================
+
+Before getting started, ensure:
+
+    - The items in the product backlog have been sized by the team
+      and assigned a relative story point value.
+    - The product backlog is stack ranked to reflect the priorities
+      of the Product Owner.
+    - There is a general understanding of the acceptance criteria for
+      these ranked backlog items.
+
+  * Equal Opportunity backlog
+
+    The product backlog addresses new functionality and fixes to existing functionality.
+
+    For the purpose of iteration planning, the important characteristics for a product backlog item are:
+        - It is small enough to be completed in the iteration
+        - We can verify it has been implemented correctly
+
+  * Right-Sized Backlog Items
+    Product backlog items too large to be completed in an iteration need
+    to be split into smaller pieces. The best way to split product backlog
+    items is by value, not by process.
+
+    If we can split a product backlog item so that its children deliver value,
+    then our iterations incrementally deliver value. If we split by process,
+    then we impact time-to-market because value is not delivered until all the
+    children are complete.
+
+Planning Process
+================
+
+Planning the contents of an iteration has two stages:
+    - determining how many user stories can fit into the iteration, then
+    - breaking those stories down into tasks and assigning owners.
+
+...
+
+
+  User Story Size
+  ===============
+
+  Mature teams use past velocity to determine what product backlog items
+  to commit to during the iteration. Velocity is the average number of user
+  story points a team can complete in an iteration. For example, a new team
+  completed 12, 14, and 8 points in their last three iterations. Review meetings
+  revealed that the team was only able to complete 8 story points in the most
+  recent iteration, due to a technical issue that has since been solved. Based
+  on these factors, the team would estimate they have a velocity of 12 story
+  points, to use in the next iteration.
+
+  Task Capacity
+  =============
+
+  The capacity for the team is derived from three simple measures for each team member:
+
+      - Number of ideal hours in the work day
+      - Days in the iteration that the person will be available
+      - Percentage of time the person will dedicate to this team
+
+  For example, let's look at a team of five individuals, all committed to the
+  team full-time. Each has about six ideal hours per day to work on tasks, and no
+  one is taking vacation. For a week-long iteration:
+
+      5 team members X 6 ideal hours X 5 working days = 150 hours of task capacity
+
+  Planning Steps
+  ==============
+
+      1. The Product Owner describes the highest ranked product backlog item.
+      2. The team determines the tasks necessary to complete each
+          product backlog item.
+      3. Team members volunteer to own the tasks.
+      4. Task owners estimate the ideal hours they need to finish each task.
+      5. Planning steps repeat while the team can commit to delivery without
+          exceeding optimum velocity.
+
+  If any individual exceeds their capacity during iteration planning, then the
+  team collaborates to distribute the load.
+
+  
+
+
+https://help.rallydev.com/iteration-planning
+https://xp123.com/xplor/xp0512/index.shtml
+http://www.scaledagileframework.com/iteration-planning/

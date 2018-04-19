@@ -1,0 +1,16 @@
+Set environment variables
+=========================
+
+unix:
+  for one run:
+    > PORT=1234 node app.js
+  
+  more permanently:
+    > export PORT=1234
+
+windows:
+  cmd:
+    > set PORT=1234
+
+  powershell:
+    > $env:PORT = 1234

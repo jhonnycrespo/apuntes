@@ -1,0 +1,191 @@
+Chapter 3: Planning
+====================
+
+Initial Exploration
+===================
+
+At the start of the project, the developers and customers have conversations
+about the new system in order to identify all the significant features that
+they can. However, they don't try to identify all features. As the project
+proceeds, the customers will continue to discover more features. The flow of
+features will not shut off until the project is over.
+
+As a feature is identified, it is broken down into one or more user stories,
+which are written onto index cards or their equivalent. Not much is written on
+the card except the name of the story (e.g., Login, Add User, Delete User,
+or Change Password).We aren't trying to capture details at this stage.
+We simply want something to remind us of the conversations we've been having
+about the features.
+
+The developers work together to estimate the stories. The estimates are relative,
+not absolute. We write a number of "points" on a story card to represent the
+relative cost of the story. We may not be sure just how much time a story point
+represents, but we do know that a story with 8 points will take twice as long as
+a story with 4 points.
+
+Spiking, Splitting, and Velocity
+================================
+
+Stories that are too large or too small are difficult to estimate. Developers
+tend to underestimate large stories and overestimate small ones. Any story that
+is too big should be split into pieces that aren't too big. Any story that is too
+small should be merged with other small stories.
+
+For example, consider the story "Users can securely transfer money into, out of,
+and between their accounts." This is a big story. Estimating will be difficult,
+and probably inaccurate. However, we can split it into many stories that are much
+easier to estimate:
+
+    - Users can log in.
+    - Users can log out.
+    - Users can deposit money into their accounts.
+    - Users can withdraw money from their accounts.
+    - Users can transfer money from one of their accounts to another account.
+
+When a story is split or merged, it should be reestimated. It is not wise to simply
+add or subtract the estimate. The whole reason to split or merge a story is to get
+it to a size at which estimation is accurate. It is not surprising to find that a
+story estimated at 25 points breaks up into stories that add up to 30! Thirty is the
+more accurate estimate.
+
+Every week, we complete a certain number of stories. The sum of the estimates of the
+completed stories is a metric known as velocity. If we completed 42 points' worth of
+stories during the previous week, our velocity is 42.
+
+After 3 or 4 weeks, we'll have a good idea of our average velocity. We can use
+this to predict how much work we'll get done in subsequent weeks.
+
+At the start of a project, the developers will not have a very good idea of their velocity.
+They must create an initial guess by whatever means they feel will give the best
+results. The need for accuracy at this point is not particularly grave, so they don't need
+to spend an inordinate amount of time on it.
+
+Release Planning
+================
+
+Given a velocity, the customers can get an idea of the cost of each of the stories, as well as its
+business value and priority. This allows the customers to choose the stories they want done first. This
+choice is not purely a matter of priority. Something that is important but also expensive may be
+delayed in favor of something that is less important but much less expensive. Choices like this are
+business decisions. The business folks decide which stories give them the most bang for the buck.
+
+The developers and customers agree on a date for the first release of the project. This is usually a
+matter of 24 months in the future. The customers pick the stories they want implemented within that
+release and the rough order they want them implemented in. The customers cannot choose more
+stories than will fit according to the current velocity. Since the velocity is initially inaccurate, this
+selection is crude. But accuracy is not very important at this point. The release plan can be adjusted
+as velocity becomes more accurate.
+
+Iteration Planning
+==================
+
+Next, the developers and customers choose an iteration size: typically, 1 or 2 weeks. Once again, the
+customers choose the stories that they want implemented in the first iteration but cannot choose
+more stories than will fit according to the current velocity.
+
+The order of the stories within the iteration is a technical decision. The developers implement the
+stories in the order that makes the most technical sense. The developers may work on the stories
+serially, finishing each one after the next, or may divvy up the stories and work on them all
+concurrently. It's entirely up to the developers.
+
+The customers cannot change the stories in the iteration once it has begun. Customers are free to
+change or reorder any other story in the project but not the ones that the developers are currently
+working on.
+
+The iteration ends on the specified date, even if all the stories aren't done. The estimates for all the
+completed stories are totaled, and the velocity for that iteration is calculated. This measure of
+velocity is then used to plan the next iteration. The rule is very simple: The planned velocity for each
+iteration is the measured velocity of the previous iteration. If the team got 31 story points done last
+iteration, it should plan to get 31 story points done in the next. The team's velocity is 31 points per
+iteration.
+
+This feedback of velocity helps to keep the planning in sync with the team. If the team gains in
+expertise and skill, the velocity will rise commensurately. If someone is lost from the team, the
+velocity will fall. If an architecture evolves that facilitates development, the velocity will rise.
+
+Defining DONE
+=============
+
+A story is not done until all its acceptance tests pass. Those acceptance tests are automated. They
+are written by the customer, business analysts, quality assurance specialists, testers, and even
+programmers, at the very start of each iteration. These tests define the details of the stories and are
+the final authority on how the stories behave. We'll have more to say about acceptance tests in the
+next chapter.
+
+Task Planning
+=============
+
+At the start of a new iteration, the developers and customers get together to plan. The developers
+break the stories down into development tasks. A task is something that one developer can
+implement in 416 hours. The stories are analyzed, with the customers' help, and the tasks are
+enumerated as completely as possible.
+
+A list of the tasks is created on a flip chart, whiteboard, or some other convenient medium. Then, one
+by one, the developers sign up for the tasks they want to implement, estimating each task in
+arbitrary task points[*].
+
+[*] Many developers find it helpful to use "perfect programming hours" as their task points.
+
+Developers may sign up for any kind of task. Database specialists are not constrained to sign up for
+database tasks. GUI people can sign up for database tasks if they like. Although this may seem
+inefficient, a mechanism manages that. The benefit is obvious: The more the developers know about
+the whole project, the healthier and more informed the project team is. We want knowledge of the
+project to spread throughout the team, irrespective of specialty.
+
+Each developer knows how many task points he or she managed to implement in the previous
+iteration; this number is the developer's budget. No one signs up for more points than are in the
+budget.
+
+Task selection continues until either all tasks are assigned or all developers have used their budgets.
+If tasks remain, the developers negotiate with each other, trading tasks, based on their various skills.
+If this doesn't make enough room to get all the tasks assigned, the developers ask the customers to
+remove tasks or stories from the iteration. If all the tasks are signed up and the developers still have
+room in their budgets for more work, they ask the customers for more stories.
+
+Half way through the iteration, the team holds a meeting. At this point, half of the stories scheduled
+for the iteration should be complete. If half the stories aren't complete, the team tries to reapportion
+tasks and responsibilities to ensure that all the stories will be complete by the end of the iteration. If
+the developers cannot find such a reapportionment, the customers need to be told. The customers
+may decide to pull a task or story from the iteration. At very least, they will name the lowest-priority
+tasks and stories so that developers avoid working on them.
+
+For example, suppose that the customers selected eight stories totaling 24 story points for the
+iteration. Suppose also that these were broken down into 42 tasks. At the halfway point of the
+iteration, we would expect to have 21 tasks and 12 story points complete. Those 12 story points
+must represent wholly completed stories. Our goal is to complete stories, not simply tasks. The
+nightmare scenario is to get to the end of the iteration with 90 percent of the tasks complete but no
+stories complete. At the halfway point, we want to see completed stories that represent half the story
+points for the iteration.
+
+Iterating
+=========
+
+Every 2 weeks, the current iteration ends and the next begins. At the end of each iteration, the
+current running executable is demonstrated to the customers. The customers are asked to evaluate
+the look, feel, and performance of the project. They will provide their feedback in terms of new user
+stories.
+
+The customers see progress frequently. They can measure velocity. They can predict how quickly the
+team is going and can schedule high-priority stories early. In short, customers have all the data and
+control they need to manage the project to their liking.
+
+Conclusion
+==========
+
+From iteration to iteration and release to release, the project falls into a predictable and comfortable
+rhythm. Everyone knows what to expect and when to expect it. Stakeholders see progress frequently
+and substantially. Rather than being shown notebooks full of diagrams and plans, stakeholders are
+shown working software that they can touch, feel, and provide feedback on.
+
+Developers see a reasonable plan, based on their own estimates and controlled by their own
+measured velocity. Developers choose the tasks they feel comfortable working on and keep the
+quality of their workmanship high.
+
+Managers receive data every iteration. They use this data to control and manage the project. They
+don't have to resort to pressure, threats, or appeals to loyalty to meet an arbitrary and unrealistic
+date.
+
+If this sounds like blue sky and apple pie, it's not. The stakeholders won't always be happy with the
+data that the process produces, especially not at first. Using an agile method does not mean that the
+stakeholders will get what they want. It simply means that they'll be able to control the team to get
+the most business value for the least cost.

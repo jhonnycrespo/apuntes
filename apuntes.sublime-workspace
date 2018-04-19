@@ -528,15 +528,6 @@
 			}
 		},
 		{
-			"file": "/C/Users/JhonnyHoracio/Desktop/tareaMonitor.txt",
-			"settings":
-			{
-				"buffer_size": 1635,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "/F/Tutoriales/Videos/C#/Udemy - Mosh Hamedani - C# Basic/02 Introduction to C and .NET Framework/011 What is ReSharper.html",
 			"settings":
 			{
@@ -945,6 +936,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/JhonnyHoracio/Desktop/tareaMonitor.txt",
 		"/F/Tutoriales/Videos/dotNet/3. Pluralsight - Become a Full-stack .NET Developer - Architecture and Testing/3-exercise-files/After/GigHub/Controllers/GigsController.cs",
 		"/F/apuntes/IDE&editors/visual studio.txt",
 		"/F/apuntes/apuntes.sublime-project",
@@ -1071,8 +1063,7 @@
 		"/C/xampp/htdocs/sistema_unilever/protected/modules/distribucion/controllers/VehiculoController.php",
 		"/C/xampp/htdocs/sistema_unilever/protected/components/Controller.php",
 		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludFormulario/create.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/models/Paciente.php",
-		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/views/saludArchivo/index.php"
+		"/C/xampp/htdocs/sistema_unilever/protected/modules/salud/models/Paciente.php"
 	],
 	"find":
 	{
@@ -1262,7 +1253,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -1291,40 +1282,11 @@
 						"translation.y": 62.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/JhonnyHoracio/Desktop/tareaMonitor.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1635,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1572,
-								1572
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 241.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "/F/Tutoriales/Videos/C#/Udemy - Mosh Hamedani - C# Basic/02 Introduction to C and .NET Framework/011 What is ReSharper.html",
 					"semi_transient": false,
 					"settings":
@@ -1353,7 +1315,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"semi_transient": false,
 					"settings":
 					{
