@@ -1,0 +1,22 @@
+sprint 4:
+  - Implement rendering of forms. (research, implementation with unit tests) (8 hrs)
+
+sprint 5:
+  - Implement background image and color for the editor took me like
+    5 hours (implementing and manual testing).
+
+  - Implement save of the model took like 3 hours (implementing and manual testing).
+
+sprint 6:
+  - Implement the endpoint to get the list of benefits for the catalog
+    took me like 4 hours (implementation without unit tests and manual testing)
+
+sprint 7:
+  - Implement the endpoint to get the list of templates took me
+    like 3:30 hours (implementation without unit tests and manual testing)
+
+  - Implement update, delete in the schedules took me like 4:30 hrs (take approach, research
+    and implementation without unit tests)
+
+sprint 8:
+  - Fix a login in bug took me like 2 hrs (identifying source, fixing and manual testing)
