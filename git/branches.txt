@@ -1,3 +1,6 @@
 Mostrar los branches y sus commits
 ====================================	
 	> git show-branch
+
+To delete a remote branch named feature:
+	> git push origin --delete `feature`
