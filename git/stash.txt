@@ -1,0 +1,26 @@
+Stashing
+========
+
+Let’s say you are in the middle of implementing a new feature and you need to switch
+branches to fix a bug or revert back to where you started in the current branch. You
+don’t want to commit half-done work or lose your changes. git stash is a handy feature
+for these types of situations. It takes your changes, saves them to a temporary place
+and cleans up your working directory. This allows you to switch to other branches or
+work elsewhere. Let’s look at some examples.
+
+To stash your work in progress:
+
+    > git stash save "Partial improvement to file.txt"
+
+Once you stash, you are free to switch branches. When you are ready to resume
+working on the changes you stashed, you can apply the stash:
+
+    > git stash apply (restores the most recent save)
+
+You can stash multiple times. Use git stash list command to see to list of stashes
+stored on the stash stack.
+
+A stash could be applied to any branch not just the same branch it was saved from.
+
+Note: Stash will ignore ‘un-tracked’ files. If you added a new file, you must first
+add it to the index using git add before stashing.
